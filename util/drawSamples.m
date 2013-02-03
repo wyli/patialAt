@@ -1,4 +1,6 @@
 function [] = drawSamples(imgSet, xmlSet, outputSet, windowSize)
+% usage: 
+% >> drawSamples('~/desktop/OPTmix', '~/desktop/description', '~/desktop/cuboidset', 21);
 fprintf('%s drawing samples, (may contain empty cell.\n', datestr(now));
 fprintf('windowSize: %d\n', windowSize);
 % input

@@ -1,0 +1,102 @@
+% listFiles = dir('*.mat');
+% 
+% 
+% high = [];
+% yhigh = [];
+% for i = 1:length(listFiles)
+%     if (i == 10 || i == 16 || i == 7)
+%         continue;
+%     end
+%     load(listFiles(i).name);
+%     ind = randsample(size(X_features, 2), 100);
+%     high = [high,X_features(:, ind)]; 
+%     yhigh = [yhigh, info{ind}];
+% end
+% 
+% 
+% testhigh = [];
+% yhigh_t = [];
+% for i = 1:length(listFiles)
+%     if (i == 10 || i == 16 || i == 7)
+%     load(listFiles(i).name);
+%     ind = randsample(size(X_features, 2), 100);
+%     testhigh = [testhigh,X_features(:, ind)]; 
+%     yhigh_t = [yhigh_t, info{ind}];
+%     end
+% end
+% 
+% low = [];
+% ylow = [];
+% for i = 1:length(listFiles)
+%     if (i == 10 || i == 16 || i == 7)
+%         continue;
+%     end
+%     load(listFiles(i).name);
+%     ind = randsample(size(X_features, 2), 200);
+%     low = [low,X_features(:, ind)]; 
+%     ylow = [ylow, info{ind}];
+% end
+% 
+% testlow = [];
+% ylow_t = [];
+% for i = 1:length(listFiles)
+%     if (i == 10 || i == 16 || i == 7)
+%     load(listFiles(i).name);
+%     ind = randsample(size(X_features, 2), 100);
+%     testlow = [testlow,X_features(:, ind)]; 
+%     ylow_t = [ylow_t, info{ind}];
+%     end
+% end
+% 
+% trainHigh = high'; clear high;
+% trainLow = low'; clear low;
+% testHigh = testhigh'; clear testhigh;
+% testLow = testlow'; clear testlow;
+% 
+% for i = 1:length(yhigh)
+%     if strcmp(yhigh(i).type,'LGD')
+%         trainYHigh(i) = -2;
+%     else
+%         trainYHigh(i) = 2;
+%     end
+% end
+% 
+% for i = 1:length(ylow)
+%     if strcmp(ylow(i).type,'LGD')
+%         trainYLow(i) = -0.5;
+%     else
+%         trainYLow(i) = 0.5;
+%     end
+% end
+% 
+% for i = 1:length(yhigh_t)
+%     if strcmp(yhigh_t(i).type,'LGD')
+%         testYHigh(i) = -2;
+%     else
+%         testYHigh(i) = 2;
+%     end
+% end
+% 
+% for i = 1:length(ylow_t)
+%     if strcmp(ylow_t(i).type,'LGD')
+%         testYLow(i) = -0.5;
+%     else
+%         testYLow(i) = 0.5;
+%     end
+% end
+        
+trainYHigh = trainYHigh';
+trainYLow = trainYLow';
+testYHigh = testYHigh';
+testYLow = testYLow';
+trainHigh = [trainHigh, ones(size(trainHigh, 1), 1)];
+trainLow = [trainLow, ones(size(trainLow, 1), 1)];
+
+trainHigh(:, end) = trainHigh(:,end) * 100;
+trainLow(:, end) = trainLow(:,end) * 0.1;
+
+model = train(sparse([trainYHigh; trainYLow]), sparse([trainHigh; trainLow]), '-e 0.00001 -s 2');
+[label, acc, dec]= predict(sparse([testYHigh; testYLow]), sparse([testHigh; testLow]), model);
+
+%model = train(sparse([trainYHigh]), sparse([trainHigh]), '-e 0.00001 -s 2');
+%[label, acc, dec]= predict(sparse([testYHigh; testYLow]), sparse([testHigh; testLow]), model);

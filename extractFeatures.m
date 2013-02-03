@@ -1,22 +1,23 @@
 function [] = extractFeatures(...
-        baseSet, cuboidSet feaSet, windowSize, subSize, step3d, randMat)
+        baseSet, cuboidSet, feaSet, windowSize, subSize, step3d, randMat)
 global projMat 
 projMat = randMat;
 fprintf('%s build histogram for each cuboid\n', datestr(now));
 % input 
 clusterSet = [baseSet, '/clusters'];
 % output
-feaSet = [feaSet '/'];
 mkdir(feaSet);
-feaSet = [feaSet '%s'];
+feaSet = [feaSet '/%s'];
 
 load(clusterSet);
 listFiles = dir(sprintf(cuboidSet, windowSize, '*.mat'));
-for i = 1:size(xmlFiles, 1)
+for i = 1:size(listFiles, 1)
     fprintf('%s extracting BoG features %s\n', datestr(now), listFiles(i).name);
     cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name);
     load(cuboidFile);
     cuboid = cuboid(1,:);
+    locations = cuboid(2,:);
+    info = cuboid(3,:);
 
     idMat = ones(1, size(cuboid, 2));
     repSize = mat2cell(idMat.*subSize, 1, idMat);
@@ -32,8 +33,8 @@ for i = 1:size(xmlFiles, 1)
     X_features = cell2mat(histograms');
     X_features = X_features';
     featureFile = sprintf(feaSet, listFiles(i).name);
-    save(featureFile, 'X_features');
-    clear X_features histograms;
+    save(featureFile, 'X_features', 'info', 'locations');
+    clear X_features histograms info locations;
 end
 end
 

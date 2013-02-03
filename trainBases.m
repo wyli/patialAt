@@ -15,8 +15,7 @@ localSet = [];
 listFiles = dir(sprintf(cuboidSet, windowSize, '*.mat'));
 for j = 1:size(trainInd, 1)
     i = trainInd(j);
-    listFiles(i).name
-    cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name)
+    cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name);
     load(cuboidFile);
     r = randsample(size(cuboid,2), min(size(cuboid,2), samplesPerFile));
     cuboid = cuboid(1,r);

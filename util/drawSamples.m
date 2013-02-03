@@ -36,11 +36,15 @@ for i = 1:size(xmlFiles, 1)
     for j = 1:size(cuboid_low, 2)
         cuboid_low{3, j} = rec.annotation;
     end
-    cuboid = cuboid_low
+    badIndex = cellfun(@isempty, cuboid_low(1, :));
+    cuboid_low(:, badIndex) = [];
+    cuboid = cuboid_low;
     cuboidSet = sprintf('%s/low/%s', outputSet, name);
     fprintf('saving at: %s\n', cuboidSet);
     save(cuboidSet, 'cuboid');
 
+    badIndex = cellfun(@isempty, cuboid_high(1, :));
+    cuboid_high(:, badIndex) = [];
     cuboid = cuboid_high;
     cuboidSet = sprintf('%s/high/%s', outputSet, name);
     fprintf('saving at: %s\n', cuboidSet);

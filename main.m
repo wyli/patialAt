@@ -23,9 +23,9 @@ do_kmeans = ones(10, 1);
 do_extract_features= 1;
 do_classification = 1;
 fprintf('at: %s\n', datestr(now));
-fprintf('generate testing scheme? %d', generate_scheme);
-fprintf('%s\n', 'I will:');
-fprintf('%s: %d\n', 'do kmeans on training', do_kmeans);
+fprintf('generate testing scheme? %d\n', generate_scheme);
+fprintf('%s: \n', 'I will');
+fprintf('%s: %d\n', 'do kmeans on training', do_kmeans(1));
 fprintf('%s: %d\n', 'extract features on all', do_extract_features);
 fprintf('%s: %d\n', 'do classification', do_classification);
 fprintf('\n\n');
@@ -78,7 +78,7 @@ for f = 1:length(testScheme)
         if ~do_kmeans(f)
             load([resultSet, '/randMat']);
         end
-        mkdir([resultSet, 'fea']);
+        mkdir([resultSet, '/fea']);
         cuboidInput = [patchSet, '/cuboid_%d/high/%s'];
         feaOutput = [resultSet, '/fea/high'];
         extractFeatures(...

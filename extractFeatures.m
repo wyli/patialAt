@@ -15,9 +15,9 @@ for i = 1:size(listFiles, 1)
     fprintf('%s extracting BoG features %s\n', datestr(now), listFiles(i).name);
     cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name);
     load(cuboidFile);
-    cuboid = cuboid(1,:);
     locations = cuboid(2,:);
     info = cuboid(3,:);
+    cuboid = cuboid(1,:);
 
     idMat = ones(1, size(cuboid, 2));
     repSize = mat2cell(idMat.*subSize, 1, idMat);

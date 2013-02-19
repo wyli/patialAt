@@ -1,5 +1,5 @@
 function [ image3d, locations ] =...
-        scanForWeakSampleLocations( image3d, window3d, step )
+        scanForWeakSampleLocations( image3d, window3d, step, radius )
 % scanForCuboids looking for cuboids locations in the 3d image
 % RETURN 3d images and locations
 % e.g.:
@@ -28,13 +28,27 @@ for i = 1:size(frameInx,1);
     yLow = max(min(ys), window3d(2)+1);
     yHigh = min(max(ys), sizeOfImg(2)-window3d(2));
 
-    xLow = xLow - 40;
-    xHigh = xHigh + 40;
-    yLow = yLow - 40;
-    yHigh = yHigh + 40;
+    xLow = xLow - radius;
+    xHigh = xHigh + radius;
+    yLow = yLow - radius;
+    yHigh = yHigh + radius;
 
-    for x = xLow:step(1):xHigh
+    for x = [xLow, xHigh]
         for y = yLow:step(2):yHigh
+            try
+                if ~all(image3d( x-window3d(1):x+window3d(1),...
+                                y-window3d(2):y+window3d(2),...
+                                startFrame ))
+                    % locations of positive examples.
+                    locations = [locations; [x y startFrame]];
+                end
+            catch e
+                % do nothing
+            end
+        end
+    end
+    for x = xLow+window3d(1):step(1):xHigh-window3d(2)
+        for y = [yLow, yHigh]
             try
                 if ~all(image3d( x-window3d(1):x+window3d(1),...
                                 y-window3d(2):y+window3d(2),...
@@ -57,17 +71,17 @@ end % end of function
 % 
 % % debugging for visualise ROI
 %  figure;
-%  colormap(gray);
-%  imagesc(image3d(:,:,frameInx(15)));
-%  hold on;
-%  for i = 1:size(locations,1)
-%  l = locations(i,:);
-%  if l(3) == frameInx(15)
-%  rectangle('Position',...
-%     [l(2)-window3d(2), l(1)-window3d(1),window3d(2)*2, window3d(1)*2],'FaceColor', 'r');
+%   colormap(gray);
+%   imagesc(image3d(:,:,frameInx(15)));
+%   hold on;
+%   for i = 1:size(locations,1)
+%   l = locations(i,:);
+%   if l(3) == frameInx(15)
+%   rectangle('Position',...
+%      [l(2)-window3d(2), l(1)-window3d(1),window3d(2)*2, window3d(1)*2],'FaceColor', 'r');
+%   end
+%   end
+%  
+%   clear i overlap;
 %  end
-%  end
-% 
-%  clear i overlap;
-% end
 %

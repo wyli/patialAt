@@ -1,9 +1,8 @@
 function  [cuboid_low, cuboid_high] = img2Cub(...
-    imgFile, segFile, windowSize, step)
+    imgFile, segFile, windowSize, step, radius)
 
-numOfSamples = 100;
-numOfWeakSamples = 200;
-highLowRatio = 4;
+numOfSamples = 50;
+numOfWeakSamples = 500;
 % load images and segmentations.
 load(imgFile);
 load(segFile);
@@ -24,11 +23,11 @@ for loc = 1:size(randIndex,1)
     cuboid_high{2,loc} = locations3d(loc,:);
 end	
 
-fprintf('propagate to low confidence: %d\n', highLowRatio*size(randIndex,1));
+fprintf('propagate to low confidence: %d\n', min(size(locations3d,1),numOfWeakSamples));
 [~, locations3d] = scanForWeakSampleLocations(...
-    segImg, windowSize, step);
+    segImg, windowSize, step, radius);
 fprintf('Found %d all weak locations\n', length(locations3d));
-randIndex = randsample(size(locations3d,1), min(size(locations3d,1),numOfWeakSamples ));
+randIndex = randsample(size(locations3d,1), min(size(locations3d,1),numOfWeakSamples));
 fprintf('Randomly choose low confident locations: %d\n ',...
             min(size(locations3d,1), numOfWeakSamples));
 
@@ -39,15 +38,4 @@ for loc = 1:size(randIndex,1)
         oriImg, locations3d(loc,:), windowSize);
     cuboid_low{2,loc} = locations3d(loc,:);
 end	
-%cuboid_low = cell(2, size(randIndex, 1)*highLowRatio);
-%offset = [-5, 5];
-%for i = 1:size(cuboid_low, 2)
-%    low_loc = locations3d(1+mod(i, size(randIndex, 1)), :);
-%    low_loc(1) = low_loc(1) + offset(randsample(2,1));
-%    low_loc(2) = low_loc(2) + offset(randsample(2,1));
-%    low_loc(3) = low_loc(3) + offset(randsample(2,1));
-%    cuboid_low{1, i} = getSurroundCuboid(...
-%        oriImg, low_loc, windowSize);
-%    cuboid_low{2, i} = low_loc;
-%end
 end % end of function

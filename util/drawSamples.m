@@ -1,6 +1,6 @@
-function [] = drawSamples(imgSet, xmlSet, outputSet, windowSize)
+function [] = drawSamples(imgSet, xmlSet, outputSet, windowSize, radius)
 % usage: 
-% >> drawSamples('~/desktop/OPTmix', '~/desktop/description', '~/desktop/cuboidset', 21);
+% >> drawSamples('~/desktop/OPTmix', '~/desktop/description', '~/desktop/cuboidset', 21, 0);
 fprintf('%s drawing samples, (may contain empty cell.\n', datestr(now));
 fprintf('windowSize: %d\n', windowSize);
 % input
@@ -23,12 +23,16 @@ for i = 1:size(xmlFiles, 1)
     rec = VOCreadxml([xmlSet '/' xmlFiles(i).name]);
     name = rec.annotation.index;
     for p = 1:size(rec.annotation.part, 2)
-        part = rec.annotation.part{p};
+        try
+            part = rec.annotation.part{p};
+        catch
+            part = rec.annotation.part;
+        end
         segFile = sprintf(segImgSet, imgSet, name, part);
         oriFile = sprintf(oriImgSet, imgSet, name, part);
         fprintf('input: %s\n', segFile);
         fprintf('input: %s\n', oriFile);
-        [cubPart_low, cubPart_high] = img2Cub(oriFile, segFile, window3d, step3d);
+        [cubPart_low, cubPart_high] = img2Cub(oriFile, segFile, window3d, step3d, radius);
         cuboid_high = [cuboid_high, cubPart_high];
         cuboid_low = [cuboid_low, cubPart_low];
     end
@@ -41,7 +45,7 @@ for i = 1:size(xmlFiles, 1)
     badIndex = cellfun(@isempty, cuboid_low(1, :));
     cuboid_low(:, badIndex) = [];
     cuboid = cuboid_low;
-    cuboidSet = sprintf('%s/low/%s', outputSet, name);
+    cuboidSet = sprintf('%s/low/%s_%d', outputSet, name, radius);
     fprintf('saving at: %s\n', cuboidSet);
     save(cuboidSet, 'cuboid');
 

@@ -4,7 +4,7 @@ listFiles = dir('*.mat');
 % high = [];
 % yhigh = [];
 % for i = 1:length(listFiles)
-%     if (i == 10 || i == 16 || i == 7)
+%     if (i == 16 || i == 14 || i == 26)
 %         continue;
 %     end
 %     load(listFiles(i).name);
@@ -17,36 +17,36 @@ listFiles = dir('*.mat');
 % testhigh = [];
 % yhigh_t = [];
 % for i = 1:length(listFiles)
-%     if (i == 10 || i == 16 || i == 7)
+%     if (i == 14 || i == 16 || i == 26)
 %     load(listFiles(i).name);
 %     ind = randsample(size(X_features, 2), 100);
 %     testhigh = [testhigh,X_features(:, ind)]; 
 %     yhigh_t = [yhigh_t, info{ind}];
 %     end
 % end
-% 
-% low = [];
-% ylow = [];
-% for i = 1:length(listFiles)
-%     if (i == 10 || i == 16 || i == 7)
-%         continue;
-%     end
-%     load(listFiles(i).name);
-%     ind = randsample(size(X_features, 2), 200);
-%     low = [low,X_features(:, ind)]; 
-%     ylow = [ylow, info{ind}];
-% end
-% 
-% testlow = [];
-% ylow_t = [];
-% for i = 1:length(listFiles)
-%     if (i == 10 || i == 16 || i == 7)
-%     load(listFiles(i).name);
-%     ind = randsample(size(X_features, 2), 100);
-%     testlow = [testlow,X_features(:, ind)]; 
-%     ylow_t = [ylow_t, info{ind}];
-%     end
-% end
+
+low = [];
+ylow = [];
+for i = 1:length(listFiles)
+    if (i == 16 || i == 14 || i == 26)
+        continue;
+    end
+    load(listFiles(i).name);
+    ind = randsample(size(X_features, 2), 200);
+    low = [low,X_features(:, ind)]; 
+    ylow = [ylow, info{ind}];
+end
+
+testlow = [];
+ylow_t = [];
+for i = 1:length(listFiles)
+    if (i == 14 || i == 16 || i == 26)
+    load(listFiles(i).name);
+    ind = randsample(size(X_features, 2), 100);
+    testlow = [testlow,X_features(:, ind)]; 
+    ylow_t = [ylow_t, info{ind}];
+    end
+end
 % 
 % trainHigh = high'; clear high;
 % trainLow = low'; clear low;
@@ -84,26 +84,19 @@ listFiles = dir('*.mat');
 %         testYLow(i) = 0.5;
 %     end
 % end
-        
+%         
 % trainYHigh = trainYHigh';
 % trainYLow = trainYLow';
 % testYHigh = testYHigh';
 % testYLow = testYLow';
-
-addpath('~/dropbox/libCG/matlab');
-load('~/desktop/noisy.mat');
-acc1 = [];
-for i = 0.1
-trainall = [trainHigh; trainLow];
-c = [ones(size(trainHigh, 1), 1) *0.0001;  ones(size(trainLow, 1), 1) * .1];
-model = train(sparse([trainYHigh; trainYLow]), sparse([trainall, c]), '-s 2');
-% trainall = trainHigh;
-% c = ones(size(trainHigh, 1),1);
-% model = train(sparse(trainYHigh), sparse([trainall, c]), '-s 2');
-
-[label, acc, dec]= predict(sparse(testYHigh), sparse(testHigh), model);
-% acc1 = [acc1, acc];
-
-% model = train(sparse([trainYHigh]), sparse([trainHigh]), '-e 0.00001 -s 2');
-% [label, acc, dec]= predict(sparse([testYHigh]), sparse([testHigh]), model);
-end
+% trainHigh = [trainHigh, ones(size(trainHigh, 1), 1)];
+% trainLow = [trainLow, ones(size(trainLow, 1), 1)];
+% 
+% trainHigh(:, end) = trainHigh(:,end) * 100;
+% trainLow(:, end) = trainLow(:,end) * 0.1;
+% 
+% model = train(sparse([trainYHigh; trainYLow]), sparse([trainHigh; trainLow]), '-e 0.00001 -s 2');
+% [label, acc, dec]= predict(sparse([testYHigh; testYLow]), sparse([testHigh; testLow]), model);
+% 
+% %model = train(sparse([trainYHigh]), sparse([trainHigh]), '-e 0.00001 -s 2');
+% %[label, acc, dec]= predict(sparse([testYHigh; testYLow]), sparse([testHigh; testLow]), model);

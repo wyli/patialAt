@@ -1,69 +1,89 @@
 function [ image3d, locations ] =...
-        scanForPositiveSampleLocations( image3d, window3d, step )
+            scanForPositiveSampleLocations( image3d, window3d, step )
 % scanForCuboids looking for cuboids locations in the 3d image
 % RETURN 3d images and locations
-% e.g.:
+% e.g.: 
 % [~, loc] = scanForCuboids('/cancer/annotation/73c', [21,21,11], [10,10,5]);
-% Wed 25 Apr 2012 00:31:06 BST
+% Wed 25 Apr 2012 00:31:06 BST 
 % Wenqi Li
 
 
-sizeOfImg = size(image3d);
-index = find(image3d);
-[~, ~, frameInx] = ind2sub(size(image3d), index);
-frameInx = unique(frameInx);
+sizeOfImage = size(image3d);
+frameInx = zeros(200, 1);
+x = 0;
+for i = 1:sizeOfImage(3)  % in the direction of frames
+	if(find(image3d(:,:,i)))  % if there are annotations
+		x = x + 1;
+		frameInx(x) = i;
+	end
+end
+clear i x;
 
 locations = [];
 window3d = floor(window3d./2);
-for i = 1:size(frameInx,1);
-    if (frameInx(i) - window3d(3) < 1) ||...
-            (frameInx(i) + window3d(3) > sizeOfImg(3))
+for i = 2:200
+    if (frameInx(i) < 1)
+		continue;
+    end
+    if frameInx(i-1) - window3d(3) < 1
         continue;
     end
 
-    startFrame = frameInx(i);
+	startFrame = frameInx(i-1);
     [xs ys] = find(image3d(:,:,startFrame));
-    xLow = max(min(xs), window3d(1)+1);
-    xHigh = min(max(xs), sizeOfImg(1)-window3d(1));
-    yLow = max(min(ys), window3d(2)+1);
-    yHigh = min(max(ys), sizeOfImg(2)-window3d(2));
+    xLow = min(xs);
+    xHigh = max(xs);
+    yLow = min(ys);
+    yHigh = max(ys);
 
-    for x = xLow:step(1):xHigh
-        for y = yLow:step(2):yHigh
-            try
-                if all(image3d( x-window3d(1):x+window3d(1),...
-                        y-window3d(2):y+window3d(2),...
-                        startFrame ))
+	%xLow = 1;
+	%while ~any(image3d(xLow,:,startFrame))
+		%xLow = xLow + 1;
+	%end
+	%xHigh = sizeOfImage(1);
+	%while ~any(image3d(xHigh,:,startFrame))
+		%xHigh = xHigh - 1;
+	%end
+	%yLow = 1;
+	%while ~any(image3d(:,yLow,startFrame))
+		%yLow = yLow + 1;
+	%end
+	%yHigh = sizeOfImage(2);
+	%while ~any(image3d(:,yHigh,startFrame))
+		%yHigh = yHigh - 1;
+	%end
+
+	for x = xLow:step(1):xHigh
+		for y = yLow:step(2):yHigh
+			try
+				if all(image3d( x-window3d(1):x+window3d(1),...
+								y-window3d(2):y+window3d(2),...
+								startFrame ))
                     % locations of positive examples.
-                    locations = [locations; [x y startFrame]];
-                end
-            catch e
-                warning(e.identifier, 'In scanForPositiveSampleLocations');
+					locations = [locations; [x y startFrame]];
+				end
+			catch exception
                 % do nothing
-            end
-        end
+			end
+		end
+	end
+    if isempty(locations)
+        err = MException('OPT:nolocation',...
+            'Cannot find any continuous annotations');
+        throw(err);
     end
 end
-if isempty(locations)
-    err = MException('OPT:nolocation',...
-        'Cannot find any continuous annotations');
-    throw(err);
-end
-end % end of function
-
-
-% debugging for visualise ROI
 % figure;
 % colormap(gray);
-% imagesc(image3d(:,:,frameInx(5)));
-% for i = 1:1000
+% imagesc(image3d(:,:,108));
+% for i = 1:611
 % l = locations(i,:);
-% if l(3) == frameInx(5)
+% if l(3) == 108
 % rectangle('Position',...
-%    [l(2)-window3d(2), l(1)-window3d(1),window3d(2)*2, window3d(1)*2],'FaceColor', 'r');
+% [l(2)-window3d(2), l(1)-window3d(1),window3d(2)*2, window3d(1)*2],'FaceColor', 'r');
 % end
 % end
-%
+% 
 % clear i overlap;
 %end
-%
+

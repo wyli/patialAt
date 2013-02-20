@@ -1,6 +1,6 @@
 clear all; close all;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
-addpath('~/dropbox/libprime/matlab/');
+addpath('~/dropbox/libr/matlab/');
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 
 id = '';
@@ -19,7 +19,7 @@ patchSet = '~/desktop/cuboidset';
 
 % flags
 generate_scheme = 1;
-do_kmeans = ones(10, 1);
+do_kmeans = ones(3, 1);
 do_extract_features= 1;
 do_classification = 1;
 fprintf('at: %s\n', datestr(now));
@@ -34,9 +34,9 @@ fprintf('\n\n');
 windowSize = 21;
 subWindow = 9;
 if generate_scheme
-    k = 10;
-    foldSize = 3;
-    allInd = randsample(30, 30);
+    k = 6;
+    foldSize = 10;
+    allInd = randsample(k*foldSize, k*foldSize);
     allInd = reshape(allInd, foldSize, []);
     testScheme = eye(k, 'int8');
     save([out_dir '/exparam'], 'testScheme', 'allInd');
@@ -44,7 +44,8 @@ else
     load([out_dir '/exparam']);
 end
 
-for f = 1:length(testScheme)
+repeating = 3;
+for f = 1:min(repeating, length(testScheme))
 
     % output dir
     resultSet = sprintf('%s/result_%02d', out_dir, f);
@@ -52,7 +53,9 @@ for f = 1:length(testScheme)
 
     trainInd = allInd(:, ~testScheme(f, :));
     trainInd = trainInd(:);
+    trainInd = trainInd(trainInd~=60);
     testInd = allInd(:, f);
+    testInd = testInd(testInd~=60); % we only have 59 files
     fprintf('training on:\n');
     for i = trainInd
         fprintf('%d, ', i);
@@ -68,9 +71,10 @@ for f = 1:length(testScheme)
         randMat = randn(150, 9^3);
         save([resultSet, '/randMat'], 'randMat');
         kcenters = 200;
+        samplePerFile = 50; % use all key points.
         trainBases(...
             resultSet, patchSet, trainInd,...
-            windowSize, subWindow, 2, kcenters, randMat)
+            windowSize, subWindow, 2, kcenters, randMat, samplePerFile)
     end
 
     if do_extract_features
@@ -81,15 +85,18 @@ for f = 1:length(testScheme)
         mkdir([resultSet, '/fea']);
         cuboidInput = [patchSet, '/cuboid_%d/high/%s'];
         feaOutput = [resultSet, '/fea/high'];
+        samplePerFile = 50;
         extractFeatures(...
             resultSet, cuboidInput, feaOutput,...
-            windowSize, 9, 1, randMat)
+            windowSize, 9, 1, randMat, samplePerFile, -1);
 
         cuboidInput = [patchSet, '/cuboid_%d/low/%s'];
         feaOutput = [resultSet, '/fea/low'];
+        samplePerFile = 500;
+        radius = 0;
         extractFeatures(...
             resultSet, cuboidInput, feaOutput,...
-            windowSize, 9, 1, randMat)
+            windowSize, 9, 1, randMat, samplePerFile, radius);
     end
 
     if do_classification

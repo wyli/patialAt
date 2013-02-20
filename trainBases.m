@@ -1,10 +1,10 @@
 function [] = trainBases(...
-        baseDir, cuboidSet, trainInd, windowSize, subSize, step3d, k, randMat)
+        baseDir, cuboidSet, trainInd, windowSize, subSize, step3d, k, randMat, samplePerFile)
+
 fprintf('%s find %d clusters on small window %d\n', datestr(now), k, subSize);
 % params
 global numOfSubsamples
 numOfSubsamples = 6;
-samplesPerFile = 800;
 % input
 cuboidSet = [cuboidSet '/cuboid_%d/high/%s'];
 
@@ -17,8 +17,12 @@ for j = 1:size(trainInd, 1)
     i = trainInd(j);
     cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name);
     load(cuboidFile);
-    r = randsample(size(cuboid,2), min(size(cuboid,2), samplesPerFile));
-    cuboid = cuboid(1,r);
+    if(samplePerFile < size(cuboid, 2))
+        r = randsample(size(cuboid,2), min(size(cuboid,2), samplePerFile));
+        cuboid = cuboid(:, r);
+        save(cuboidFile, 'cuboid');
+    end
+    cuboid = cuboid(1, :);
 
     idMat = ones(1, size(cuboid, 2));
     repSize = mat2cell(idMat.*subSize, 1, idMat);
@@ -30,10 +34,10 @@ for j = 1:size(trainInd, 1)
     localSet = [localSet; localMat];
 end
 localSet = (randMat*localSet')';
-assert(size(localSet, 1) > 40000, '%d %d', size(localSet, 1), size(localSet, 2));
-r = randsample(size(localSet, 1), 40000);
-localSet = localSet(r, :);
-prm.nTrial = 3;
+%assert(size(localSet, 1) > 40000, '%d %d', size(localSet, 1), size(localSet, 2));
+%r = randsample(size(localSet, 1), 40000);
+%localSet = localSet(r, :);
+prm.nTrial = 5;
 prm.maxIter = 200;
 [~, clusters] = kmeans2(localSet, k, prm);
 save(clusterFile, 'clusters');

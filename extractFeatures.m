@@ -1,5 +1,6 @@
 function [] = extractFeatures(...
-        baseSet, cuboidSet, feaSet, windowSize, subSize, step3d, randMat)
+        baseSet, cuboidSet, feaSet, ...
+        windowSize, subSize, step3d, randMat, samplePerFile, radius)
 global projMat 
 projMat = randMat;
 fprintf('%s build histogram for each cuboid\n', datestr(now));
@@ -15,9 +16,15 @@ for i = 1:size(listFiles, 1)
     fprintf('%s extracting BoG features %s\n', datestr(now), listFiles(i).name);
     cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name);
     load(cuboidFile);
+    if(samplePerFile < size(cuboid, 2))
+        r = randsample(size(cuboid, 2), min(size(cuboid, 2), samplePerFile));
+        cuboid = cuboid(:, r);
+        save(cuboidFile, 'cuboid');
+    end
     locations = cuboid(2,:);
     info = cuboid(3,:);
     cuboid = cuboid(1,:);
+
 
     idMat = ones(1, size(cuboid, 2));
     repSize = mat2cell(idMat.*subSize, 1, idMat);

@@ -7,7 +7,7 @@ feaHigh = [];
 yHigh = [];
 for i = 1:length(trainInd)
     %load([feaPathHigh '/' lsFiles(trainInd(1)).name]);
-    fprintf([feaPathHigh '/' lsFiles(trainInd(1)).name]);
+    fprintf([feaPathHigh '/' lsFiles(trainInd(i)).name]);
     feaHigh = [feaHigh, X_features];
     yHigh = [yHigh, info{ind}];
 end
@@ -18,9 +18,9 @@ feaLow = [];
 yLow = [];
 for i = 1:length(trainInd)
     %load([feaPathLow '/' lsFiles(trainInd(1)).name, '_', radius, '.mat']);
-    fprintf([feaPathLow '/' lsFiles(trainInd(1)).name, '_', radius, '.mat']);
+    fprintf([feaPathLow '/' lsFiles(trainInd(i)).name, '_', radius, '.mat']);
     feaLow = [feaLow, X_features];
-    yLow = [yLow, info{ind}];
+    yLow = [yLow, info{i}];
 end
 
 feaHigh = feaHigh';

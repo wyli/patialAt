@@ -74,9 +74,9 @@ clear featureSet;
 fprintf('size of training: %d\n', size(scaledFeatures, 1));
 accnow = 0;
 bestcmd = [];
-for log10c = 1:-1:-7
-    for log10p = -1:-1:-7
-        cmd = ['-s 0 -c ', num2str(10^log10c), ' -e  0.01 -p ', num2str(10^log10p) ' -q'];
+%for log10c = 1:-1:-4
+    %for log10p = [-1, -3]
+        cmd = ['-s 0 -c 0.1 -e  0.0001 -p 0.1 -q'];
         yy = y;
         yy(y<0) = -1;
         tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
@@ -88,13 +88,13 @@ for log10c = 1:-1:-7
             bestcmd = cmd;
             accnow = acc;
         end
-    end
-end
+    %end
+%end
 accnow = 0;
 bestcmd2 = [];
-for log10c = 1:-1:-7
-    for log10p = -1:-1:-7
-        cmd = ['-s 0 -c ', num2str(10^log10c), ' -e  0.01 -p ', num2str(10^log10p) ' -q'];
+%for log10c = 1:-1:-4
+    %for log10p = [-1, -3]
+        cmd = ['-s 0 -c 0.1 -e  0.0001 -p 0.1 -q'];
         yy = y;
         yy(y>0) = 1;
         tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
@@ -106,8 +106,11 @@ for log10c = 1:-1:-7
             bestcmd2 = cmd;
             accnow = acc;
         end
-    end
-end
+    %end
+%end
+
+fprintf('bestcmd1: %s\n', bestcmd);
+fprintf('bestcmd2: %s\n', bestcmd2);
 tempy = y;
 tempy(y<0) = -1;
 modelbest1 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd);

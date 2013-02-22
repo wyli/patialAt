@@ -76,7 +76,7 @@ fprintf('size of training: %d\n', size(scaledFeatures, 1));
 accnow = 0;
 bestcmd = [];
 for log10e = -1:-1:-7
-    for log10p = -1:-1:-7
+    for log10p = [-1, -3]
         cmd = ['-s 2 -c 0 -e ', num2str(10^log10e), ' -p ', num2str(10^log10p), ' -q'];
         tempmodel = train1(sparse(y), sparse(scaledFeatures), cmd);
         [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');

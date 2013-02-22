@@ -34,7 +34,7 @@ acc = [];
 auc = [];
 nr_points = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-for i = 2:1:120
+for i = total
 
     [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
@@ -69,14 +69,14 @@ end
 function [acc, auc] = expConventionalSVM(...
         featureSet, y,...
         feaTest, testY)
-[scaledFeatures, scaleVectors] = scaleFeatures(featureSet, [], -1);
+scaledFeatures = scaleFeatures(featureSet);
 clear featureSet;
 
 fprintf('size of training: %d\n', size(scaledFeatures, 1));
 accnow = 0;
 bestcmd = [];
 for log10e = -1:-1:-7
-    for log10p = -1:-1:-7
+    for log10p = [-1, -3]
         cmd = ['-s 2 -c 0 -e ', num2str(10^log10e), ' -p ', num2str(10^log10p), ' -q'];
         tempmodel = train1(sparse(y), sparse(scaledFeatures), cmd);
         [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');
@@ -92,7 +92,7 @@ fprintf('training acc: %f cmd: %s\n', acc(1), bestcmd);
 modelbest = train1(sparse(y), sparse(scaledFeatures), bestcmd);
 clear y log10e tempmodel scores aucnow cmd scaledFeatures bestcmd
 
-[scaledFeatures, ~] = scaleFeatures(feaTest, scaleVectors, 1);
+scaledFeatures = scaleFeatures(feaTest);
 clear feaTest scaleVectors;
 [~, acc, scores] = predict1(sparse(testY), sparse(scaledFeatures), modelbest);
 try

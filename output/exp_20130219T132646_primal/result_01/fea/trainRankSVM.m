@@ -33,7 +33,7 @@ auc = [];
 acc = [];
 nr_points = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-for i = 2:1:120
+for i = total%2:1:120
 
     [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
@@ -68,15 +68,15 @@ end
 function [acc, auc] = expRankSVM(...
         featureSet, y,...
         feaTest, testY)
-[scaledFeatures, scaleVectors] = scaleFeatures(featureSet, [], -1);
+scaledFeatures = scaleFeatures(featureSet);
 clear featureSet;
 
 fprintf('size of training: %d\n', size(scaledFeatures, 1));
 accnow = 0;
 bestcmd = [];
-for log10c = 1:-1:-7
-    for log10p = -1:-1:-7
-        cmd = ['-s 0 -c ', num2str(10^log10c), ' -e  0.01 -p ', num2str(10^log10p) ' -q'];
+%for log10c = 1:-1:-4
+    %for log10p = [-1, -3]
+        cmd = ['-s 0 -c 0.1 -e  0.0001 -p 0.1 -q'];
         yy = y;
         yy(y<0) = -1;
         tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
@@ -88,13 +88,13 @@ for log10c = 1:-1:-7
             bestcmd = cmd;
             accnow = acc;
         end
-    end
-end
+    %end
+%end
 accnow = 0;
 bestcmd2 = [];
-for log10c = 1:-1:-7
-    for log10p = -1:-1:-7
-        cmd = ['-s 0 -c ', num2str(10^log10c), ' -e  0.01 -p ', num2str(10^log10p) ' -q'];
+%for log10c = 1:-1:-4
+    %for log10p = [-1, -3]
+        cmd = ['-s 0 -c 0.1 -e  0.0001 -p 0.1 -q'];
         yy = y;
         yy(y>0) = 1;
         tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
@@ -106,8 +106,11 @@ for log10c = 1:-1:-7
             bestcmd2 = cmd;
             accnow = acc;
         end
-    end
-end
+    %end
+%end
+
+fprintf('bestcmd1: %s\n', bestcmd);
+fprintf('bestcmd2: %s\n', bestcmd2);
 tempy = y;
 tempy(y<0) = -1;
 modelbest1 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd);
@@ -116,7 +119,7 @@ tempy(y>0) = 1;
 modelbest2 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd2);
 clear y log10c log10e tempmodel scores auc aucnow cmd scaledFeatures bestcmd
 
-[scaledFeatures, ~] = scaleFeatures(feaTest, scaleVectors, 1);
+scaledFeatures = scaleFeatures(feaTest);
 clear feaTest scaleVectors;
 testY = (testY > 0) * 2 - 1;
 [~, ~, scores1] = predict1(sparse(testY), sparse(scaledFeatures), modelbest1);
@@ -175,9 +178,9 @@ if radius > -1
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')
-            y(i) = -(radius/5 + 0.25);
+            y(i) = -(radius/5 + 1);
         else
-            y(i) = radius/5 + 0.25;
+            y(i) = radius/5 + 1;
         end
     end
 else

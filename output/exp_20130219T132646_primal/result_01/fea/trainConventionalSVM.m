@@ -39,7 +39,7 @@ end %end of function
 function [acc, auc] = expConventionalSVM(...
         featureSet, y,...
         feaTest, testY)
-[scaledFeatures, scaleVectors] = scaleFeatures(featureSet, [], -1);
+scaledFeatures = scaleFeatures(featureSet);
 clear featureSet;
 
 accnow = 0;
@@ -61,10 +61,10 @@ fprintf('training auc: %f cmd: %s\n', acc, bestcmd);
 modelbest = train1(sparse(y), sparse(scaledFeatures), bestcmd);
 clear y log10e tempmodel scores auc aucnow cmd scaledFeatures bestcmd
 
-[scaledFeatures, ~] = scaleFeatures(feaTest, scaleVectors, 1);
+scaledFeatures = scaleFeatures(feaTest);
 clear feaTest scaleVectors;
 [~, acc, scores] = predict1(sparse(testY), sparse(scaledFeatures), modelbest);
-[~, ~, ~, auc] = perfcurve(testY, scores, '1');
+[~, ~, ~, auc] = perfcurve(testY, scores, 1);
 end % end of expConventionalSVM
 
 

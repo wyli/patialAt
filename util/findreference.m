@@ -20,5 +20,5 @@ load(keyfile);
 key = reshape(cell2mat(locations), 3, [])';
 load(weakfile);
 weakloc = reshape(cell2mat(locations), 3, [])';
-[~, nearest] = min(dist2(weakloc, key), [], 2);
-save(weakfile, 'X_features', 'info', 'locations', 'nearest');
+[~, nearestInd] = min(dist2(weakloc, key), [], 2);
+save(weakfile, 'X_features', 'info', 'locations', 'nearestInd');

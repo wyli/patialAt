@@ -1,4 +1,5 @@
 function [auc, nr_points] = trainWeakSVM(schemeInd)
+RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 %addpath(genpath('~/desktop/liblinear-1.93/matlab'));
 addpath(genpath('~/dropbox/libr/matlab'));
@@ -76,7 +77,7 @@ accnow = 0;
 bestcmd = [];
 for log10e = -1:-1:-7
     for log10p = -1:-1:-7
-        cmd = ['-s 0 -c 0 -e ', num2str(10^log10e), ' -p ', num2str(10^log10p), ' -q'];
+        cmd = ['-s 2 -c 0 -e ', num2str(10^log10e), ' -p ', num2str(10^log10p), ' -q'];
         tempmodel = train1(sparse(y), sparse(scaledFeatures), cmd);
         [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');
         scores(isnan(scores)) = 0;

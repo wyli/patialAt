@@ -76,27 +76,44 @@ accnow = 0;
 bestcmd = [];
 for log10c = 1:-1:-7
     for log10p = -1:-1:-7
-        for log10e = 1:-1:-7
-            cmd = ['-s 0 -c ', num2str(10^log10c), ' -e ', num2str(10^log10e), ' -p ', num2str(10^log10p) ' -q'];
-            tempmodel = train1(sparse(y), sparse(scaledFeatures), cmd);
-            [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');
-            scores(isnan(scores)) = 0;
-            binaryY = (y > 0)*2 - 1;
-            [~, ~, ~, acc] = perfcurve(binaryY, scores, '1');
-            if ((acc > accnow) & (sum(tempmodel.w) ~= 0))
-                bestcmd = cmd;
-                accnow = acc;
-            end
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -e  0.01 -p ', num2str(10^log10p) ' -q'];
+        yy = y;
+        yy(y<0) = -1;
+        tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
+        [~, ~, scores] = predict1(sparse(yy), sparse(scaledFeatures), tempmodel, '-q');
+        scores(isnan(scores)) = 0;
+        binaryY = (y > 0)*2 - 1;
+        [~, ~, ~, acc] = perfcurve(binaryY, scores, '1');
+        if ((acc > accnow) & (sum(tempmodel.w) ~= 0))
+            bestcmd = cmd;
+            accnow = acc;
         end
     end
 end
-fprintf('training acc: %f cmd: %s\n', acc(1), bestcmd);
+accnow = 0;
+bestcmd2 = [];
+for log10c = 1:-1:-7
+    for log10p = -1:-1:-7
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -e  0.01 -p ', num2str(10^log10p) ' -q'];
+        yy = y;
+        yy(y>0) = 1;
+        tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
+        [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');
+        scores(isnan(scores)) = 0;
+        binaryY = (y > 0)*2 - 1;
+        [~, ~, ~, acc] = perfcurve(binaryY, scores, '1');
+        if ((acc > accnow) & (sum(tempmodel.w) ~= 0))
+            bestcmd2 = cmd;
+            accnow = acc;
+        end
+    end
+end
 tempy = y;
 tempy(y<0) = -1;
 modelbest1 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd);
 tempy = y;
 tempy(y>0) = 1;
-modelbest2 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd);
+modelbest2 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd2);
 clear y log10c log10e tempmodel scores auc aucnow cmd scaledFeatures bestcmd
 
 [scaledFeatures, ~] = scaleFeatures(feaTest, scaleVectors, 1);

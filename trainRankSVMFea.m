@@ -75,13 +75,14 @@ function [acc, auc, scores] = expRankSVM(...
         feaTest, testY)
 
 fprintf('size of training: %d\n', size(featureSet, 1));
+facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
 for log10c = [-16, -12]
     for log10p = [-18, -16, -14]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
-        yy(y<0) = -1;
+        yy(y<0) = -facty;
         acc = train1(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
         if (acc > accnow)
             bestcmd = cmd;
@@ -95,7 +96,7 @@ for log10c = [-16, -12]
     for log10p = [-18, -16, -14]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
-        yy(y>0) = 1;
+        yy(y>0) = facty;
         acc = train1(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
         if (acc > accnow)
             bestcmd2 = cmd;
@@ -114,11 +115,11 @@ tempy(y>0) = 1;
 modelneg = train1(sparse(tempy), sparse(featureSet), bestcmd2);
 clear y featureSet cmd bestcmd
 
-testY = (testY > 0) * 2 - 1;
+testY = (testY > 0);
 [~, ~, scoresneg] = predict1(sparse(testY), sparse(feaTest), modelneg);
 [~, ~, scorespos] = predict1(sparse(testY), sparse(feaTest), modelpos);
 [scores, labels] = max([scoresneg, scorespos], [], 2);
-labels = labels * 2 - 1;
+labels = labels - 1;
 prelabels = (labels == testY);
 acc = 100 * sum(prelabels) / length(prelabels);
 try
@@ -142,6 +143,7 @@ feaHigh = [];
 yHigh = [];
 imageInd = [];
 referInd = [];
+feadists = [];
 for i = 1:length(ind)
 
     if radius > -1
@@ -152,6 +154,7 @@ for i = 1:length(ind)
         yHigh = [yHigh, info(1, r)];
         imageInd = [imageInd; ones(size(info(1,r)))' * i];
         referInd = [referInd; nearestInd(r)];
+        feadists = [feadists; distanceweak(r)];
     else
         fprintf([setpath '/%s\n'], lsFiles(ind(i)).name)
         load([setpath '/', lsFiles(ind(i)).name]);
@@ -167,21 +170,22 @@ features = feaHigh';
 
 y = zeros(size(yHigh))';
 if radius > -1
+    feadists = exp(feadists/std(feadists)) - 0.5;
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')
-            y(i) = -(radius/5 + 1);
+            y(i) = -feadists(i);
         else
-            y(i) = radius/5 + 1;
+            y(i) = feadists(i);
         end
     end
 else
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')
-            y(i) = -0.05;
+            y(i) = -0.5;
         else
-            y(i) = 0.05;
+            y(i) = 0.5;
         end
     end
 end

@@ -1,4 +1,5 @@
 function [acc, nr_points] = trainRankSVM(schemeInd)
+matlabpool 4;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/dropbox/libr/matlab'));
@@ -31,21 +32,24 @@ end
 
 auc = [];
 acc = [];
+scores = [];
 nr_points = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-for i = 2:1:120
-
+parfor j = 1:length(2:10:total)%2:1:120
+    indexes=2:10:total;
+    i = indexes(j);
     [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
         feaLow, trainYLow, lowImageInd, referLowInd, i);
-    [accs, aucs] = expRankSVM(...
+    [accs, aucs, score_column] = expRankSVM(...
         fea, y,...
         feaTest, testY);
     auc = [auc, aucs];
     acc = [acc, accs];
+    scores = [scores, score_column];
     nr_points = [nr_points, i];
 end
-save('rankSVM', 'acc', 'auc', 'nr_points');
+save('rankSVM', 'acc', 'auc', 'nr_points', 'scores');
 end %end of trainweakSVMfunction
 
 function [fea, y] = calculateTrainingSet(...
@@ -62,79 +66,67 @@ function [fea, y] = calculateTrainingSet(...
     end
     fea = [fea; feaLow(indAll > 0, :)];
     y = [y; trainYLow(indAll > 0)];
-end
+    
+end % end of calculateTrainingSet
 
 
-function [acc, auc] = expRankSVM(...
+function [acc, auc, scores] = expRankSVM(...
         featureSet, y,...
         feaTest, testY)
-[scaledFeatures, scaleVectors] = scaleFeatures(featureSet, [], -1);
-clear featureSet;
 
-fprintf('size of training: %d\n', size(scaledFeatures, 1));
+fprintf('size of training: %d\n', size(featureSet, 1));
 accnow = 0;
 bestcmd = [];
-%for log10c = 1:-1:-4
-    %for log10p = [-1, -3]
-        cmd = ['-s 0 -c 0.1 -e  0.0001 -p 0.1 -q'];
+for log10c = [-16, -12]
+    for log10p = [-18, -16, -14]
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y<0) = -1;
-        tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
-        [~, ~, scores] = predict1(sparse(yy), sparse(scaledFeatures), tempmodel, '-q');
-        scores(isnan(scores)) = 0;
-        binaryY = (y > 0)*2 - 1;
-        [~, ~, ~, acc] = perfcurve(binaryY, scores, '1');
-        if ((acc > accnow) & (sum(tempmodel.w) ~= 0))
+        acc = train1(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
+        if (acc > accnow)
             bestcmd = cmd;
             accnow = acc;
         end
-    %end
-%end
+    end
+end
 accnow = 0;
 bestcmd2 = [];
-%for log10c = 1:-1:-4
-    %for log10p = [-1, -3]
-        cmd = ['-s 0 -c 0.1 -e  0.0001 -p 0.1 -q'];
+for log10c = [-16, -12]
+    for log10p = [-18, -16, -14]
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y>0) = 1;
-        tempmodel = train1(sparse(yy), sparse(scaledFeatures), cmd);
-        [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');
-        scores(isnan(scores)) = 0;
-        binaryY = (y > 0)*2 - 1;
-        [~, ~, ~, acc] = perfcurve(binaryY, scores, '1');
-        if ((acc > accnow) & (sum(tempmodel.w) ~= 0))
+        acc = train1(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
+        if (acc > accnow)
             bestcmd2 = cmd;
             accnow = acc;
         end
-    %end
-%end
+    end
+end
 
 fprintf('bestcmd1: %s\n', bestcmd);
 fprintf('bestcmd2: %s\n', bestcmd2);
 tempy = y;
 tempy(y<0) = -1;
-modelbest1 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd);
+modelpos = train1(sparse(tempy), sparse(featureSet), bestcmd);
 tempy = y;
 tempy(y>0) = 1;
-modelbest2 = train1(sparse(tempy), sparse(scaledFeatures), bestcmd2);
-clear y log10c log10e tempmodel scores auc aucnow cmd scaledFeatures bestcmd
+modelneg = train1(sparse(tempy), sparse(featureSet), bestcmd2);
+clear y featureSet cmd bestcmd
 
-[scaledFeatures, ~] = scaleFeatures(feaTest, scaleVectors, 1);
-clear feaTest scaleVectors;
 testY = (testY > 0) * 2 - 1;
-[~, ~, scores1] = predict1(sparse(testY), sparse(scaledFeatures), modelbest1);
-[~, ~, scores2] = predict1(sparse(testY), sparse(scaledFeatures), modelbest2);
-scores = max(scores1, scores2);
-prelabels = (scores1>scores2) & (testY > 0);
-acc = sum(prelabels) / length(prelabels);
+[~, ~, scoresneg] = predict1(sparse(testY), sparse(feaTest), modelneg);
+[~, ~, scorespos] = predict1(sparse(testY), sparse(feaTest), modelpos);
+[scores, labels] = max([scoresneg, scorespos], [], 2);
+labels = labels * 2 - 1;
+prelabels = (labels == testY);
+acc = 100 * sum(prelabels) / length(prelabels);
 try
     [~, ~, ~, auc] = perfcurve(testY, scores, '1')
 catch
     auc = 0;
 end
-end % end of expConventionalSVM
-
-
+end %end of expranksvm
 
 function [features, y, imageInd, referInd] =...
         loadFeaturesWithRadius(setpath, ind, radius)
@@ -178,9 +170,9 @@ if radius > -1
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')
-            y(i) = -(radius/5 + 0.25);
+            y(i) = -(radius/5 + 1);
         else
-            y(i) = radius/5 + 0.25;
+            y(i) = radius/5 + 1;
         end
     end
 else
@@ -193,4 +185,4 @@ else
         end
     end
 end
-end
+end % end of loadFeaturesWithRadius

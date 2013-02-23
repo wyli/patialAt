@@ -20,51 +20,48 @@ testInd = testInd(testInd < 60);
 auc = [];
 acc = [];
 nr_points = [];
+scores = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-for i = 2:1:120
+for i = 2:10:total
 
-    [accs, aucs]= expConventionalSVM(...
+    [accs, aucs, score_column]= expConventionalSVM(...
         [feaHigh(1:i, :); feaHigh(end-i+1:end, :)],...
         [trainYHigh(1:i); trainYHigh(end-i+1:end)],...
         feaTest, testY);
     auc = [auc, aucs];
     acc = [acc, accs];
     nr_points = [nr_points, i];
+    scores = [scores, score_column];
 end
-save('consvm', 'acc', 'auc', 'nr_points');
+save('consvm', 'acc', 'auc', 'nr_points', 'scores');
 end %end of function
 
 
 
-function [acc, auc] = expConventionalSVM(...
+function [acc, auc, scores] = expConventionalSVM(...
         featureSet, y,...
         feaTest, testY)
-scaledFeatures = scaleFeatures(featureSet);
-clear featureSet;
 
 accnow = 0;
 bestcmd = [];
-for log10p = -1:-1:-7
-    for log10e = -1:-1:-7
-        cmd = ['-s 2 -c 0', ' -e ', num2str(10^log10e), ' -p ',  num2str(10^log10p), ' -q'];
-        tempmodel = train1(sparse(y), sparse(scaledFeatures), cmd);
-        [~, ~, scores] = predict1(sparse(y), sparse(scaledFeatures), tempmodel, '-q');
-        scores(isnan(scores)) = 0;
-        [~, ~, ~, acc] = perfcurve(y, scores, '1');
-        if ((acc > accnow) && (sum(tempmodel.w) ~= 0))
-            bestcmd = cmd;
-            accnow = acc;
-        end
+for log10c = 7:-1:-7
+    cmd = ['-s 2 -c ', num2str(10^log10c)];
+    acc = train(sparse(y), sparse(featureSet), [cmd ' -v 3 -q']);
+    if (acc >= accnow)
+        bestcmd = cmd;
+        accnow = acc;
     end
 end
 fprintf('training auc: %f cmd: %s\n', acc, bestcmd);
-modelbest = train1(sparse(y), sparse(scaledFeatures), bestcmd);
-clear y log10e tempmodel scores auc aucnow cmd scaledFeatures bestcmd
+modelbest = train(sparse(y), sparse(featureSet), bestcmd);
+clear y log10e tempmodel scores auc aucnow cmd featureSet bestcmd
 
-scaledFeatures = scaleFeatures(feaTest);
-clear feaTest scaleVectors;
-[~, acc, scores] = predict1(sparse(testY), sparse(scaledFeatures), modelbest);
-[~, ~, ~, auc] = perfcurve(testY, scores, 1);
+[~, acc, scores] = predict(sparse(testY), sparse(feaTest), modelbest);
+try
+    [~, ~, ~, auc] = perfcurve(testY, scores, 1);
+catch
+    auc = 0;
+end
 end % end of expConventionalSVM
 
 

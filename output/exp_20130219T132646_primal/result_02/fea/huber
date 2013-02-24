@@ -1,0 +1,6629 @@
+/Users/wenqili/dropbox/libr/matlab/train.mexmaci64
+./high/139.mat
+./high/148.mat
+./high/172.mat
+./high/195.mat
+./high/279.mat
+./high/468.mat
+./high/079.mat
+./high/384.mat
+./high/082.mat
+./high/445.mat
+./high/119.mat
+./high/196.mat
+./high/123.mat
+./high/249.mat
+./high/362.mat
+./high/175.mat
+./high/171.mat
+./high/141.mat
+./high/256.mat
+./high/120.mat
+./high/382.mat
+./high/380.mat
+./high/185.mat
+./high/073.mat
+./high/070.mat
+./high/453.mat
+./high/099.mat
+./high/084.mat
+./high/377.mat
+./high/154.mat
+./high/156.mat
+./high/167.mat
+./high/174.mat
+./high/190.mat
+./high/126.mat
+./high/194.mat
+./high/216.mat
+./high/193.mat
+./high/366.mat
+./high/250.mat
+./high/280.mat
+./high/248.mat
+./high/109.mat
+./high/198.mat
+./high/118.mat
+./high/146.mat
+./high/252.mat
+./high/197.mat
+./high/447.mat
+./low/139_0.mat
+./low/148_0.mat
+./low/172_0.mat
+./low/195_0.mat
+./low/279_0.mat
+./low/468_0.mat
+./low/079_0.mat
+./low/384_0.mat
+./low/082_0.mat
+./low/445_0.mat
+./low/119_0.mat
+./low/196_0.mat
+./low/123_0.mat
+./low/249_0.mat
+./low/362_0.mat
+./low/175_0.mat
+./low/171_0.mat
+./low/141_0.mat
+./low/256_0.mat
+./low/120_0.mat
+./low/382_0.mat
+./low/380_0.mat
+./low/185_0.mat
+./low/073_0.mat
+./low/070_0.mat
+./low/453_0.mat
+./low/099_0.mat
+./low/084_0.mat
+./low/377_0.mat
+./low/154_0.mat
+./low/156_0.mat
+./low/167_0.mat
+./low/174_0.mat
+./low/190_0.mat
+./low/126_0.mat
+./low/194_0.mat
+./low/216_0.mat
+./low/193_0.mat
+./low/366_0.mat
+./low/250_0.mat
+./low/280_0.mat
+./low/248_0.mat
+./low/109_0.mat
+./low/198_0.mat
+./low/118_0.mat
+./low/146_0.mat
+./low/252_0.mat
+./low/197_0.mat
+./low/447_0.mat
+./low/139_5.mat
+./low/148_5.mat
+./low/172_5.mat
+./low/195_5.mat
+./low/279_5.mat
+./low/468_5.mat
+./low/079_5.mat
+./low/384_5.mat
+./low/082_5.mat
+./low/445_5.mat
+./low/119_5.mat
+./low/196_5.mat
+./low/123_5.mat
+./low/249_5.mat
+./low/362_5.mat
+./low/175_5.mat
+./low/171_5.mat
+./low/141_5.mat
+./low/256_5.mat
+./low/120_5.mat
+./low/382_5.mat
+./low/380_5.mat
+./low/185_5.mat
+./low/073_5.mat
+./low/070_5.mat
+./low/453_5.mat
+./low/099_5.mat
+./low/084_5.mat
+./low/377_5.mat
+./low/154_5.mat
+./low/156_5.mat
+./low/167_5.mat
+./low/174_5.mat
+./low/190_5.mat
+./low/126_5.mat
+./low/194_5.mat
+./low/216_5.mat
+./low/193_5.mat
+./low/366_5.mat
+./low/250_5.mat
+./low/280_5.mat
+./low/248_5.mat
+./low/109_5.mat
+./low/198_5.mat
+./low/118_5.mat
+./low/146_5.mat
+./low/252_5.mat
+./low/197_5.mat
+./low/447_5.mat
+./low/139_20.mat
+./low/148_20.mat
+./low/172_20.mat
+./low/195_20.mat
+./low/279_20.mat
+./low/468_20.mat
+./low/079_20.mat
+./low/384_20.mat
+./low/082_20.mat
+./low/445_20.mat
+./low/119_20.mat
+./low/196_20.mat
+./low/123_20.mat
+./low/249_20.mat
+./low/362_20.mat
+./low/175_20.mat
+./low/171_20.mat
+./low/141_20.mat
+./low/256_20.mat
+./low/120_20.mat
+./low/382_20.mat
+./low/380_20.mat
+./low/185_20.mat
+./low/073_20.mat
+./low/070_20.mat
+./low/453_20.mat
+./low/099_20.mat
+./low/084_20.mat
+./low/377_20.mat
+./low/154_20.mat
+./low/156_20.mat
+./low/167_20.mat
+./low/174_20.mat
+./low/190_20.mat
+./low/126_20.mat
+./low/194_20.mat
+./low/216_20.mat
+./low/193_20.mat
+./low/366_20.mat
+./low/250_20.mat
+./low/280_20.mat
+./low/248_20.mat
+./low/109_20.mat
+./low/198_20.mat
+./low/118_20.mat
+./low/146_20.mat
+./low/252_20.mat
+./low/197_20.mat
+./low/447_20.mat
+./low/139_25.mat
+./low/148_25.mat
+./low/172_25.mat
+./low/195_25.mat
+./low/279_25.mat
+./low/468_25.mat
+./low/079_25.mat
+./low/384_25.mat
+./low/082_25.mat
+./low/445_25.mat
+./low/119_25.mat
+./low/196_25.mat
+./low/123_25.mat
+./low/249_25.mat
+./low/362_25.mat
+./low/175_25.mat
+./low/171_25.mat
+./low/141_25.mat
+./low/256_25.mat
+./low/120_25.mat
+./low/382_25.mat
+./low/380_25.mat
+./low/185_25.mat
+./low/073_25.mat
+./low/070_25.mat
+./low/453_25.mat
+./low/099_25.mat
+./low/084_25.mat
+./low/377_25.mat
+./low/154_25.mat
+./low/156_25.mat
+./low/167_25.mat
+./low/174_25.mat
+./low/190_25.mat
+./low/126_25.mat
+./low/194_25.mat
+./low/216_25.mat
+./low/193_25.mat
+./low/366_25.mat
+./low/250_25.mat
+./low/280_25.mat
+./low/248_25.mat
+./low/109_25.mat
+./low/198_25.mat
+./low/118_25.mat
+./low/146_25.mat
+./low/252_25.mat
+./low/197_25.mat
+./low/447_25.mat
+./low/139_40.mat
+./low/148_40.mat
+./low/172_40.mat
+./low/195_40.mat
+./low/279_40.mat
+./low/468_40.mat
+./low/079_40.mat
+./low/384_40.mat
+./low/082_40.mat
+./low/445_40.mat
+./low/119_40.mat
+./low/196_40.mat
+./low/123_40.mat
+./low/249_40.mat
+./low/362_40.mat
+./low/175_40.mat
+./low/171_40.mat
+./low/141_40.mat
+./low/256_40.mat
+./low/120_40.mat
+./low/382_40.mat
+./low/380_40.mat
+./low/185_40.mat
+./low/073_40.mat
+./low/070_40.mat
+./low/453_40.mat
+./low/099_40.mat
+./low/084_40.mat
+./low/377_40.mat
+./low/154_40.mat
+./low/156_40.mat
+./low/167_40.mat
+./low/174_40.mat
+./low/190_40.mat
+./low/126_40.mat
+./low/194_40.mat
+./low/216_40.mat
+./low/193_40.mat
+./low/366_40.mat
+./low/250_40.mat
+./low/280_40.mat
+./low/248_40.mat
+./low/109_40.mat
+./low/198_40.mat
+./low/118_40.mat
+./low/146_40.mat
+./low/252_40.mat
+./low/197_40.mat
+./low/447_40.mat
+./low/139_50.mat
+./low/148_50.mat
+./low/172_50.mat
+./low/195_50.mat
+./low/279_50.mat
+./low/468_50.mat
+./low/079_50.mat
+./low/384_50.mat
+./low/082_50.mat
+./low/445_50.mat
+./low/119_50.mat
+./low/196_50.mat
+./low/123_50.mat
+./low/249_50.mat
+./low/362_50.mat
+./low/175_50.mat
+./low/171_50.mat
+./low/141_50.mat
+./low/256_50.mat
+./low/120_50.mat
+./low/382_50.mat
+./low/380_50.mat
+./low/185_50.mat
+./low/073_50.mat
+./low/070_50.mat
+./low/453_50.mat
+./low/099_50.mat
+./low/084_50.mat
+./low/377_50.mat
+./low/154_50.mat
+./low/156_50.mat
+./low/167_50.mat
+./low/174_50.mat
+./low/190_50.mat
+./low/126_50.mat
+./low/194_50.mat
+./low/216_50.mat
+./low/193_50.mat
+./low/366_50.mat
+./low/250_50.mat
+./low/280_50.mat
+./low/248_50.mat
+./low/109_50.mat
+./low/198_50.mat
+./low/118_50.mat
+./low/146_50.mat
+./low/252_50.mat
+./low/197_50.mat
+./low/447_50.mat
+./low/139_80.mat
+./low/148_80.mat
+./low/172_80.mat
+./low/195_80.mat
+./low/279_80.mat
+./low/468_80.mat
+./low/079_80.mat
+./low/384_80.mat
+./low/082_80.mat
+./low/445_80.mat
+./low/119_80.mat
+./low/196_80.mat
+./low/123_80.mat
+./low/249_80.mat
+./low/362_80.mat
+./low/175_80.mat
+./low/171_80.mat
+./low/141_80.mat
+./low/256_80.mat
+./low/120_80.mat
+./low/382_80.mat
+./low/380_80.mat
+./low/185_80.mat
+./low/073_80.mat
+./low/070_80.mat
+./low/453_80.mat
+./low/099_80.mat
+./low/084_80.mat
+./low/377_80.mat
+./low/154_80.mat
+./low/156_80.mat
+./low/167_80.mat
+./low/174_80.mat
+./low/190_80.mat
+./low/126_80.mat
+./low/194_80.mat
+./low/216_80.mat
+./low/193_80.mat
+./low/366_80.mat
+./low/250_80.mat
+./low/280_80.mat
+./low/248_80.mat
+./low/109_80.mat
+./low/198_80.mat
+./low/118_80.mat
+./low/146_80.mat
+./low/252_80.mat
+./low/197_80.mat
+./low/447_80.mat
+./low/139_100.mat
+./low/148_100.mat
+./low/172_100.mat
+./low/195_100.mat
+./low/279_100.mat
+./low/468_100.mat
+./low/079_100.mat
+./low/384_100.mat
+./low/082_100.mat
+./low/445_100.mat
+./low/119_100.mat
+./low/196_100.mat
+./low/123_100.mat
+./low/249_100.mat
+./low/362_100.mat
+./low/175_100.mat
+./low/171_100.mat
+./low/141_100.mat
+./low/256_100.mat
+./low/120_100.mat
+./low/382_100.mat
+./low/380_100.mat
+./low/185_100.mat
+./low/073_100.mat
+./low/070_100.mat
+./low/453_100.mat
+./low/099_100.mat
+./low/084_100.mat
+./low/377_100.mat
+./low/154_100.mat
+./low/156_100.mat
+./low/167_100.mat
+./low/174_100.mat
+./low/190_100.mat
+./low/126_100.mat
+./low/194_100.mat
+./low/216_100.mat
+./low/193_100.mat
+./low/366_100.mat
+./low/250_100.mat
+./low/280_100.mat
+./low/248_100.mat
+./low/109_100.mat
+./low/198_100.mat
+./low/118_100.mat
+./low/146_100.mat
+./low/252_100.mat
+./low/197_100.mat
+./low/447_100.mat
+../testingfea/090.mat
+../testingfea/134.mat
+../testingfea/192.mat
+../testingfea/378.mat
+../testingfea/186.mat
+../testingfea/448.mat
+../testingfea/466.mat
+../testingfea/081.mat
+../testingfea/152.mat
+../testingfea/444.mat
+filtered features
+size of training: 23
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+Cross Validation Accuracy = 82.6087%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 5
+Negative: 18
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.002160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.098400e+02, fun: 4.394939e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 1.098399e+02, fun: 4.394939e+06
+Positive: 5
+Negative: 18
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.002160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.098400e+02, fun: 3.969633e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 1.098399e+02, fun: 3.969633e+06
+Accuracy = 16.0944% (225/1398)
+Accuracy = 16.0944% (225/1398)
+acc =
+   57.7969
+auc =
+    0.5865
+!!!i = 2, acc = 57.796853, auc = 0.586502filtered features
+size of training: 114
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+Cross Validation Accuracy = 71.0526%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 69
+Negative: 45
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.074520 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.030233e+04, fun: 3.880871e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 3.030227e+04, fun: 3.880871e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 3.030215e+04, fun: 3.880871e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 3.030208e+04, fun: 3.880870e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 3.030201e+04, fun: 3.880870e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 3.030194e+04, fun: 3.880870e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 3.030187e+04, fun: 3.880870e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 3.030180e+04, fun: 3.880870e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 3.030174e+04, fun: 3.880870e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 3.030167e+04, fun: 3.880870e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 3.030161e+04, fun: 3.880870e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 3.030154e+04, fun: 3.880870e+06
+Positive: 69
+Negative: 45
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.074520 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.030243e+04, fun: 4.091847e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 3.030229e+04, fun: 4.091847e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 3.030223e+04, fun: 4.091847e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 3.030220e+04, fun: 4.091847e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 3.030218e+04, fun: 4.091847e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 3.030215e+04, fun: 4.091846e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 3.030213e+04, fun: 4.091846e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 3.030210e+04, fun: 4.091846e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 3.030208e+04, fun: 4.091846e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 3.030206e+04, fun: 4.091846e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 3.030203e+04, fun: 4.091846e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 3.030201e+04, fun: 4.091846e+06
+Accuracy = 18.8126% (263/1398)
+Accuracy = 18.8126% (263/1398)
+acc =
+   49.9285
+auc =
+    0.5880
+!!!i = 12, acc = 49.928469, auc = 0.588049filtered features
+size of training: 178
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+Cross Validation Accuracy = 74.1573%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 100
+Negative: 78
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.187200 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.308869e+05, fun: 4.110492e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.308847e+05, fun: 4.110492e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.308825e+05, fun: 4.110491e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.308810e+05, fun: 4.110491e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 2.308794e+05, fun: 4.110491e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 2.308778e+05, fun: 4.110491e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 2.308763e+05, fun: 4.110491e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 2.308748e+05, fun: 4.110491e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 2.308733e+05, fun: 4.110491e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 2.308718e+05, fun: 4.110491e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 2.308703e+05, fun: 4.110491e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 2.308689e+05, fun: 4.110490e+06
+Positive: 100
+Negative: 78
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.187200 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.308874e+05, fun: 3.907458e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.308860e+05, fun: 3.907458e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.308853e+05, fun: 3.907458e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.308848e+05, fun: 3.907458e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 2.308842e+05, fun: 3.907458e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 2.308837e+05, fun: 3.907457e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 2.308832e+05, fun: 3.907457e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 2.308827e+05, fun: 3.907457e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 2.308821e+05, fun: 3.907457e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 2.308816e+05, fun: 3.907457e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 2.308811e+05, fun: 3.907457e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 2.308807e+05, fun: 3.907457e+06
+Accuracy = 19.1702% (268/1398)
+Accuracy = 19.1702% (268/1398)
+acc =
+   48.7124
+auc =
+    0.6047
+!!!i = 22, acc = 48.712446, auc = 0.604730filtered features
+size of training: 270
+Cross Validation Accuracy = 74.8148%
+Cross Validation Accuracy = 74.4444%
+Cross Validation Accuracy = 74.0741%
+Cross Validation Accuracy = 74.0741%
+Cross Validation Accuracy = 74.8148%
+Cross Validation Accuracy = 74.4444%
+Cross Validation Accuracy = 74.0741%
+Cross Validation Accuracy = 74.4444%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 145
+Negative: 125
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.435000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.359301e+06, fun: 4.046171e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.359258e+06, fun: 4.046170e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.359230e+06, fun: 4.046170e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.359206e+06, fun: 4.046170e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 1.359182e+06, fun: 4.046169e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 1.359158e+06, fun: 4.046169e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 1.359135e+06, fun: 4.046169e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 1.359111e+06, fun: 4.046168e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 1.359087e+06, fun: 4.046168e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 1.359063e+06, fun: 4.046168e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 1.359040e+06, fun: 4.046168e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 1.359016e+06, fun: 4.046167e+06
+Positive: 145
+Negative: 125
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 0.435000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.359305e+06, fun: 3.728710e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.359292e+06, fun: 3.728709e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.359283e+06, fun: 3.728709e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.359276e+06, fun: 3.728709e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 1.359268e+06, fun: 3.728709e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 1.359261e+06, fun: 3.728708e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 1.359254e+06, fun: 3.728708e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 1.359246e+06, fun: 3.728708e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 1.359239e+06, fun: 3.728707e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 1.359232e+06, fun: 3.728707e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 1.359224e+06, fun: 3.728707e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 1.359217e+06, fun: 3.728707e+06
+Accuracy = 22.3176% (312/1398)
+Accuracy = 22.3176% (312/1398)
+acc =
+   44.1345
+auc =
+    0.6971
+!!!i = 32, acc = 44.134478, auc = 0.697103filtered features
+size of training: 336
+Cross Validation Accuracy = 69.3452%
+Cross Validation Accuracy = 69.6429%
+Cross Validation Accuracy = 69.3452%
+Cross Validation Accuracy = 69.9405%
+Cross Validation Accuracy = 69.3452%
+Cross Validation Accuracy = 69.6429%
+Cross Validation Accuracy = 69.6429%
+Cross Validation Accuracy = 69.6429%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 175
+Negative: 161
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 0.676200 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.498451e+02, fun: 4.172088e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.302190e+02, fun: 4.172080e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.178104e+02, fun: 4.172073e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.092805e+02, fun: 4.172068e+01
+
+Pass: 4, L: 2.000000e+02, sumY: 2.025419e+02, fun: 4.172063e+01
+
+Pass: 5, L: 2.000000e+02, sumY: 1.966708e+02, fun: 4.172058e+01
+
+Pass: 6, L: 2.000000e+02, sumY: 1.915266e+02, fun: 4.172054e+01
+
+Pass: 7, L: 2.000000e+02, sumY: 1.869170e+02, fun: 4.172050e+01
+
+Pass: 8, L: 2.000000e+02, sumY: 1.828350e+02, fun: 4.172047e+01
+
+converged i: 69, j:8
+Pass: 9, L: 2.000000e+02, sumY: 1.794128e+02, fun: 4.172045e+01
+Positive: 175
+Negative: 161
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 0.676200 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.465679e+06, fun: 3.789006e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.434909e+06, fun: 3.788523e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.413725e+06, fun: 3.788166e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.396071e+06, fun: 3.787821e+03
+
+Pass: 4, L: 2.000000e+02, sumY: 2.378961e+06, fun: 3.787487e+03
+
+Pass: 5, L: 2.000000e+02, sumY: 2.362272e+06, fun: 3.787159e+03
+
+Pass: 6, L: 2.000000e+02, sumY: 2.345891e+06, fun: 3.786838e+03
+
+Pass: 7, L: 2.000000e+02, sumY: 2.329812e+06, fun: 3.786524e+03
+
+Pass: 8, L: 2.000000e+02, sumY: 2.314028e+06, fun: 3.786216e+03
+
+Pass: 9, L: 2.000000e+02, sumY: 2.298533e+06, fun: 3.785915e+03
+
+Pass: 10, L: 2.000000e+02, sumY: 2.283321e+06, fun: 3.785619e+03
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 2.268386e+06, fun: 3.785329e+03
+Accuracy = 18.4549% (258/1398)
+Accuracy = 18.0258% (252/1398)
+acc =
+   37.7682
+auc =
+    0.6705
+!!!i = 42, acc = 37.768240, auc = 0.670451filtered features
+size of training: 447
+Cross Validation Accuracy = 72.7069%
+Cross Validation Accuracy = 72.7069%
+Cross Validation Accuracy = 72.7069%
+Cross Validation Accuracy = 72.2595%
+Cross Validation Accuracy = 72.7069%
+Cross Validation Accuracy = 72.7069%
+Cross Validation Accuracy = 72.7069%
+Cross Validation Accuracy = 72.4832%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 213
+Negative: 234
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 1.196208 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.756492e+06, fun: 4.176931e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 6.756168e+06, fun: 4.176930e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 6.755917e+06, fun: 4.176929e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 6.755703e+06, fun: 4.176929e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 6.755491e+06, fun: 4.176928e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 6.755280e+06, fun: 4.176928e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 6.755069e+06, fun: 4.176927e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 6.754860e+06, fun: 4.176927e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 6.754652e+06, fun: 4.176926e+06
+
+Pass: 9, L: 2.000000e+02, sumY: 6.754447e+06, fun: 4.176926e+06
+
+Pass: 10, L: 2.000000e+02, sumY: 6.754241e+06, fun: 4.176925e+06
+Max_iter reached
+
+Pass: 11, L: 2.000000e+02, sumY: 6.754036e+06, fun: 4.176925e+06
+Positive: 213
+Negative: 234
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 1.196208 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.756512e+06, fun: 3.667800e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 6.756357e+06, fun: 3.667799e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 6.756257e+06, fun: 3.667799e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 6.756170e+06, fun: 3.667798e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 6.756083e+06, fun: 3.667797e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 6.755997e+06, fun: 3.667797e+06
+
+Pass: 6, L: 2.000000e+02, sumY: 6.755911e+06, fun: 3.667796e+06
+
+Pass: 7, L: 2.000000e+02, sumY: 6.755825e+06, fun: 3.667796e+06
+
+Pass: 8, L: 2.000000e+02, sumY: 6.755740e+06, fun: 3.667795e+06
+
+converged i: 61, j:5
+Pass: 9, L: 2.000000e+02, sumY: 6.755665e+06, fun: 3.667795e+06
+Accuracy = 18.7411% (262/1398)
+Accuracy = 29.8999% (418/1398)
+acc =
+   64.3062
+auc =
+    0.7307
+!!!i = 52, acc = 64.306152, auc = 0.730654filtered features
+size of training: 562
+Cross Validation Accuracy = 70.2847%
+Cross Validation Accuracy = 70.4626%
+Cross Validation Accuracy = 70.2847%
+Cross Validation Accuracy = 70.9964%
+Cross Validation Accuracy = 70.2847%
+Cross Validation Accuracy = 70.4626%
+Cross Validation Accuracy = 70.2847%
+Cross Validation Accuracy = 70.2847%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 268
+Negative: 294
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 1.891008 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.393645e+03, fun: 4.130445e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.227670e+03, fun: 4.130429e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.102376e+03, fun: 4.130418e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.022518e+03, fun: 4.130409e+01
+
+converged i: 266, j:32
+Pass: 4, L: 2.000000e+02, sumY: 1.022499e+03, fun: 4.130409e+01
+Positive: 268
+Negative: 294
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 1.891008 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.389819e+07, fun: 3.531219e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.344235e+07, fun: 3.530205e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.312943e+07, fun: 3.529433e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.286317e+07, fun: 3.528678e+03
+
+Pass: 4, L: 2.000000e+02, sumY: 1.260639e+07, fun: 3.527934e+03
+
+Pass: 5, L: 2.000000e+02, sumY: 1.235524e+07, fun: 3.527209e+03
+
+Pass: 6, L: 2.000000e+02, sumY: 1.211270e+07, fun: 3.526513e+03
+
+Pass: 7, L: 2.000000e+02, sumY: 1.188210e+07, fun: 3.525843e+03
+
+Pass: 8, L: 2.000000e+02, sumY: 1.166204e+07, fun: 3.525197e+03
+
+Pass: 9, L: 2.000000e+02, sumY: 1.145122e+07, fun: 3.524572e+03
+
+converged i: 122, j:248
+Pass: 10, L: 2.000000e+02, sumY: 1.128132e+07, fun: 3.524204e+03
+Accuracy = 26.824% (375/1398)
+Accuracy = 27.2532% (381/1398)
+acc =
+   36.4092
+auc =
+    0.7611
+!!!i = 62, acc = 36.409156, auc = 0.761103filtered features
+size of training: 653
+Cross Validation Accuracy = 68.6064%
+Cross Validation Accuracy = 68.9127%
+Cross Validation Accuracy = 68.3002%
+Cross Validation Accuracy = 69.219%
+Cross Validation Accuracy = 68.6064%
+Cross Validation Accuracy = 68.4533%
+Cross Validation Accuracy = 68.3002%
+Cross Validation Accuracy = 68.4533%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 326
+Negative: 327
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 2.558448 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.049234e+03, fun: 4.082302e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.769112e+03, fun: 4.082285e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.555577e+03, fun: 4.082273e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.427028e+03, fun: 4.082264e+01
+
+converged i: 316, j:13
+Pass: 4, L: 2.000000e+02, sumY: 1.412386e+03, fun: 4.082264e+01
+Positive: 326
+Negative: 327
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 2.558448 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.048076e+07, fun: 3.623699e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.047987e+07, fun: 3.623698e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.047923e+07, fun: 3.623697e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.047868e+07, fun: 3.623696e+06
+
+converged i: 309, j:208
+Pass: 4, L: 2.000000e+02, sumY: 2.047857e+07, fun: 3.623696e+06
+Accuracy = 40.8441% (571/1398)
+Accuracy = 28.8984% (404/1398)
+acc =
+   39.2704
+auc =
+    0.7302
+!!!i = 72, acc = 39.270386, auc = 0.730160filtered features
+size of training: 705
+Cross Validation Accuracy = 71.773%
+Cross Validation Accuracy = 72.3404%
+Cross Validation Accuracy = 72.0567%
+Cross Validation Accuracy = 72.3404%
+Cross Validation Accuracy = 71.9149%
+Cross Validation Accuracy = 72.0567%
+Cross Validation Accuracy = 71.773%
+Cross Validation Accuracy = 72.4823%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 351
+Negative: 354
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 2.982096 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.507488e+07, fun: 4.152399e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.259460e+07, fun: 4.151192e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.071501e+07, fun: 4.150324e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.941199e+07, fun: 4.149546e+03
+
+converged i: 287, j:155
+Pass: 4, L: 2.000000e+02, sumY: 1.885195e+07, fun: 4.149381e+03
+Positive: 351
+Negative: 354
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 2.982096 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.690159e+03, fun: 3.656094e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.327568e+03, fun: 3.656075e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.204372e+03, fun: 3.656063e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.118408e+03, fun: 3.656052e+01
+
+converged i: 350, j:46
+Pass: 4, L: 2.000000e+02, sumY: 2.118405e+03, fun: 3.656052e+01
+Accuracy = 28.2546% (395/1398)
+Accuracy = 27.6824% (387/1398)
+acc =
+   61.3734
+auc =
+    0.7273
+!!!i = 82, acc = 61.373391, auc = 0.727270filtered features
+size of training: 805
+Cross Validation Accuracy = 73.1677%
+Cross Validation Accuracy = 73.1677%
+Cross Validation Accuracy = 72.795%
+Cross Validation Accuracy = 73.1677%
+Cross Validation Accuracy = 73.1677%
+Cross Validation Accuracy = 72.9193%
+Cross Validation Accuracy = 72.9193%
+Cross Validation Accuracy = 73.5404%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 406
+Negative: 399
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 3.887856 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.599493e+07, fun: 4.172328e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 4.598915e+07, fun: 4.172326e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 4.598426e+07, fun: 4.172325e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 4.598018e+07, fun: 4.172324e+06
+
+converged i: 146, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.597649e+07, fun: 4.172323e+06
+Positive: 406
+Negative: 399
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 3.887856 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.784033e+03, fun: 3.670184e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.136085e+03, fun: 3.670160e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.871018e+03, fun: 3.670144e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.694227e+03, fun: 3.670131e+01
+
+converged i: 405, j:6
+Pass: 4, L: 2.000000e+02, sumY: 3.694227e+03, fun: 3.670131e+01
+Accuracy = 30.186% (422/1398)
+Accuracy = 30.186% (422/1398)
+acc =
+   59.2990
+auc =
+    0.6855
+!!!i = 92, acc = 59.298999, auc = 0.685512filtered features
+size of training: 866
+Cross Validation Accuracy = 72.6328%
+Cross Validation Accuracy = 72.6328%
+Cross Validation Accuracy = 72.6328%
+Cross Validation Accuracy = 72.8637%
+Cross Validation Accuracy = 72.6328%
+Cross Validation Accuracy = 72.6328%
+Cross Validation Accuracy = 72.7483%
+Cross Validation Accuracy = 72.7483%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-09
+Positive: 446
+Negative: 420
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 4.495680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.557227e+03, fun: 4.227513e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.666487e+03, fun: 4.227488e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.012466e+03, fun: 4.227473e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.677766e+03, fun: 4.227461e+01
+
+converged i: 445, j:138
+Pass: 4, L: 2.000000e+02, sumY: 3.677741e+03, fun: 4.227461e+01
+Positive: 446
+Negative: 420
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 4.495680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.569289e+03, fun: 3.715454e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 5.568318e+03, fun: 3.715454e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 5.567892e+03, fun: 3.715454e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 5.567585e+03, fun: 3.715454e+04
+
+converged i: 288, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.567413e+03, fun: 3.715454e+04
+Accuracy = 30.2575% (423/1398)
+Accuracy = 31.4735% (440/1398)
+acc =
+   47.2818
+auc =
+    0.6909
+!!!i = 102, acc = 47.281831, auc = 0.690922filtered features
+size of training: 957
+Cross Validation Accuracy = 71.2644%
+Cross Validation Accuracy = 71.5778%
+Cross Validation Accuracy = 71.3689%
+Cross Validation Accuracy = 71.5778%
+Cross Validation Accuracy = 71.2644%
+Cross Validation Accuracy = 71.5778%
+Cross Validation Accuracy = 71.3689%
+Cross Validation Accuracy = 71.0554%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 537
+Negative: 420
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 5.412960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.634056e+07, fun: 4.211449e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.776362e+07, fun: 4.209790e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.003941e+07, fun: 4.208756e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.650395e+07, fun: 4.207873e+03
+
+converged i: 536, j:122
+Pass: 4, L: 2.000000e+02, sumY: 3.650374e+07, fun: 4.207873e+03
+Positive: 537
+Negative: 420
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 5.412960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.754326e+07, fun: 3.713665e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.973152e+07, fun: 3.711996e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.552846e+07, fun: 3.710875e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.260634e+07, fun: 3.709867e+03
+
+converged i: 536, j:367
+Pass: 4, L: 2.000000e+02, sumY: 4.260517e+07, fun: 3.709866e+03
+Accuracy = 26.824% (375/1398)
+Accuracy = 26.9671% (377/1398)
+acc =
+   50.4292
+auc =
+    0.6489
+!!!i = 112, acc = 50.429185, auc = 0.648893filtered features
+size of training: 1028
+Cross Validation Accuracy = 70.3307%
+Cross Validation Accuracy = 70.428%
+Cross Validation Accuracy = 69.8444%
+Cross Validation Accuracy = 70.2335%
+Cross Validation Accuracy = 70.3307%
+Cross Validation Accuracy = 70.428%
+Cross Validation Accuracy = 69.8444%
+Cross Validation Accuracy = 70.428%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 608
+Negative: 420
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 6.128640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.063634e+07, fun: 4.281977e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 5.758577e+07, fun: 4.280186e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.721160e+07, fun: 4.279063e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.246280e+07, fun: 4.278107e+03
+
+converged i: 607, j:325
+Pass: 4, L: 2.000000e+02, sumY: 4.246200e+07, fun: 4.278106e+03
+Positive: 608
+Negative: 420
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 6.128640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.130880e+07, fun: 3.713540e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 6.132071e+07, fun: 3.711722e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.527236e+07, fun: 3.710473e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 5.103740e+07, fun: 3.709357e+03
+
+converged i: 607, j:95
+Pass: 4, L: 2.000000e+02, sumY: 5.103731e+07, fun: 3.709357e+03
+Accuracy = 26.824% (375/1398)
+Accuracy = 26.8956% (376/1398)
+acc =
+   48.5694
+auc =
+    0.6616
+!!!i = 122, acc = 48.569385, auc = 0.661617filtered features
+size of training: 1122
+Cross Validation Accuracy = 68.3601%
+Cross Validation Accuracy = 67.8253%
+Cross Validation Accuracy = 68.2709%
+Cross Validation Accuracy = 68.5383%
+Cross Validation Accuracy = 68.3601%
+Cross Validation Accuracy = 68.1818%
+Cross Validation Accuracy = 68.1818%
+Cross Validation Accuracy = 68.1818%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 702
+Negative: 420
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 7.076160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.471699e+03, fun: 4.258847e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.082323e+03, fun: 4.258824e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.548981e+03, fun: 4.258812e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.161221e+03, fun: 4.258802e+01
+
+converged i: 701, j:95
+Pass: 4, L: 2.000000e+02, sumY: 4.161195e+03, fun: 4.258802e+01
+Positive: 702
+Negative: 420
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 7.076160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.200302e+07, fun: 3.715452e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 8.198252e+07, fun: 3.715450e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 8.197063e+07, fun: 3.715449e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 8.196136e+07, fun: 3.715447e+06
+
+converged i: 495, j:2
+Pass: 4, L: 2.000000e+02, sumY: 8.195678e+07, fun: 3.715447e+06
+Accuracy = 27.9685% (391/1398)
+Accuracy = 29.4707% (412/1398)
+acc =
+   40.1288
+auc =
+    0.6578
+!!!i = 132, acc = 40.128755, auc = 0.657776filtered features
+size of training: 1206
+Cross Validation Accuracy = 67.4959%
+Cross Validation Accuracy = 67.4129%
+Cross Validation Accuracy = 67.33%
+Cross Validation Accuracy = 67.7446%
+Cross Validation Accuracy = 67.2471%
+Cross Validation Accuracy = 67.33%
+Cross Validation Accuracy = 67.33%
+Cross Validation Accuracy = 67.4959%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 786
+Negative: 420
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 7.922880 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.447952e+03, fun: 4.231715e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.618512e+03, fun: 4.231692e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.907903e+03, fun: 4.231680e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.569528e+03, fun: 4.231671e+01
+
+converged i: 393, j:22
+Pass: 4, L: 2.000000e+02, sumY: 4.453046e+03, fun: 4.231667e+01
+Positive: 786
+Negative: 420
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 7.922880 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.040800e+04, fun: 3.715444e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.803344e+03, fun: 3.715421e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.636461e+03, fun: 3.715408e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.995853e+03, fun: 3.715396e+01
+
+converged i: 785, j:22
+Pass: 4, L: 2.000000e+02, sumY: 4.995853e+03, fun: 3.715396e+01
+Accuracy = 26.3948% (369/1398)
+Accuracy = 27.2532% (381/1398)
+acc =
+   61.5165
+auc =
+    0.6563
+!!!i = 142, acc = 61.516452, auc = 0.656272filtered features
+size of training: 1267
+Cross Validation Accuracy = 66.2194%
+Cross Validation Accuracy = 66.1405%
+Cross Validation Accuracy = 66.3773%
+Cross Validation Accuracy = 66.2983%
+Cross Validation Accuracy = 66.2194%
+Cross Validation Accuracy = 66.3773%
+Cross Validation Accuracy = 66.3773%
+Cross Validation Accuracy = 65.8248%
+bestcmd1: -s 2 -c 0.0001 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 845
+Negative: 422
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 8.558160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.055029e+04, fun: 4.270296e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 1.054660e+04, fun: 4.270296e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 1.054132e+04, fun: 4.270296e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 1.053739e+04, fun: 4.270296e+04
+
+converged i: 844, j:124
+Pass: 4, L: 2.000000e+02, sumY: 1.053739e+04, fun: 4.270296e+04
+Positive: 845
+Negative: 422
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 8.558160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.128865e+08, fun: 3.727390e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 8.376508e+07, fun: 3.725362e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 7.048533e+07, fun: 3.724059e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 6.243945e+07, fun: 3.722926e+03
+
+converged i: 844, j:95
+Pass: 4, L: 2.000000e+02, sumY: 6.243933e+07, fun: 3.722926e+03
+Accuracy = 25.5365% (357/1398)
+Accuracy = 25.2504% (353/1398)
+acc =
+   40.2718
+auc =
+    0.6384
+!!!i = 152, acc = 40.271817, auc = 0.638387filtered features
+size of training: 1347
+Cross Validation Accuracy = 66.4439%
+Cross Validation Accuracy = 66.7409%
+Cross Validation Accuracy = 66.4439%
+Cross Validation Accuracy = 67.3348%
+Cross Validation Accuracy = 66.5182%
+Cross Validation Accuracy = 66.5182%
+Cross Validation Accuracy = 66.4439%
+Cross Validation Accuracy = 66.2212%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 879
+Negative: 468
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 9.872928 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.462443e+04, fun: 4.256346e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 9.754541e+03, fun: 4.256320e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.365047e+03, fun: 4.256306e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.938818e+03, fun: 4.256295e+01
+
+converged i: 878, j:311
+Pass: 4, L: 2.000000e+02, sumY: 6.938624e+03, fun: 4.256295e+01
+Positive: 879
+Negative: 468
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 9.872928 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.403329e+08, fun: 3.727329e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.402751e+08, fun: 3.727327e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.402442e+08, fun: 3.727325e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.402195e+08, fun: 3.727323e+06
+
+converged i: 423, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.402029e+08, fun: 3.727322e+06
+Accuracy = 24.392% (341/1398)
+Accuracy = 26.1087% (365/1398)
+acc =
+   42.6323
+auc =
+    0.6118
+!!!i = 162, acc = 42.632332, auc = 0.611755filtered features
+size of training: 1430
+Cross Validation Accuracy = 63.7762%
+Cross Validation Accuracy = 64.1958%
+Cross Validation Accuracy = 63.8462%
+Cross Validation Accuracy = 64.4056%
+Cross Validation Accuracy = 63.7762%
+Cross Validation Accuracy = 63.986%
+Cross Validation Accuracy = 63.7762%
+Cross Validation Accuracy = 63.5664%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 942
+Negative: 488
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 11.032704 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.601298e+04, fun: 4.224632e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.220445e+04, fun: 4.224605e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 9.175370e+03, fun: 4.224590e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 8.711498e+03, fun: 4.224578e+01
+
+converged i: 900, j:388
+Pass: 4, L: 2.000000e+02, sumY: 8.691640e+03, fun: 4.224577e+01
+Positive: 942
+Negative: 488
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 11.032704 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.846649e+08, fun: 3.787849e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.085293e+08, fun: 3.785569e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 8.815006e+07, fun: 3.784200e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 7.784021e+07, fun: 3.783048e+03
+
+converged i: 745, j:95
+Pass: 4, L: 2.000000e+02, sumY: 7.542812e+07, fun: 3.782788e+03
+Accuracy = 23.7482% (332/1398)
+Accuracy = 24.8927% (348/1398)
+acc =
+   43.4907
+auc =
+    0.5935
+!!!i = 172, acc = 43.490701, auc = 0.593547filtered features
+size of training: 1501
+Cross Validation Accuracy = 63.1579%
+Cross Validation Accuracy = 63.6243%
+Cross Validation Accuracy = 63.4244%
+Cross Validation Accuracy = 64.1572%
+Cross Validation Accuracy = 63.1579%
+Cross Validation Accuracy = 63.3578%
+Cross Validation Accuracy = 63.4244%
+Cross Validation Accuracy = 63.4244%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-09
+Positive: 990
+Negative: 511
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 12.141360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.849556e+04, fun: 4.190178e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.476996e+04, fun: 4.190151e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.118760e+04, fun: 4.190133e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.055144e+04, fun: 4.190120e+01
+
+converged i: 989, j:445
+Pass: 4, L: 2.000000e+02, sumY: 1.055105e+04, fun: 4.190120e+01
+Positive: 990
+Negative: 511
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 12.141360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.689452e+04, fun: 3.822809e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 1.688534e+04, fun: 3.822809e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 1.687398e+04, fun: 3.822809e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 1.686992e+04, fun: 3.822809e+04
+
+converged i: 750, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.686881e+04, fun: 3.822809e+04
+Accuracy = 23.4621% (328/1398)
+Accuracy = 25.1788% (352/1398)
+acc =
+   56.5093
+auc =
+    0.5537
+!!!i = 182, acc = 56.509299, auc = 0.553735filtered features
+size of training: 1620
+Cross Validation Accuracy = 62.9012%
+Cross Validation Accuracy = 63.0864%
+Cross Validation Accuracy = 62.716%
+Cross Validation Accuracy = 63.8272%
+Cross Validation Accuracy = 62.9012%
+Cross Validation Accuracy = 63.0864%
+Cross Validation Accuracy = 62.8395%
+Cross Validation Accuracy = 63.0247%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 1029
+Negative: 591
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 14.595336 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.526767e+04, fun: 4.178930e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.100807e+04, fun: 4.178890e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.767576e+04, fun: 4.178872e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.593472e+04, fun: 4.178857e+01
+
+converged i: 1028, j:335
+Pass: 4, L: 2.000000e+02, sumY: 1.593426e+04, fun: 4.178857e+01
+Positive: 1029
+Negative: 591
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 14.595336 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.925136e+08, fun: 3.655012e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.045075e+08, fun: 3.651506e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.528527e+08, fun: 3.649486e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.299488e+08, fun: 3.647841e+03
+
+converged i: 1007, j:235
+Pass: 4, L: 2.000000e+02, sumY: 1.294290e+08, fun: 3.647800e+03
+Accuracy = 22.9614% (321/1398)
+Accuracy = 25.0358% (350/1398)
+acc =
+   45.2790
+auc =
+    0.5654
+!!!i = 192, acc = 45.278970, auc = 0.565397filtered features
+size of training: 1696
+Cross Validation Accuracy = 63.6792%
+Cross Validation Accuracy = 64.1509%
+Cross Validation Accuracy = 63.5613%
+Cross Validation Accuracy = 64.5047%
+Cross Validation Accuracy = 63.6792%
+Cross Validation Accuracy = 63.9741%
+Cross Validation Accuracy = 63.5613%
+Cross Validation Accuracy = 63.9151%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 1058
+Negative: 638
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 16.200096 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.371978e+04, fun: 4.190255e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.468904e+04, fun: 4.190212e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.138342e+04, fun: 4.190193e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.884946e+04, fun: 4.190176e+01
+
+converged i: 1048, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.882842e+04, fun: 4.190176e+01
+Positive: 1058
+Negative: 638
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 16.200096 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.796293e+08, fun: 3.672879e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.389584e+08, fun: 3.669073e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.744791e+08, fun: 3.666915e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.469542e+08, fun: 3.665175e+03
+
+converged i: 1057, j:255
+Pass: 4, L: 2.000000e+02, sumY: 1.469510e+08, fun: 3.665174e+03
+Accuracy = 22.6753% (317/1398)
+Accuracy = 24.6781% (345/1398)
+acc =
+   46.2089
+auc =
+    0.5572
+!!!i = 202, acc = 46.208870, auc = 0.557156filtered features
+size of training: 1779
+Cross Validation Accuracy = 63.4626%
+Cross Validation Accuracy = 64.1934%
+Cross Validation Accuracy = 63.4626%
+Cross Validation Accuracy = 64.362%
+Cross Validation Accuracy = 63.4626%
+Cross Validation Accuracy = 63.8561%
+Cross Validation Accuracy = 63.575%
+Cross Validation Accuracy = 63.8561%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 1082
+Negative: 697
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 18.099696 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.699219e+04, fun: 4.212008e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.636317e+04, fun: 4.211964e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.406689e+04, fun: 4.211946e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.080973e+04, fun: 4.211929e+01
+
+converged i: 1081, j:592
+Pass: 4, L: 2.000000e+02, sumY: 2.080869e+04, fun: 4.211929e+01
+Positive: 1082
+Negative: 697
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 18.099696 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.155574e+08, fun: 3.649264e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.812738e+08, fun: 3.645059e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.942999e+08, fun: 3.642714e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.599720e+08, fun: 3.640912e+03
+
+converged i: 557, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.473710e+08, fun: 3.640074e+03
+Accuracy = 23.319% (326/1398)
+Accuracy = 24.8212% (347/1398)
+acc =
+   45.9943
+auc =
+    0.5588
+!!!i = 212, acc = 45.994278, auc = 0.558819filtered features
+size of training: 1847
+Cross Validation Accuracy = 64.4288%
+Cross Validation Accuracy = 64.5371%
+Cross Validation Accuracy = 64.3747%
+Cross Validation Accuracy = 64.7537%
+Cross Validation Accuracy = 64.4829%
+Cross Validation Accuracy = 64.3205%
+Cross Validation Accuracy = 64.3205%
+Cross Validation Accuracy = 64.2664%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 1114
+Negative: 733
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 19.597488 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.521320e+04, fun: 4.212913e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.829396e+04, fun: 4.212868e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.688194e+04, fun: 4.212851e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.274433e+04, fun: 4.212834e+01
+
+converged i: 1113, j:326
+Pass: 4, L: 2.000000e+02, sumY: 2.274382e+04, fun: 4.212834e+01
+Positive: 1114
+Negative: 733
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 19.597488 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.010466e+08, fun: 3.682806e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 6.003075e+08, fun: 3.682801e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 5.999837e+08, fun: 3.682797e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 5.997258e+08, fun: 3.682793e+06
+
+converged i: 856, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.996270e+08, fun: 3.682792e+06
+Accuracy = 22.8898% (320/1398)
+Accuracy = 25.3219% (354/1398)
+acc =
+   48.6409
+auc =
+    0.5309
+!!!i = 222, acc = 48.640916, auc = 0.530934filtered features
+size of training: 1926
+Cross Validation Accuracy = 62.9283%
+Cross Validation Accuracy = 63.811%
+Cross Validation Accuracy = 62.9283%
+Cross Validation Accuracy = 63.8629%
+Cross Validation Accuracy = 62.9283%
+Cross Validation Accuracy = 62.9803%
+Cross Validation Accuracy = 62.9283%
+Cross Validation Accuracy = 62.8764%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 1157
+Negative: 769
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 21.353592 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.926760e+04, fun: 4.211460e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.898920e+04, fun: 4.211416e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.894977e+04, fun: 4.211402e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.328136e+04, fun: 4.211384e+01
+
+converged i: 1156, j:192
+Pass: 4, L: 2.000000e+02, sumY: 2.328120e+04, fun: 4.211384e+01
+Positive: 1157
+Negative: 769
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 21.353592 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.735878e+08, fun: 3.704172e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.714973e+08, fun: 3.700203e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.893002e+08, fun: 3.698217e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.616067e+08, fun: 3.696673e+03
+
+converged i: 1156, j:263
+Pass: 4, L: 2.000000e+02, sumY: 1.616048e+08, fun: 3.696673e+03
+Accuracy = 23.319% (326/1398)
+Accuracy = 25.608% (358/1398)
+acc =
+   47.7110
+auc =
+    0.5507
+!!!i = 232, acc = 47.711016, auc = 0.550689filtered features
+size of training: 2019
+Cross Validation Accuracy = 62.209%
+Cross Validation Accuracy = 62.6548%
+Cross Validation Accuracy = 62.209%
+Cross Validation Accuracy = 63.1501%
+Cross Validation Accuracy = 62.209%
+Cross Validation Accuracy = 62.209%
+Cross Validation Accuracy = 62.209%
+Cross Validation Accuracy = 61.8623%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 1217
+Negative: 802
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 23.424816 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.750268e+04, fun: 4.190553e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.118848e+04, fun: 4.190509e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.358766e+04, fun: 4.190496e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.784825e+04, fun: 4.190476e+01
+
+converged i: 1216, j:357
+Pass: 4, L: 2.000000e+02, sumY: 2.784775e+04, fun: 4.190476e+01
+Positive: 1217
+Negative: 802
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 23.424816 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.299207e+08, fun: 3.749988e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 6.286320e+08, fun: 3.749984e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 6.280059e+08, fun: 3.749980e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 6.276831e+08, fun: 3.749976e+06
+
+Pass: 4, L: 2.000000e+02, sumY: 6.273854e+08, fun: 3.749973e+06
+
+Pass: 5, L: 2.000000e+02, sumY: 6.270934e+08, fun: 3.749969e+06
+
+converged i: 763, j:471
+Pass: 6, L: 2.000000e+02, sumY: 6.269256e+08, fun: 3.749968e+06
+Accuracy = 23.176% (324/1398)
+Accuracy = 39.3419% (550/1398)
+acc =
+   50.6438
+auc =
+    0.5158
+!!!i = 242, acc = 50.643777, auc = 0.515809filtered features
+size of training: 2109
+Cross Validation Accuracy = 62.3044%
+Cross Validation Accuracy = 62.9208%
+Cross Validation Accuracy = 62.3044%
+Cross Validation Accuracy = 63.0156%
+Cross Validation Accuracy = 62.3044%
+Cross Validation Accuracy = 62.4941%
+Cross Validation Accuracy = 62.3518%
+Cross Validation Accuracy = 62.5889%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1269
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 25.583040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.114842e+04, fun: 4.184964e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.361042e+04, fun: 4.184919e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.827445e+04, fun: 4.184907e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.285390e+04, fun: 4.184885e+01
+
+converged i: 1268, j:435
+Pass: 4, L: 2.000000e+02, sumY: 3.285318e+04, fun: 4.184885e+01
+Positive: 1269
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 25.583040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.051721e+05, fun: 3.757035e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.609714e+04, fun: 3.756998e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.170107e+04, fun: 3.756982e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.911532e+04, fun: 3.756968e+01
+
+converged i: 1268, j:352
+Pass: 4, L: 2.000000e+02, sumY: 1.911491e+04, fun: 3.756968e+01
+Accuracy = 23.319% (326/1398)
+Accuracy = 25.9657% (363/1398)
+acc =
+   56.9385
+auc =
+    0.5186
+!!!i = 252, acc = 56.938484, auc = 0.518558filtered features
+size of training: 2196
+Cross Validation Accuracy = 60.2459%
+Cross Validation Accuracy = 61.1111%
+Cross Validation Accuracy = 60.2914%
+Cross Validation Accuracy = 61.2933%
+Cross Validation Accuracy = 60.2459%
+Cross Validation Accuracy = 60.2004%
+Cross Validation Accuracy = 60.2914%
+Cross Validation Accuracy = 60.1548%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-09
+Positive: 1356
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 27.336960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.827240e+04, fun: 4.173628e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.383800e+04, fun: 4.173585e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.470443e+04, fun: 4.173575e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.365171e+04, fun: 4.173547e+01
+
+converged i: 1355, j:222
+Pass: 4, L: 2.000000e+02, sumY: 4.365123e+04, fun: 4.173547e+01
+Positive: 1356
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 27.336960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.611763e+04, fun: 3.757079e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 6.598113e+04, fun: 3.757079e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 6.578884e+04, fun: 3.757079e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 6.574415e+04, fun: 3.757079e+04
+
+converged i: 1355, j:47
+Pass: 4, L: 2.000000e+02, sumY: 6.574415e+04, fun: 3.757079e+04
+Accuracy = 22.5322% (315/1398)
+Accuracy = 25.8226% (361/1398)
+acc =
+   59.2275
+auc =
+    0.5331
+!!!i = 262, acc = 59.227468, auc = 0.533105filtered features
+size of training: 2320
+Cross Validation Accuracy = 58.6207%
+Cross Validation Accuracy = 58.8793%
+Cross Validation Accuracy = 58.6638%
+Cross Validation Accuracy = 59.8276%
+Cross Validation Accuracy = 58.6638%
+Cross Validation Accuracy = 58.6207%
+Cross Validation Accuracy = 58.6207%
+Cross Validation Accuracy = 58.8793%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1480
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 29.836800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.117840e+05, fun: 4.129966e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.738371e+04, fun: 4.129923e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.285012e+04, fun: 4.129913e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.700268e+04, fun: 4.129883e+01
+
+converged i: 1479, j:363
+Pass: 4, L: 2.000000e+02, sumY: 4.700086e+04, fun: 4.129883e+01
+Positive: 1480
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 29.836800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.244979e+05, fun: 3.757040e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.012957e+04, fun: 3.757009e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.483371e+04, fun: 3.756996e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.117232e+04, fun: 3.756983e+01
+
+converged i: 1479, j:190
+Pass: 4, L: 2.000000e+02, sumY: 2.117229e+04, fun: 3.756983e+01
+Accuracy = 23.319% (326/1398)
+Accuracy = 26.2518% (367/1398)
+acc =
+   57.7969
+auc =
+    0.5706
+!!!i = 272, acc = 57.796853, auc = 0.570576filtered features
+size of training: 2400
+Cross Validation Accuracy = 58.0833%
+Cross Validation Accuracy = 59.2083%
+Cross Validation Accuracy = 58.125%
+Cross Validation Accuracy = 59.5417%
+Cross Validation Accuracy = 58.0833%
+Cross Validation Accuracy = 58.375%
+Cross Validation Accuracy = 58.125%
+Cross Validation Accuracy = 58.4167%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1560
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 31.449600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.235736e+05, fun: 4.100289e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.005694e+04, fun: 4.100247e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.972161e+04, fun: 4.100235e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.735411e+04, fun: 4.100203e+01
+
+converged i: 1550, j:289
+Pass: 4, L: 2.000000e+02, sumY: 4.634775e+04, fun: 4.100203e+01
+Positive: 1560
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 31.449600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.351174e+05, fun: 3.757041e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.532184e+04, fun: 3.757012e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.646594e+04, fun: 3.756999e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.230915e+04, fun: 3.756987e+01
+
+converged i: 1559, j:377
+Pass: 4, L: 2.000000e+02, sumY: 2.230876e+04, fun: 3.756987e+01
+Accuracy = 23.6767% (331/1398)
+Accuracy = 39.9857% (559/1398)
+acc =
+   57.8684
+auc =
+    0.5783
+!!!i = 282, acc = 57.868383, auc = 0.578270filtered features
+size of training: 2473
+Cross Validation Accuracy = 58.4311%
+Cross Validation Accuracy = 59.078%
+Cross Validation Accuracy = 58.4311%
+Cross Validation Accuracy = 59.3611%
+Cross Validation Accuracy = 58.4311%
+Cross Validation Accuracy = 58.1884%
+Cross Validation Accuracy = 58.4311%
+Cross Validation Accuracy = 57.9054%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 1633
+Negative: 840
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 32.921280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.380649e+05, fun: 4.085169e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.252645e+04, fun: 4.085127e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.123837e+04, fun: 4.085115e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.228671e+04, fun: 4.085083e+01
+
+converged i: 1632, j:289
+Pass: 4, L: 2.000000e+02, sumY: 5.228474e+04, fun: 4.085083e+01
+Positive: 1633
+Negative: 840
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 32.921280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.597238e+08, fun: 3.757077e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 7.593333e+08, fun: 3.757073e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 7.561171e+08, fun: 3.757069e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 7.546309e+08, fun: 3.757065e+06
+
+converged i: 1374, j:0
+Pass: 4, L: 2.000000e+02, sumY: 7.544914e+08, fun: 3.757065e+06
+Accuracy = 24.0343% (336/1398)
+Accuracy = 26.1087% (365/1398)
+acc =
+   51.6452
+auc =
+    0.5396
+!!!i = 292, acc = 51.645207, auc = 0.539597filtered features
+size of training: 2537
+Cross Validation Accuracy = 57.4695%
+Cross Validation Accuracy = 58.7702%
+Cross Validation Accuracy = 57.4695%
+Cross Validation Accuracy = 59.4797%
+Cross Validation Accuracy = 57.5089%
+Cross Validation Accuracy = 57.5877%
+Cross Validation Accuracy = 57.4695%
+Cross Validation Accuracy = 57.6271%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1689
+Negative: 848
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 34.374528 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.485776e+05, fun: 4.090515e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.318567e+04, fun: 4.090475e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.254665e+04, fun: 4.090463e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.701277e+04, fun: 4.090432e+01
+
+converged i: 1688, j:342
+Pass: 4, L: 2.000000e+02, sumY: 5.700918e+04, fun: 4.090432e+01
+Positive: 1689
+Negative: 848
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 34.374528 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.525860e+05, fun: 3.764633e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.892675e+04, fun: 3.764607e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.832010e+04, fun: 3.764595e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.423782e+04, fun: 3.764582e+01
+
+converged i: 1688, j:380
+Pass: 4, L: 2.000000e+02, sumY: 2.423745e+04, fun: 3.764582e+01
+Accuracy = 23.8913% (334/1398)
+Accuracy = 26.3948% (369/1398)
+acc =
+   57.4392
+auc =
+    0.5890
+!!!i = 302, acc = 57.439199, auc = 0.589021filtered features
+size of training: 2617
+Cross Validation Accuracy = 56.7826%
+Cross Validation Accuracy = 58.3493%
+Cross Validation Accuracy = 57.0883%
+Cross Validation Accuracy = 60.3745%
+Cross Validation Accuracy = 56.7826%
+Cross Validation Accuracy = 56.9736%
+Cross Validation Accuracy = 56.859%
+Cross Validation Accuracy = 57.3175%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1729
+Negative: 888
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 36.848448 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.739406e+05, fun: 4.094780e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.880720e+04, fun: 4.094740e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.294560e+04, fun: 4.094727e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.048670e+04, fun: 4.094696e+01
+
+converged i: 1728, j:131
+Pass: 4, L: 2.000000e+02, sumY: 6.048634e+04, fun: 4.094696e+01
+Positive: 1729
+Negative: 888
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 36.848448 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.690882e+05, fun: 3.758768e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.214535e+04, fun: 3.758743e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.126054e+04, fun: 3.758730e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.754241e+04, fun: 3.758716e+01
+
+converged i: 1728, j:252
+Pass: 4, L: 2.000000e+02, sumY: 2.754225e+04, fun: 3.758716e+01
+Accuracy = 23.9628% (335/1398)
+Accuracy = 25.8941% (362/1398)
+acc =
+   56.9385
+auc =
+    0.6131
+!!!i = 312, acc = 56.938484, auc = 0.613066filtered features
+size of training: 2715
+Cross Validation Accuracy = 57.8269%
+Cross Validation Accuracy = 58.9319%
+Cross Validation Accuracy = 57.7901%
+Cross Validation Accuracy = 59.7422%
+Cross Validation Accuracy = 57.8269%
+Cross Validation Accuracy = 57.8269%
+Cross Validation Accuracy = 57.8269%
+Cross Validation Accuracy = 58.0847%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1770
+Negative: 945
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 40.143600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.107195e+05, fun: 4.082438e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.233160e+04, fun: 4.082397e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.454671e+04, fun: 4.082382e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.746106e+04, fun: 4.082350e+01
+
+converged i: 1769, j:141
+Pass: 4, L: 2.000000e+02, sumY: 5.746069e+04, fun: 4.082350e+01
+Positive: 1770
+Negative: 945
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 40.143600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.936641e+05, fun: 3.761692e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 8.503017e+04, fun: 3.761666e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.567990e+04, fun: 3.761653e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.261625e+04, fun: 3.761637e+01
+
+converged i: 1769, j:275
+Pass: 4, L: 2.000000e+02, sumY: 3.261606e+04, fun: 3.761637e+01
+Accuracy = 24.3205% (340/1398)
+Accuracy = 26.5379% (371/1398)
+acc =
+   57.9399
+auc =
+    0.6565
+!!!i = 322, acc = 57.939914, auc = 0.656512filtered features
+size of training: 2789
+Cross Validation Accuracy = 58.4439%
+Cross Validation Accuracy = 59.2327%
+Cross Validation Accuracy = 58.3722%
+Cross Validation Accuracy = 59.663%
+Cross Validation Accuracy = 58.408%
+Cross Validation Accuracy = 58.3005%
+Cross Validation Accuracy = 58.3722%
+Cross Validation Accuracy = 58.3363%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 1806
+Negative: 983
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 42.607152 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.444387e+05, fun: 4.086423e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 7.981378e+04, fun: 4.086381e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.133626e+04, fun: 4.086364e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.135795e+04, fun: 4.086331e+01
+
+converged i: 1805, j:27
+Pass: 4, L: 2.000000e+02, sumY: 5.135794e+04, fun: 4.086331e+01
+Positive: 1806
+Negative: 983
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 42.607152 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.694876e+08, fun: 3.785694e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 9.706833e+08, fun: 3.785690e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 9.670242e+08, fun: 3.785686e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 9.635783e+08, fun: 3.785683e+06
+
+converged i: 1805, j:512
+Pass: 4, L: 2.000000e+02, sumY: 9.635776e+08, fun: 3.785683e+06
+Accuracy = 25.7511% (360/1398)
+Accuracy = 26.7525% (374/1398)
+acc =
+   50.9299
+auc =
+    0.5773
+!!!i = 332, acc = 50.929900, auc = 0.577274filtered features
+size of training: 2883
+Cross Validation Accuracy = 58.342%
+Cross Validation Accuracy = 59.2438%
+Cross Validation Accuracy = 58.3767%
+Cross Validation Accuracy = 60.3191%
+Cross Validation Accuracy = 58.342%
+Cross Validation Accuracy = 58.5154%
+Cross Validation Accuracy = 58.3767%
+Cross Validation Accuracy = 58.5848%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1855
+Negative: 1028
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 45.766560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.063179e+05, fun: 4.074402e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.184214e+05, fun: 4.074360e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.559772e+04, fun: 4.074339e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.865164e+04, fun: 4.074307e+01
+
+converged i: 1854, j:27
+Pass: 4, L: 2.000000e+02, sumY: 4.865163e+04, fun: 4.074307e+01
+Positive: 1855
+Negative: 1028
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 45.766560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.563461e+05, fun: 3.794298e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.453886e+05, fun: 3.794272e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.583430e+04, fun: 3.794256e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.162614e+04, fun: 3.794238e+01
+
+converged i: 1854, j:286
+Pass: 4, L: 2.000000e+02, sumY: 4.162589e+04, fun: 3.794238e+01
+Accuracy = 23.6052% (330/1398)
+Accuracy = 26.8956% (376/1398)
+acc =
+   58.9413
+auc =
+    0.7115
+!!!i = 342, acc = 58.941345, auc = 0.711508filtered features
+size of training: 2948
+Cross Validation Accuracy = 57.3948%
+Cross Validation Accuracy = 58.1072%
+Cross Validation Accuracy = 57.3948%
+Cross Validation Accuracy = 60.4478%
+Cross Validation Accuracy = 57.3948%
+Cross Validation Accuracy = 57.2252%
+Cross Validation Accuracy = 57.3948%
+Cross Validation Accuracy = 57.2592%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 1894
+Negative: 1054
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 47.910624 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.477881e+05, fun: 4.076861e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.506920e+05, fun: 4.076819e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 9.885856e+04, fun: 4.076796e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.754035e+04, fun: 4.076766e+01
+
+converged i: 1893, j:27
+Pass: 4, L: 2.000000e+02, sumY: 5.754034e+04, fun: 4.076766e+01
+Positive: 1894
+Negative: 1054
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 47.910624 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.100017e+09, fun: 3.821701e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.102352e+09, fun: 3.821697e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.098245e+09, fun: 3.821694e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.094388e+09, fun: 3.821690e+06
+
+converged i: 1893, j:547
+Pass: 4, L: 2.000000e+02, sumY: 1.094387e+09, fun: 3.821690e+06
+Accuracy = 40.5579% (567/1398)
+Accuracy = 27.1817% (380/1398)
+acc =
+   48.4263
+auc =
+    0.6018
+!!!i = 352, acc = 48.426323, auc = 0.601757filtered features
+size of training: 3072
+Cross Validation Accuracy = 58.3659%
+Cross Validation Accuracy = 59.5052%
+Cross Validation Accuracy = 58.431%
+Cross Validation Accuracy = 59.9284%
+Cross Validation Accuracy = 58.5612%
+Cross Validation Accuracy = 58.3984%
+Cross Validation Accuracy = 58.431%
+Cross Validation Accuracy = 58.2682%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 1946
+Negative: 1126
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 52.588704 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.661575e+05, fun: 4.073866e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.788816e+05, fun: 4.073830e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.712081e+05, fun: 4.073791e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.758498e+05, fun: 4.073779e+01
+
+converged i: 1945, j:2
+Pass: 4, L: 2.000000e+02, sumY: 2.758498e+05, fun: 4.073779e+01
+Positive: 1946
+Negative: 1126
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 52.588704 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.548887e+09, fun: 3.796231e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.549690e+09, fun: 3.796226e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.538356e+09, fun: 3.796222e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.529760e+09, fun: 3.796217e+06
+
+converged i: 1377, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.528450e+09, fun: 3.796215e+06
+Accuracy = 24.1774% (338/1398)
+Accuracy = 30.0429% (420/1398)
+acc =
+   45.7797
+auc =
+    0.6174
+!!!i = 362, acc = 45.779685, auc = 0.617412filtered features
+size of training: 3128
+Cross Validation Accuracy = 58.6957%
+Cross Validation Accuracy = 60.1023%
+Cross Validation Accuracy = 58.6637%
+Cross Validation Accuracy = 60.6138%
+Cross Validation Accuracy = 58.7596%
+Cross Validation Accuracy = 58.9514%
+Cross Validation Accuracy = 58.6637%
+Cross Validation Accuracy = 58.9834%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 1983
+Negative: 1145
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 54.492840 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.040631e+05, fun: 4.073071e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.169984e+05, fun: 4.073037e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.270829e+05, fun: 4.072992e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.301730e+05, fun: 4.072985e+01
+
+converged i: 1982, j:2
+Pass: 4, L: 2.000000e+02, sumY: 3.301730e+05, fun: 4.072985e+01
+Positive: 1983
+Negative: 1145
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 54.492840 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.618353e+05, fun: 3.820616e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.295804e+05, fun: 3.820591e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.386378e+04, fun: 3.820573e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.219615e+04, fun: 3.820551e+01
+
+converged i: 1982, j:126
+Pass: 4, L: 2.000000e+02, sumY: 5.219610e+04, fun: 3.820551e+01
+Accuracy = 24.6781% (345/1398)
+Accuracy = 53.3619% (746/1398)
+acc =
+   59.4421
+auc =
+    0.6701
+!!!i = 372, acc = 59.442060, auc = 0.670148filtered features
+size of training: 3231
+Cross Validation Accuracy = 58.991%
+Cross Validation Accuracy = 60.1362%
+Cross Validation Accuracy = 58.991%
+Cross Validation Accuracy = 60.7552%
+Cross Validation Accuracy = 58.991%
+Cross Validation Accuracy = 59.3934%
+Cross Validation Accuracy = 58.991%
+Cross Validation Accuracy = 59.4862%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2021
+Negative: 1210
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 58.689840 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.296537e+05, fun: 4.066077e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.709641e+05, fun: 4.066055e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.906030e+05, fun: 4.065979e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.376457e+05, fun: 4.066020e+01
+
+converged i: 2020, j:340
+Pass: 4, L: 2.000000e+02, sumY: 6.375956e+05, fun: 4.066020e+01
+Positive: 2021
+Negative: 1210
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 58.689840 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.850819e+05, fun: 3.767045e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.098402e+05, fun: 3.767019e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.455549e+04, fun: 3.766998e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.845546e+04, fun: 3.766975e+01
+
+converged i: 2020, j:156
+Pass: 4, L: 2.000000e+02, sumY: 5.845539e+04, fun: 3.766975e+01
+Accuracy = 24.9642% (349/1398)
+Accuracy = 30.0429% (420/1398)
+acc =
+   62.0887
+auc =
+    0.6457
+!!!i = 382, acc = 62.088698, auc = 0.645720filtered features
+size of training: 3317
+Cross Validation Accuracy = 59.0292%
+Cross Validation Accuracy = 59.8131%
+Cross Validation Accuracy = 58.9388%
+Cross Validation Accuracy = 60.2653%
+Cross Validation Accuracy = 58.9991%
+Cross Validation Accuracy = 59.18%
+Cross Validation Accuracy = 58.9388%
+Cross Validation Accuracy = 59.0895%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2085
+Negative: 1232
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 61.649280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.067968e+05, fun: 4.051018e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 5.256652e+05, fun: 4.050996e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 6.768598e+05, fun: 4.050914e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 7.347520e+05, fun: 4.050962e+01
+
+converged i: 2084, j:287
+Pass: 4, L: 2.000000e+02, sumY: 7.347415e+05, fun: 4.050962e+01
+Positive: 2085
+Negative: 1232
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 61.649280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.240068e+09, fun: 3.780499e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.452388e+09, fun: 3.777801e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 9.910687e+08, fun: 3.775577e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 6.510997e+08, fun: 3.773209e+03
+
+converged i: 2084, j:166
+Pass: 4, L: 2.000000e+02, sumY: 6.510989e+08, fun: 3.773209e+03
+Accuracy = 25.1073% (351/1398)
+Accuracy = 30.0429% (420/1398)
+acc =
+   34.4778
+auc =
+    0.7102
+!!!i = 392, acc = 34.477825, auc = 0.710179filtered features
+size of training: 3369
+Cross Validation Accuracy = 59.8991%
+Cross Validation Accuracy = 60.8489%
+Cross Validation Accuracy = 59.9288%
+Cross Validation Accuracy = 61.4129%
+Cross Validation Accuracy = 59.8991%
+Cross Validation Accuracy = 60.1662%
+Cross Validation Accuracy = 59.9288%
+Cross Validation Accuracy = 60.2256%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2102
+Negative: 1267
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 63.917616 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.709440e+05, fun: 4.063840e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 5.536305e+05, fun: 4.063825e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.651841e+05, fun: 4.063726e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 8.422738e+05, fun: 4.063806e+01
+
+converged i: 2101, j:28
+Pass: 4, L: 2.000000e+02, sumY: 8.422738e+05, fun: 4.063806e+01
+Positive: 2102
+Negative: 1267
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 63.917616 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.457128e+05, fun: 3.798367e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.581324e+05, fun: 3.798340e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.164691e+05, fun: 3.798315e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.714541e+04, fun: 3.798291e+01
+
+converged i: 2101, j:113
+Pass: 4, L: 2.000000e+02, sumY: 6.714536e+04, fun: 3.798291e+01
+Accuracy = 40.701% (569/1398)
+Accuracy = 30.186% (422/1398)
+acc =
+   62.7325
+auc =
+    0.6407
+!!!i = 402, acc = 62.732475, auc = 0.640669filtered features
+size of training: 3452
+Cross Validation Accuracy = 59.9073%
+Cross Validation Accuracy = 60.8343%
+Cross Validation Accuracy = 59.9073%
+Cross Validation Accuracy = 60.9212%
+Cross Validation Accuracy = 59.8494%
+Cross Validation Accuracy = 60.2549%
+Cross Validation Accuracy = 59.9073%
+Cross Validation Accuracy = 60.3998%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2121
+Negative: 1331
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 67.753224 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.695619e+05, fun: 4.076573e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.008106e+05, fun: 4.076564e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.361877e+05, fun: 4.076454e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 8.443959e+05, fun: 4.076554e+01
+
+converged i: 2120, j:13
+Pass: 4, L: 2.000000e+02, sumY: 8.443959e+05, fun: 4.076554e+01
+Positive: 2121
+Negative: 1331
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 67.753224 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.889226e+05, fun: 3.775085e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.008914e+05, fun: 3.775060e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.722098e+05, fun: 3.775029e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 9.127858e+04, fun: 3.775007e+01
+
+converged i: 2120, j:113
+Pass: 4, L: 2.000000e+02, sumY: 9.127853e+04, fun: 3.775007e+01
+Accuracy = 25.8941% (362/1398)
+Accuracy = 30.4721% (426/1398)
+acc =
+   63.1617
+auc =
+    0.6536
+!!!i = 412, acc = 63.161660, auc = 0.653642filtered features
+size of training: 3529
+Cross Validation Accuracy = 60.8104%
+Cross Validation Accuracy = 61.6889%
+Cross Validation Accuracy = 60.9238%
+Cross Validation Accuracy = 62.3123%
+Cross Validation Accuracy = 60.8388%
+Cross Validation Accuracy = 60.8388%
+Cross Validation Accuracy = 60.9238%
+Cross Validation Accuracy = 60.9521%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2157
+Negative: 1372
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 71.025696 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.481375e+05, fun: 4.083812e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.150081e+05, fun: 4.083813e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.399061e+05, fun: 4.083689e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 7.276655e+05, fun: 4.083814e+01
+
+converged i: 2156, j:11
+Pass: 4, L: 2.000000e+02, sumY: 7.276655e+05, fun: 4.083814e+01
+Positive: 2157
+Negative: 1372
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 71.025696 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.225305e+05, fun: 3.783961e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.335022e+05, fun: 3.783937e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.474140e+05, fun: 3.783901e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.459159e+05, fun: 3.783883e+01
+
+converged i: 2156, j:34
+Pass: 4, L: 2.000000e+02, sumY: 1.459159e+05, fun: 3.783883e+01
+Accuracy = 27.0386% (378/1398)
+Accuracy = 31.1874% (436/1398)
+acc =
+   63.2332
+auc =
+    0.6773
+!!!i = 422, acc = 63.233190, auc = 0.677251filtered features
+size of training: 3628
+Cross Validation Accuracy = 60.4465%
+Cross Validation Accuracy = 61.4388%
+Cross Validation Accuracy = 60.4741%
+Cross Validation Accuracy = 61.742%
+Cross Validation Accuracy = 60.4465%
+Cross Validation Accuracy = 60.6395%
+Cross Validation Accuracy = 60.4465%
+Cross Validation Accuracy = 60.6395%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2212
+Negative: 1416
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 75.172608 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.059640e+06, fun: 4.088354e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.599286e+05, fun: 4.088357e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.736956e+05, fun: 4.088233e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.345457e+05, fun: 4.088362e+01
+
+converged i: 2211, j:0
+Pass: 4, L: 2.000000e+02, sumY: 6.345457e+05, fun: 4.088362e+01
+Positive: 2212
+Negative: 1416
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 75.172608 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.633763e+09, fun: 3.807351e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 3.922009e+09, fun: 3.805143e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.203105e+09, fun: 3.801323e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.073888e+09, fun: 3.799754e+03
+
+converged i: 2211, j:34
+Pass: 4, L: 2.000000e+02, sumY: 2.073887e+09, fun: 3.799754e+03
+Accuracy = 27.3963% (383/1398)
+Accuracy = 31.402% (439/1398)
+acc =
+   29.3991
+auc =
+    0.7895
+!!!i = 432, acc = 29.399142, auc = 0.789453filtered features
+size of training: 3712
+Cross Validation Accuracy = 60.5873%
+Cross Validation Accuracy = 61.1261%
+Cross Validation Accuracy = 60.5334%
+Cross Validation Accuracy = 61.5841%
+Cross Validation Accuracy = 60.5603%
+Cross Validation Accuracy = 60.5873%
+Cross Validation Accuracy = 60.5334%
+Cross Validation Accuracy = 60.6681%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2267
+Negative: 1445
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 78.619560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.158984e+06, fun: 4.089310e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.627143e+05, fun: 4.089318e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.179785e+05, fun: 4.089187e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.541689e+05, fun: 4.089331e+01
+
+converged i: 2266, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.541689e+05, fun: 4.089331e+01
+Positive: 2267
+Negative: 1445
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 78.619560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.726644e+05, fun: 3.838282e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.768322e+05, fun: 3.838261e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.333749e+05, fun: 3.838205e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.442015e+05, fun: 3.838210e+01
+
+converged i: 2266, j:2
+Pass: 4, L: 2.000000e+02, sumY: 6.442015e+05, fun: 3.838210e+01
+Accuracy = 28.4692% (398/1398)
+Accuracy = 32.1888% (450/1398)
+acc =
+   63.5193
+auc =
+    0.7152
+!!!i = 442, acc = 63.519313, auc = 0.715152filtered features
+size of training: 3789
+Cross Validation Accuracy = 61.3618%
+Cross Validation Accuracy = 62.0744%
+Cross Validation Accuracy = 61.3882%
+Cross Validation Accuracy = 62.4175%
+Cross Validation Accuracy = 61.3618%
+Cross Validation Accuracy = 61.3882%
+Cross Validation Accuracy = 61.3882%
+Cross Validation Accuracy = 61.3882%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2319
+Negative: 1470
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 81.814320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.258402e+06, fun: 4.090144e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.608711e+05, fun: 4.090157e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.390864e+05, fun: 4.090019e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.778557e+05, fun: 4.090176e+01
+
+converged i: 2318, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.778557e+05, fun: 4.090176e+01
+Positive: 2319
+Negative: 1470
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 81.814320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.233483e+09, fun: 3.844718e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.604191e+09, fun: 3.842850e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.104241e+09, fun: 3.837471e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 6.600905e+09, fun: 3.837655e+03
+
+converged i: 2318, j:2
+Pass: 4, L: 2.000000e+02, sumY: 6.600905e+09, fun: 3.837655e+03
+Accuracy = 28.6838% (401/1398)
+Accuracy = 31.7597% (444/1398)
+acc =
+   28.8984
+auc =
+    0.8284
+!!!i = 452, acc = 28.898426, auc = 0.828387filtered features
+size of training: 3884
+Cross Validation Accuracy = 60.5561%
+Cross Validation Accuracy = 61.4315%
+Cross Validation Accuracy = 60.5046%
+Cross Validation Accuracy = 63.826%
+Cross Validation Accuracy = 60.5304%
+Cross Validation Accuracy = 60.7621%
+Cross Validation Accuracy = 60.5046%
+Cross Validation Accuracy = 60.6334%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2414
+Negative: 1470
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 85.165920 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.361833e+06, fun: 4.066114e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.168325e+05, fun: 4.066138e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.674600e+05, fun: 4.065991e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.441413e+05, fun: 4.066149e+01
+
+converged i: 2413, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.441413e+05, fun: 4.066149e+01
+Positive: 2414
+Negative: 1470
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 85.165920 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.391695e+09, fun: 3.844875e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.093234e+09, fun: 3.842986e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.224109e+09, fun: 3.837011e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 7.450103e+09, fun: 3.838207e+03
+
+converged i: 2413, j:2
+Pass: 4, L: 2.000000e+02, sumY: 7.450103e+09, fun: 3.838207e+03
+Accuracy = 29.6137% (414/1398)
+Accuracy = 31.7597% (444/1398)
+acc =
+   29.7568
+auc =
+    0.8303
+!!!i = 462, acc = 29.756795, auc = 0.830342filtered features
+size of training: 3952
+Cross Validation Accuracy = 60.501%
+Cross Validation Accuracy = 61.083%
+Cross Validation Accuracy = 60.5263%
+Cross Validation Accuracy = 61.1589%
+Cross Validation Accuracy = 60.5263%
+Cross Validation Accuracy = 60.6022%
+Cross Validation Accuracy = 60.501%
+Cross Validation Accuracy = 60.3998%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2482
+Negative: 1470
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 87.564960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.390180e+06, fun: 4.075914e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 5.778448e+05, fun: 4.075944e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.608097e+05, fun: 4.075788e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.827053e+05, fun: 4.075946e+01
+
+converged i: 2481, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.827053e+05, fun: 4.075946e+01
+Positive: 2482
+Negative: 1470
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 87.564960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.699013e+09, fun: 3.844497e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.535075e+09, fun: 3.842482e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.353993e+09, fun: 3.836777e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 7.716325e+09, fun: 3.837489e+03
+
+converged i: 2481, j:2
+Pass: 4, L: 2.000000e+02, sumY: 7.716325e+09, fun: 3.837489e+03
+Accuracy = 29.113% (407/1398)
+Accuracy = 31.8312% (445/1398)
+acc =
+   28.8269
+auc =
+    0.8324
+!!!i = 472, acc = 28.826896, auc = 0.832405filtered features
+size of training: 4050
+Cross Validation Accuracy = 60.321%
+Cross Validation Accuracy = 63.4568%
+Cross Validation Accuracy = 60.2963%
+Cross Validation Accuracy = 63.8519%
+Cross Validation Accuracy = 60.2963%
+Cross Validation Accuracy = 60.2716%
+Cross Validation Accuracy = 60.321%
+Cross Validation Accuracy = 60.3457%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2580
+Negative: 1470
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 91.022400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.457233e+06, fun: 4.057102e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 5.028829e+05, fun: 4.057141e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.389739e+05, fun: 4.056977e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.085350e+06, fun: 4.057119e+01
+
+converged i: 2579, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.085350e+06, fun: 4.057119e+01
+Positive: 2580
+Negative: 1470
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 91.022400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.822170e+05, fun: 3.851453e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.434572e+05, fun: 3.851432e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.594187e+05, fun: 3.851363e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.248049e+05, fun: 3.851386e+01
+
+converged i: 2579, j:408
+Pass: 4, L: 2.000000e+02, sumY: 4.246542e+05, fun: 3.851386e+01
+Accuracy = 43.2046% (604/1398)
+Accuracy = 31.9742% (447/1398)
+acc =
+   60.4435
+auc =
+    0.7347
+!!!i = 482, acc = 60.443491, auc = 0.734747filtered features
+size of training: 4139
+Cross Validation Accuracy = 60.3286%
+Cross Validation Accuracy = 61.0534%
+Cross Validation Accuracy = 60.2561%
+Cross Validation Accuracy = 64.6533%
+Cross Validation Accuracy = 60.2803%
+Cross Validation Accuracy = 60.1595%
+Cross Validation Accuracy = 60.2803%
+Cross Validation Accuracy = 60.1111%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 2669
+Negative: 1470
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 94.162320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.569518e+06, fun: 4.055843e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.281303e+05, fun: 4.055888e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.079805e+05, fun: 4.055719e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.722263e+06, fun: 4.055844e+01
+
+converged i: 2668, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.722263e+06, fun: 4.055844e+01
+Positive: 2669
+Negative: 1470
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 94.162320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.906009e+09, fun: 3.851515e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 4.890320e+09, fun: 3.851506e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 4.775070e+09, fun: 3.851498e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 4.736399e+09, fun: 3.851489e+06
+
+converged i: 2170, j:87
+Pass: 4, L: 2.000000e+02, sumY: 4.732057e+09, fun: 3.851488e+06
+Accuracy = 28.6123% (400/1398)
+Accuracy = 32.2604% (451/1398)
+acc =
+   34.9070
+auc =
+    0.7061
+!!!i = 492, acc = 34.907010, auc = 0.706134filtered features
+size of training: 4211
+Cross Validation Accuracy = 58.7984%
+Cross Validation Accuracy = 62.0755%
+Cross Validation Accuracy = 58.8221%
+Cross Validation Accuracy = 62.503%
+Cross Validation Accuracy = 58.7984%
+Cross Validation Accuracy = 59.2258%
+Cross Validation Accuracy = 58.8221%
+Cross Validation Accuracy = 59.2258%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2730
+Negative: 1481
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 97.035120 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.653225e+06, fun: 4.056855e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.706091e+05, fun: 4.056914e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.857343e+06, fun: 4.056733e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 7.836324e+06, fun: 4.056838e+01
+
+converged i: 2729, j:0
+Pass: 4, L: 2.000000e+02, sumY: 7.836324e+06, fun: 4.056838e+01
+Positive: 2730
+Negative: 1481
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 97.035120 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.002090e+09, fun: 3.849007e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.961872e+09, fun: 3.847080e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 7.531264e+09, fun: 3.840116e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 6.646187e+09, fun: 3.842344e+03
+
+converged i: 2729, j:47
+Pass: 4, L: 2.000000e+02, sumY: 6.646187e+09, fun: 3.842344e+03
+Accuracy = 29.6137% (414/1398)
+Accuracy = 46.4235% (649/1398)
+acc =
+   30.2575
+auc =
+    0.8195
+!!!i = 502, acc = 30.257511, auc = 0.819475filtered features
+size of training: 4280
+Cross Validation Accuracy = 59.3224%
+Cross Validation Accuracy = 60.6075%
+Cross Validation Accuracy = 59.3692%
+Cross Validation Accuracy = 61.1682%
+Cross Validation Accuracy = 59.4159%
+Cross Validation Accuracy = 59.7664%
+Cross Validation Accuracy = 59.3692%
+Cross Validation Accuracy = 59.743%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2730
+Negative: 1550
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 101.556000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.800939e+06, fun: 4.056850e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.319266e+05, fun: 4.056910e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.065494e+06, fun: 4.056738e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.291159e+07, fun: 4.056793e+01
+
+converged i: 2729, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.291159e+07, fun: 4.056793e+01
+Positive: 2730
+Negative: 1550
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 101.556000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.463649e+09, fun: 3.854957e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.219869e+09, fun: 3.852916e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 7.018202e+09, fun: 3.845193e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.668767e+09, fun: 3.848394e+03
+
+converged i: 2729, j:50
+Pass: 4, L: 2.000000e+02, sumY: 1.668767e+09, fun: 3.848394e+03
+Accuracy = 29.5422% (413/1398)
+Accuracy = 32.3319% (452/1398)
+acc =
+   30.6152
+auc =
+    0.8061
+!!!i = 512, acc = 30.615165, auc = 0.806130filtered features
+size of training: 4425
+Cross Validation Accuracy = 59.435%
+Cross Validation Accuracy = 63.2542%
+Cross Validation Accuracy = 59.4124%
+Cross Validation Accuracy = 63.1186%
+Cross Validation Accuracy = 59.4576%
+Cross Validation Accuracy = 59.4124%
+Cross Validation Accuracy = 59.4124%
+Cross Validation Accuracy = 59.3898%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 2730
+Negative: 1695
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 111.056400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.117408e+10, fun: 4.047843e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 3.735707e+09, fun: 4.052524e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.709021e+10, fun: 4.037108e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.876011e+11, fun: 4.038549e+03
+
+converged i: 2729, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.876011e+11, fun: 4.038549e+03
+Positive: 2730
+Negative: 1695
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 111.056400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.588783e+09, fun: 3.842047e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 6.589593e+09, fun: 3.842037e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 6.441724e+09, fun: 3.842027e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 6.349288e+09, fun: 3.842017e+06
+
+converged i: 2729, j:1119
+Pass: 4, L: 2.000000e+02, sumY: 6.349282e+09, fun: 3.842017e+06
+Accuracy = 25.8941% (362/1398)
+Accuracy = 31.3305% (438/1398)
+acc =
+   57.1531
+auc =
+    0.6669
+!!!i = 522, acc = 57.153076, auc = 0.666856filtered features
+size of training: 4495
+Cross Validation Accuracy = 59.5996%
+Cross Validation Accuracy = 62.6474%
+Cross Validation Accuracy = 59.6663%
+Cross Validation Accuracy = 64.0489%
+Cross Validation Accuracy = 59.644%
+Cross Validation Accuracy = 59.8888%
+Cross Validation Accuracy = 59.6663%
+Cross Validation Accuracy = 60.0445%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2730
+Negative: 1765
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 115.642800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.284999e+06, fun: 4.056836e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.830776e+05, fun: 4.056898e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.036815e+07, fun: 4.056764e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.988436e+07, fun: 4.056701e+01
+
+converged i: 2729, j:6
+Pass: 4, L: 2.000000e+02, sumY: 4.988436e+07, fun: 4.056701e+01
+Positive: 2730
+Negative: 1765
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 115.642800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.743565e+05, fun: 3.864216e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.972449e+05, fun: 3.864188e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.874416e+05, fun: 3.864104e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.108645e+06, fun: 3.864132e+01
+
+converged i: 2729, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.108645e+06, fun: 3.864132e+01
+Accuracy = 27.8255% (389/1398)
+Accuracy = 27.9685% (391/1398)
+acc =
+   55.5794
+auc =
+    0.7857
+!!!i = 532, acc = 55.579399, auc = 0.785722filtered features
+size of training: 4552
+Cross Validation Accuracy = 59.5343%
+Cross Validation Accuracy = 60.6547%
+Cross Validation Accuracy = 59.5343%
+Cross Validation Accuracy = 60.7865%
+Cross Validation Accuracy = 59.5343%
+Cross Validation Accuracy = 59.7979%
+Cross Validation Accuracy = 59.5123%
+Cross Validation Accuracy = 59.7979%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 2730
+Negative: 1822
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 119.377440 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.424846e+06, fun: 4.056832e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.138272e+05, fun: 4.056890e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.612991e+07, fun: 4.056767e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 6.503336e+07, fun: 4.056681e+01
+
+converged i: 2729, j:67
+Pass: 4, L: 2.000000e+02, sumY: 6.503336e+07, fun: 4.056681e+01
+Positive: 2730
+Negative: 1822
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 119.377440 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.044070e+10, fun: 3.865494e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.220973e+09, fun: 3.862720e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.309583e+09, fun: 3.854395e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.433183e+10, fun: 3.856877e+03
+
+converged i: 2729, j:2
+Pass: 4, L: 2.000000e+02, sumY: 2.433183e+10, fun: 3.856877e+03
+Accuracy = 28.1116% (393/1398)
+Accuracy = 27.9685% (391/1398)
+acc =
+   31.5451
+auc =
+    0.7930
+!!!i = 542, acc = 31.545064, auc = 0.793045filtered features
+size of training: 4639
+Cross Validation Accuracy = 59.474%
+Cross Validation Accuracy = 60.3794%
+Cross Validation Accuracy = 59.4525%
+Cross Validation Accuracy = 61.0261%
+Cross Validation Accuracy = 59.474%
+Cross Validation Accuracy = 59.9914%
+Cross Validation Accuracy = 59.4525%
+Cross Validation Accuracy = 60.0345%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2749
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 124.694640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.620813e+06, fun: 4.046194e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.057684e+05, fun: 4.046265e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.227153e+07, fun: 4.046192e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.404636e+08, fun: 4.045967e+01
+
+converged i: 2748, j:142
+Pass: 4, L: 2.000000e+02, sumY: 1.404635e+08, fun: 4.045967e+01
+Positive: 2749
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 124.694640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.113133e+06, fun: 3.878431e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.521197e+05, fun: 3.878399e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.647629e+05, fun: 3.878312e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.854493e+06, fun: 3.878332e+01
+
+converged i: 2748, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.854493e+06, fun: 3.878332e+01
+Accuracy = 25.9657% (363/1398)
+Accuracy = 28.2546% (395/1398)
+acc =
+   56.5093
+auc =
+    0.7965
+!!!i = 552, acc = 56.509299, auc = 0.796473filtered features
+size of training: 4720
+Cross Validation Accuracy = 60.2966%
+Cross Validation Accuracy = 62.5847%
+Cross Validation Accuracy = 60.3602%
+Cross Validation Accuracy = 64.3432%
+Cross Validation Accuracy = 60.2542%
+Cross Validation Accuracy = 60.7839%
+Cross Validation Accuracy = 60.339%
+Cross Validation Accuracy = 60.9322%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2830
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 128.368800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.967766e+06, fun: 4.050130e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.103775e+06, fun: 4.050214e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 6.609563e+07, fun: 4.050175e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.880715e+08, fun: 4.049845e+01
+
+converged i: 2829, j:160
+Pass: 4, L: 2.000000e+02, sumY: 1.880712e+08, fun: 4.049845e+01
+Positive: 2830
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 128.368800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.214669e+06, fun: 3.878428e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.839807e+05, fun: 3.878396e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.876127e+05, fun: 3.878302e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.241998e+06, fun: 3.878325e+01
+
+converged i: 2829, j:0
+Pass: 4, L: 2.000000e+02, sumY: 3.241998e+06, fun: 3.878325e+01
+Accuracy = 25.7511% (360/1398)
+Accuracy = 29.2561% (409/1398)
+acc =
+   55.5079
+auc =
+    0.8081
+!!!i = 562, acc = 55.507868, auc = 0.808074filtered features
+size of training: 4809
+Cross Validation Accuracy = 60.0749%
+Cross Validation Accuracy = 61.1354%
+Cross Validation Accuracy = 60.1164%
+Cross Validation Accuracy = 62.7989%
+Cross Validation Accuracy = 60.0749%
+Cross Validation Accuracy = 60.6987%
+Cross Validation Accuracy = 60.0957%
+Cross Validation Accuracy = 60.7195%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 2919
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 132.405840 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.217128e+06, fun: 4.034245e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.867183e+06, fun: 4.034330e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.105133e+07, fun: 4.034327e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.407481e+08, fun: 4.033913e+01
+
+converged i: 2918, j:142
+Pass: 4, L: 2.000000e+02, sumY: 2.407477e+08, fun: 4.033913e+01
+Positive: 2919
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 132.405840 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.281955e+06, fun: 3.878429e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.449183e+05, fun: 3.878394e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.672336e+05, fun: 3.878302e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.401065e+06, fun: 3.878320e+01
+
+converged i: 2918, j:0
+Pass: 4, L: 2.000000e+02, sumY: 3.401065e+06, fun: 3.878320e+01
+Accuracy = 25.7511% (360/1398)
+Accuracy = 29.8999% (418/1398)
+acc =
+   56.4378
+auc =
+    0.8257
+!!!i = 572, acc = 56.437768, auc = 0.825710filtered features
+size of training: 4911
+Cross Validation Accuracy = 59.1326%
+Cross Validation Accuracy = 60.7616%
+Cross Validation Accuracy = 59.1122%
+Cross Validation Accuracy = 60.7208%
+Cross Validation Accuracy = 59.1326%
+Cross Validation Accuracy = 60.171%
+Cross Validation Accuracy = 59.1122%
+Cross Validation Accuracy = 60.2118%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3021
+Negative: 1890
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 137.032560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.289367e+10, fun: 3.997909e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.214928e+10, fun: 4.007360e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 9.243028e+11, fun: 4.009047e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.822316e+12, fun: 3.961793e+03
+
+converged i: 3020, j:160
+Pass: 4, L: 2.000000e+02, sumY: 2.822310e+12, fun: 3.961791e+03
+Positive: 3021
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 137.032560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.370438e+06, fun: 3.878431e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.140384e+05, fun: 3.878394e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.730749e+05, fun: 3.878299e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.659228e+06, fun: 3.878316e+01
+
+converged i: 3020, j:0
+Pass: 4, L: 2.000000e+02, sumY: 3.659228e+06, fun: 3.878316e+01
+Accuracy = 25.608% (358/1398)
+Accuracy = 30.329% (424/1398)
+acc =
+   69.5994
+auc =
+    0.8360
+!!!i = 582, acc = 69.599428, auc = 0.835967filtered features
+size of training: 4993
+Cross Validation Accuracy = 59.8838%
+Cross Validation Accuracy = 62.8079%
+Cross Validation Accuracy = 59.9239%
+Cross Validation Accuracy = 61.5061%
+Cross Validation Accuracy = 59.9039%
+Cross Validation Accuracy = 59.9439%
+Cross Validation Accuracy = 59.8838%
+Cross Validation Accuracy = 59.9639%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3103
+Negative: 1890
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 140.752080 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.537424e+10, fun: 3.990522e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.376047e+10, fun: 4.000055e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.080841e+12, fun: 4.008426e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.376914e+12, fun: 3.948265e+03
+
+converged i: 3102, j:160
+Pass: 4, L: 2.000000e+02, sumY: 3.376906e+12, fun: 3.948264e+03
+Positive: 3103
+Negative: 1890
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 140.752080 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.453804e+06, fun: 3.878429e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.767009e+05, fun: 3.878391e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.836473e+05, fun: 3.878295e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.977316e+06, fun: 3.878310e+01
+
+converged i: 3102, j:0
+Pass: 4, L: 2.000000e+02, sumY: 3.977316e+06, fun: 3.878310e+01
+Accuracy = 25.3934% (355/1398)
+Accuracy = 31.1874% (436/1398)
+acc =
+   68.0258
+auc =
+    0.8388
+!!!i = 592, acc = 68.025751, auc = 0.838782filtered features
+size of training: 5046
+Cross Validation Accuracy = 60.3052%
+Cross Validation Accuracy = 64.0706%
+Cross Validation Accuracy = 60.3052%
+Cross Validation Accuracy = 64.6254%
+Cross Validation Accuracy = 60.2854%
+Cross Validation Accuracy = 61.0384%
+Cross Validation Accuracy = 60.2854%
+Cross Validation Accuracy = 61.1177%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3150
+Negative: 1896
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 143.337600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.539286e+06, fun: 4.009488e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.430135e+06, fun: 4.009587e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.089386e+08, fun: 4.009703e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.170313e+08, fun: 4.009010e+01
+
+converged i: 3149, j:160
+Pass: 4, L: 2.000000e+02, sumY: 3.170304e+08, fun: 4.009010e+01
+Positive: 3150
+Negative: 1896
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 143.337600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.508113e+06, fun: 3.884267e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 5.329563e+05, fun: 3.884228e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.756769e+05, fun: 3.884130e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.150600e+06, fun: 3.884146e+01
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.150600e+06, fun: 3.884146e+01
+Accuracy = 25.5365% (357/1398)
+Accuracy = 31.9027% (446/1398)
+acc =
+   55.7225
+auc =
+    0.8449
+!!!i = 602, acc = 55.722461, auc = 0.844852filtered features
+size of training: 5154
+Cross Validation Accuracy = 60.5743%
+Cross Validation Accuracy = 63.8727%
+Cross Validation Accuracy = 60.6131%
+Cross Validation Accuracy = 63.8533%
+Cross Validation Accuracy = 60.6325%
+Cross Validation Accuracy = 61.2146%
+Cross Validation Accuracy = 60.6325%
+Cross Validation Accuracy = 61.0982%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3150
+Negative: 2004
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 151.502400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.979387e+10, fun: 3.998020e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 8.285394e+10, fun: 4.007950e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.168439e+12, fun: 4.023366e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.102012e+12, fun: 3.953464e+03
+
+converged i: 3149, j:372
+Pass: 4, L: 2.000000e+02, sumY: 3.101986e+12, fun: 3.953463e+03
+Positive: 3150
+Negative: 2004
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 151.502400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.644587e+10, fun: 3.877137e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 7.532455e+09, fun: 3.873032e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.022967e+10, fun: 3.863546e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 5.269628e+10, fun: 3.864268e+03
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.269628e+10, fun: 3.864268e+03
+Accuracy = 25.608% (358/1398)
+Accuracy = 32.5465% (455/1398)
+acc =
+   55.8655
+auc =
+    0.8596
+!!!i = 612, acc = 55.865522, auc = 0.859584filtered features
+size of training: 5213
+Cross Validation Accuracy = 60.5218%
+Cross Validation Accuracy = 64.6269%
+Cross Validation Accuracy = 60.4642%
+Cross Validation Accuracy = 64.7228%
+Cross Validation Accuracy = 60.541%
+Cross Validation Accuracy = 60.9438%
+Cross Validation Accuracy = 60.445%
+Cross Validation Accuracy = 61.0589%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3150
+Negative: 2063
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 155.962800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.963927e+06, fun: 4.009495e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.178683e+07, fun: 4.009592e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.082401e+08, fun: 4.009774e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.007594e+08, fun: 4.009020e+01
+
+converged i: 3149, j:360
+Pass: 4, L: 2.000000e+02, sumY: 2.007575e+08, fun: 4.009020e+01
+Positive: 3150
+Negative: 2063
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 155.962800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.680594e+06, fun: 3.898783e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 9.495402e+05, fun: 3.898736e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.678929e+06, fun: 3.898653e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.004556e+06, fun: 3.898646e+01
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.004556e+06, fun: 3.898646e+01
+Accuracy = 25.3219% (354/1398)
+Accuracy = 32.7611% (458/1398)
+acc =
+   55.1502
+auc =
+    0.8618
+!!!i = 622, acc = 55.150215, auc = 0.861846filtered features
+size of training: 5320
+Cross Validation Accuracy = 60.6955%
+Cross Validation Accuracy = 61.485%
+Cross Validation Accuracy = 60.7331%
+Cross Validation Accuracy = 62.7632%
+Cross Validation Accuracy = 60.6955%
+Cross Validation Accuracy = 60.9962%
+Cross Validation Accuracy = 60.7143%
+Cross Validation Accuracy = 60.9398%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3150
+Negative: 2170
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 164.052000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.814810e+06, fun: 4.009487e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.759486e+07, fun: 4.009590e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 8.293271e+07, fun: 4.009846e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.139673e+07, fun: 4.008969e+01
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.139673e+07, fun: 4.008969e+01
+Positive: 3150
+Negative: 2170
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 164.052000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.958049e+10, fun: 3.865784e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.262101e+10, fun: 3.861699e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.423009e+10, fun: 3.851975e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 7.670102e+10, fun: 3.851374e+03
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 7.670102e+10, fun: 3.851374e+03
+Accuracy = 25.3219% (354/1398)
+Accuracy = 32.1888% (450/1398)
+acc =
+   24.8927
+auc =
+    0.8731
+!!!i = 632, acc = 24.892704, auc = 0.873070filtered features
+size of training: 5395
+Cross Validation Accuracy = 60.9639%
+Cross Validation Accuracy = 61.5755%
+Cross Validation Accuracy = 60.9268%
+Cross Validation Accuracy = 61.6497%
+Cross Validation Accuracy = 60.9824%
+Cross Validation Accuracy = 61.1863%
+Cross Validation Accuracy = 60.9453%
+Cross Validation Accuracy = 61.0751%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3150
+Negative: 2245
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 169.722000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.710866e+06, fun: 4.009482e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.118113e+07, fun: 4.009580e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 6.477644e+07, fun: 4.009865e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.393141e+07, fun: 4.009023e+01
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 3.393141e+07, fun: 4.009023e+01
+Positive: 3150
+Negative: 2245
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 169.722000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.124048e+10, fun: 3.877619e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.546154e+10, fun: 3.873458e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.364285e+10, fun: 3.863669e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 9.217610e+10, fun: 3.862001e+03
+
+converged i: 3149, j:0
+Pass: 4, L: 2.000000e+02, sumY: 9.217610e+10, fun: 3.862001e+03
+Accuracy = 25.2504% (353/1398)
+Accuracy = 30.8298% (431/1398)
+acc =
+   24.4635
+auc =
+    0.8758
+!!!i = 642, acc = 24.463519, auc = 0.875805filtered features
+size of training: 5479
+Cross Validation Accuracy = 61.0148%
+Cross Validation Accuracy = 61.6536%
+Cross Validation Accuracy = 61.0513%
+Cross Validation Accuracy = 61.7631%
+Cross Validation Accuracy = 60.9965%
+Cross Validation Accuracy = 61.4346%
+Cross Validation Accuracy = 61.0878%
+Cross Validation Accuracy = 61.4893%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3169
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 175.689360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.444154e+06, fun: 4.008679e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.478915e+07, fun: 4.008766e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.291041e+07, fun: 4.009116e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.116907e+08, fun: 4.008389e+01
+
+converged i: 3168, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.116907e+08, fun: 4.008389e+01
+Positive: 3169
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 175.689360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.360413e+06, fun: 3.876349e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.914706e+06, fun: 3.876302e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.124424e+06, fun: 3.876215e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.135610e+07, fun: 3.876165e+01
+
+converged i: 3168, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.135610e+07, fun: 3.876165e+01
+Accuracy = 25.2504% (353/1398)
+Accuracy = 45.4936% (636/1398)
+acc =
+   54.1488
+auc =
+    0.8218
+!!!i = 652, acc = 54.148784, auc = 0.821850filtered features
+size of training: 5562
+Cross Validation Accuracy = 61.1111%
+Cross Validation Accuracy = 61.6864%
+Cross Validation Accuracy = 61.1291%
+Cross Validation Accuracy = 61.7404%
+Cross Validation Accuracy = 61.1111%
+Cross Validation Accuracy = 61.5606%
+Cross Validation Accuracy = 61.1111%
+Cross Validation Accuracy = 61.5246%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3252
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 180.290880 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.397271e+06, fun: 3.999751e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.735823e+07, fun: 3.999828e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.183314e+07, fun: 4.000209e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.257681e+08, fun: 3.999619e+01
+
+converged i: 3251, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.257681e+08, fun: 3.999619e+01
+Positive: 3252
+Negative: 2310
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 180.290880 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.507415e+10, fun: 3.865516e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.095827e+10, fun: 3.861263e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.414416e+10, fun: 3.851403e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.280791e+11, fun: 3.847140e+03
+
+converged i: 3251, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.280791e+11, fun: 3.847140e+03
+Accuracy = 24.9642% (349/1398)
+Accuracy = 31.1874% (436/1398)
+acc =
+   23.7482
+auc =
+    0.8721
+!!!i = 662, acc = 23.748212, auc = 0.872123filtered features
+size of training: 5625
+Cross Validation Accuracy = 61.1022%
+Cross Validation Accuracy = 63.0044%
+Cross Validation Accuracy = 61.12%
+Cross Validation Accuracy = 63.1111%
+Cross Validation Accuracy = 61.1378%
+Cross Validation Accuracy = 61.5111%
+Cross Validation Accuracy = 61.1378%
+Cross Validation Accuracy = 61.3689%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3315
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 183.783600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.591566e+06, fun: 4.004265e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.963450e+07, fun: 4.004341e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.832475e+07, fun: 4.004739e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.405460e+08, fun: 4.004204e+01
+
+converged i: 3314, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.405460e+08, fun: 4.004204e+01
+Positive: 3315
+Negative: 2310
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 183.783600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.660939e+10, fun: 3.865356e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.277715e+10, fun: 3.860952e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.160274e+10, fun: 3.851229e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.431627e+11, fun: 3.846073e+03
+
+converged i: 3314, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.431627e+11, fun: 3.846073e+03
+Accuracy = 25.0358% (350/1398)
+Accuracy = 51.5021% (720/1398)
+acc =
+   23.8913
+auc =
+    0.8703
+!!!i = 672, acc = 23.891273, auc = 0.870342filtered features
+size of training: 5682
+Cross Validation Accuracy = 61.3516%
+Cross Validation Accuracy = 62.2316%
+Cross Validation Accuracy = 61.3516%
+Cross Validation Accuracy = 62.4076%
+Cross Validation Accuracy = 61.334%
+Cross Validation Accuracy = 61.8972%
+Cross Validation Accuracy = 61.3692%
+Cross Validation Accuracy = 61.9148%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3372
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 186.943680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.551334e+06, fun: 4.003124e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.084665e+07, fun: 4.003198e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.465287e+07, fun: 4.003616e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.903544e+08, fun: 4.003116e+01
+
+converged i: 3371, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.903544e+08, fun: 4.003116e+01
+Positive: 3372
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 186.943680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.031831e+06, fun: 3.876330e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.444515e+06, fun: 3.876285e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.135216e+07, fun: 3.876200e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.226065e+07, fun: 3.876089e+01
+
+converged i: 3371, j:7
+Pass: 4, L: 2.000000e+02, sumY: 2.226065e+07, fun: 3.876089e+01
+Accuracy = 24.8212% (347/1398)
+Accuracy = 32.475% (454/1398)
+acc =
+   53.9342
+auc =
+    0.7797
+!!!i = 682, acc = 53.934192, auc = 0.779695filtered features
+size of training: 5780
+Cross Validation Accuracy = 60.7093%
+Cross Validation Accuracy = 62.2318%
+Cross Validation Accuracy = 60.7093%
+Cross Validation Accuracy = 62.2318%
+Cross Validation Accuracy = 60.7093%
+Cross Validation Accuracy = 60.8304%
+Cross Validation Accuracy = 60.7266%
+Cross Validation Accuracy = 60.9343%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3470
+Negative: 2310
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 192.376800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.993928e+10, fun: 3.974516e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 3.559944e+11, fun: 3.981783e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.587503e+11, fun: 4.026816e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 8.144199e+12, fun: 3.983495e+03
+
+converged i: 3469, j:0
+Pass: 4, L: 2.000000e+02, sumY: 8.144199e+12, fun: 3.983495e+03
+Positive: 3470
+Negative: 2310
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 192.376800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.309764e+06, fun: 3.876330e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.490384e+06, fun: 3.876280e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.849342e+07, fun: 3.876224e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.171970e+07, fun: 3.876041e+01
+
+converged i: 3469, j:63
+Pass: 4, L: 2.000000e+02, sumY: 3.171970e+07, fun: 3.876041e+01
+Accuracy = 41.917% (586/1398)
+Accuracy = 32.2604% (451/1398)
+acc =
+   65.5937
+auc =
+    0.7313
+!!!i = 692, acc = 65.593705, auc = 0.731251filtered features
+size of training: 5891
+Cross Validation Accuracy = 60.6688%
+Cross Validation Accuracy = 64.8277%
+Cross Validation Accuracy = 60.7028%
+Cross Validation Accuracy = 64.9126%
+Cross Validation Accuracy = 60.6518%
+Cross Validation Accuracy = 61.0932%
+Cross Validation Accuracy = 60.6688%
+Cross Validation Accuracy = 60.9913%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3570
+Negative: 2321
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 198.863280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.365424e+06, fun: 3.970269e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.560043e+07, fun: 3.970299e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.983719e+06, fun: 3.970697e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.107027e+09, fun: 3.970644e+01
+
+converged i: 3569, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.107027e+09, fun: 3.970644e+01
+Positive: 3570
+Negative: 2321
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 198.863280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.405274e+10, fun: 3.870730e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.279146e+10, fun: 3.865553e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.810839e+11, fun: 3.859965e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.115845e+11, fun: 3.843088e+03
+
+converged i: 3569, j:7
+Pass: 4, L: 2.000000e+02, sumY: 3.115845e+11, fun: 3.843088e+03
+Accuracy = 37.9828% (531/1398)
+Accuracy = 45.279% (633/1398)
+acc =
+   23.8913
+auc =
+    0.8651
+!!!i = 702, acc = 23.891273, auc = 0.865138filtered features
+size of training: 5992
+Cross Validation Accuracy = 61.1983%
+Cross Validation Accuracy = 64.1188%
+Cross Validation Accuracy = 61.1983%
+Cross Validation Accuracy = 63.3845%
+Cross Validation Accuracy = 61.215%
+Cross Validation Accuracy = 61.3818%
+Cross Validation Accuracy = 61.215%
+Cross Validation Accuracy = 61.2984%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3570
+Negative: 2422
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 207.516960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.592880e+10, fun: 3.956225e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 3.989803e+11, fun: 3.958289e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.507583e+10, fun: 4.007501e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.383008e+13, fun: 4.030574e+03
+
+converged i: 3569, j:11
+Pass: 4, L: 2.000000e+02, sumY: 1.383008e+13, fun: 4.030574e+03
+Positive: 3570
+Negative: 2422
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 207.516960 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.654345e+10, fun: 3.856228e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.523131e+10, fun: 3.848153e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.293185e+11, fun: 3.850261e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 5.522064e+11, fun: 3.824149e+03
+
+converged i: 3569, j:0
+Pass: 4, L: 2.000000e+02, sumY: 5.522064e+11, fun: 3.824149e+03
+Accuracy = 25.3934% (355/1398)
+Accuracy = 29.8283% (417/1398)
+acc =
+   53.5050
+auc =
+    0.7008
+!!!i = 712, acc = 53.505007, auc = 0.700833filtered features
+size of training: 6049
+Cross Validation Accuracy = 61.3325%
+Cross Validation Accuracy = 63.7295%
+Cross Validation Accuracy = 61.3325%
+Cross Validation Accuracy = 63.8618%
+Cross Validation Accuracy = 61.3159%
+Cross Validation Accuracy = 61.7788%
+Cross Validation Accuracy = 61.2994%
+Cross Validation Accuracy = 61.5804%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3570
+Negative: 2479
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 212.400720 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.296513e+06, fun: 3.970261e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 3.818928e+07, fun: 3.970253e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.367659e+06, fun: 3.970683e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.362325e+09, fun: 3.971060e+01
+
+converged i: 3569, j:11
+Pass: 4, L: 2.000000e+02, sumY: 1.362325e+09, fun: 3.971060e+01
+Positive: 3570
+Negative: 2479
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 212.400720 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.800514e+10, fun: 3.868468e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.852073e+10, fun: 3.859873e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.130210e+11, fun: 3.860544e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.127270e+12, fun: 3.839349e+03
+
+converged i: 3569, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.127270e+12, fun: 3.839349e+03
+Accuracy = 24.8212% (347/1398)
+Accuracy = 28.8984% (404/1398)
+acc =
+   25.5365
+auc =
+    0.8459
+!!!i = 722, acc = 25.536481, auc = 0.845942filtered features
+size of training: 6137
+Cross Validation Accuracy = 61.447%
+Cross Validation Accuracy = 63.5816%
+Cross Validation Accuracy = 61.4633%
+Cross Validation Accuracy = 63.4023%
+Cross Validation Accuracy = 61.4633%
+Cross Validation Accuracy = 61.8706%
+Cross Validation Accuracy = 61.4958%
+Cross Validation Accuracy = 61.838%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3570
+Negative: 2567
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 219.940560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.799980e+10, fun: 3.955749e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.421514e+11, fun: 3.954763e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.851198e+10, fun: 4.002183e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.588555e+13, fun: 4.060936e+03
+
+converged i: 3569, j:12
+Pass: 4, L: 2.000000e+02, sumY: 1.588555e+13, fun: 4.060936e+03
+Positive: 3570
+Negative: 2567
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 219.940560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.024099e+10, fun: 3.873291e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 5.347795e+10, fun: 3.864009e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.114798e+11, fun: 3.863324e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.668658e+12, fun: 3.847877e+03
+
+converged i: 3569, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.668658e+12, fun: 3.847877e+03
+Accuracy = 24.6066% (344/1398)
+Accuracy = 28.6838% (401/1398)
+acc =
+   44.9213
+auc =
+    0.6725
+!!!i = 732, acc = 44.921316, auc = 0.672527filtered features
+size of training: 6215
+Cross Validation Accuracy = 61.0619%
+Cross Validation Accuracy = 63.572%
+Cross Validation Accuracy = 61.0619%
+Cross Validation Accuracy = 63.3628%
+Cross Validation Accuracy = 61.078%
+Cross Validation Accuracy = 61.6895%
+Cross Validation Accuracy = 61.0941%
+Cross Validation Accuracy = 61.7699%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 3570
+Negative: 2645
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 226.623600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.754463e+10, fun: 3.955530e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.422122e+11, fun: 3.952897e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.638509e+10, fun: 3.998433e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.516718e+13, fun: 4.076233e+03
+
+converged i: 3569, j:63
+Pass: 4, L: 2.000000e+02, sumY: 1.516718e+13, fun: 4.076235e+03
+Positive: 3570
+Negative: 2645
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 226.623600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.238820e+06, fun: 3.886039e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 6.033019e+06, fun: 3.885957e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.025046e+07, fun: 3.885923e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.911510e+08, fun: 3.885840e+01
+
+converged i: 3569, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.911510e+08, fun: 3.885840e+01
+Accuracy = 24.3205% (340/1398)
+Accuracy = 28.2546% (395/1398)
+acc =
+   66.0229
+auc =
+    0.6675
+!!!i = 742, acc = 66.022890, auc = 0.667473filtered features
+size of training: 6308
+Cross Validation Accuracy = 61.1763%
+Cross Validation Accuracy = 62.4921%
+Cross Validation Accuracy = 61.1921%
+Cross Validation Accuracy = 61.6043%
+Cross Validation Accuracy = 61.2238%
+Cross Validation Accuracy = 61.9531%
+Cross Validation Accuracy = 61.2397%
+Cross Validation Accuracy = 61.8897%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3578
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 234.430560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.836828e+10, fun: 3.957791e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.145333e+11, fun: 3.953017e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.403470e+11, fun: 3.995637e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.267777e+13, fun: 4.090169e+03
+
+converged i: 3577, j:63
+Pass: 4, L: 2.000000e+02, sumY: 1.267777e+13, fun: 4.090171e+03
+Positive: 3578
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 234.430560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.644597e+10, fun: 3.857179e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 6.653990e+10, fun: 3.848556e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.197864e+11, fun: 3.845917e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.580630e+12, fun: 3.838284e+03
+
+converged i: 3577, j:11
+Pass: 4, L: 2.000000e+02, sumY: 2.580630e+12, fun: 3.838284e+03
+Accuracy = 23.4621% (328/1398)
+Accuracy = 27.9685% (391/1398)
+acc =
+   46.4235
+auc =
+    0.6700
+!!!i = 752, acc = 46.423462, auc = 0.670023filtered features
+size of training: 6421
+Cross Validation Accuracy = 60.9718%
+Cross Validation Accuracy = 62.3267%
+Cross Validation Accuracy = 60.9874%
+Cross Validation Accuracy = 62.0931%
+Cross Validation Accuracy = 60.9562%
+Cross Validation Accuracy = 61.6571%
+Cross Validation Accuracy = 60.9251%
+Cross Validation Accuracy = 61.6259%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3691
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 241.834320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.800586e+10, fun: 3.950828e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 3.720331e+11, fun: 3.944265e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.847283e+11, fun: 3.982111e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 9.885320e+12, fun: 4.077757e+03
+
+converged i: 3690, j:97
+Pass: 4, L: 2.000000e+02, sumY: 9.885320e+12, fun: 4.077759e+03
+Positive: 3691
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 241.834320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.911078e+10, fun: 3.856256e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 6.357804e+10, fun: 3.847643e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.937475e+11, fun: 3.844642e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.503487e+12, fun: 3.838371e+03
+
+converged i: 3690, j:11
+Pass: 4, L: 2.000000e+02, sumY: 2.503487e+12, fun: 3.838371e+03
+Accuracy = 23.3906% (327/1398)
+Accuracy = 44.206% (618/1398)
+acc =
+   47.5680
+auc =
+    0.6708
+!!!i = 762, acc = 47.567954, auc = 0.670850filtered features
+size of training: 6512
+Cross Validation Accuracy = 61.9318%
+Cross Validation Accuracy = 63.406%
+Cross Validation Accuracy = 61.9472%
+Cross Validation Accuracy = 63.9281%
+Cross Validation Accuracy = 61.8704%
+Cross Validation Accuracy = 61.9318%
+Cross Validation Accuracy = 61.8704%
+Cross Validation Accuracy = 61.7783%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3782
+Negative: 2730
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 247.796640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.555704e+06, fun: 3.975478e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.523899e+07, fun: 3.975387e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.841960e+07, fun: 3.975657e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.713394e+08, fun: 3.976268e+01
+
+converged i: 3781, j:97
+Pass: 4, L: 2.000000e+02, sumY: 4.713394e+08, fun: 3.976268e+01
+Positive: 3782
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 247.796640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.076537e+10, fun: 3.854954e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 7.545368e+10, fun: 3.846969e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.509935e+11, fun: 3.843272e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.897860e+12, fun: 3.839246e+03
+
+converged i: 3781, j:39
+Pass: 4, L: 2.000000e+02, sumY: 2.897860e+12, fun: 3.839246e+03
+Accuracy = 23.6767% (331/1398)
+Accuracy = 28.6838% (401/1398)
+acc =
+   25.8941
+auc =
+    0.8203
+!!!i = 772, acc = 25.894134, auc = 0.820276filtered features
+size of training: 6570
+Cross Validation Accuracy = 62.0852%
+Cross Validation Accuracy = 63.8508%
+Cross Validation Accuracy = 62.0852%
+Cross Validation Accuracy = 63.8813%
+Cross Validation Accuracy = 61.9939%
+Cross Validation Accuracy = 61.9482%
+Cross Validation Accuracy = 62.0091%
+Cross Validation Accuracy = 61.9635%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-09
+Positive: 3840
+Negative: 2730
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 251.596800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.644565e+06, fun: 3.987047e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.575583e+07, fun: 3.986954e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.110097e+07, fun: 3.987229e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.484482e+08, fun: 3.987860e+01
+
+converged i: 3839, j:12
+Pass: 4, L: 2.000000e+02, sumY: 4.484482e+08, fun: 3.987860e+01
+Positive: 3840
+Negative: 2730
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 251.596800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.398438e+06, fun: 3.872084e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 4.558016e+06, fun: 3.872084e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 3.977585e+06, fun: 3.872084e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 3.934130e+06, fun: 3.872084e+04
+
+converged i: 3177, j:847
+Pass: 4, L: 2.000000e+02, sumY: 3.925236e+06, fun: 3.872084e+04
+Accuracy = 27.3963% (383/1398)
+Accuracy = 28.7554% (402/1398)
+acc =
+   41.4878
+auc =
+    0.6098
+!!!i = 782, acc = 41.487840, auc = 0.609829filtered features
+size of training: 6646
+Cross Validation Accuracy = 61.9922%
+Cross Validation Accuracy = 64.1438%
+Cross Validation Accuracy = 61.9922%
+Cross Validation Accuracy = 64.1589%
+Cross Validation Accuracy = 61.8868%
+Cross Validation Accuracy = 62.3232%
+Cross Validation Accuracy = 61.8568%
+Cross Validation Accuracy = 62.2781%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3916
+Negative: 2730
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 256.576320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.644714e+06, fun: 3.987953e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.525616e+07, fun: 3.987857e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.504972e+07, fun: 3.988123e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.837188e+08, fun: 3.988762e+01
+
+converged i: 3915, j:11
+Pass: 4, L: 2.000000e+02, sumY: 3.837188e+08, fun: 3.988762e+01
+Positive: 3916
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 256.576320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.503452e+10, fun: 3.854084e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 8.316312e+10, fun: 3.846069e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.074896e+11, fun: 3.841866e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.328981e+12, fun: 3.841272e+03
+
+converged i: 3915, j:97
+Pass: 4, L: 2.000000e+02, sumY: 3.328981e+12, fun: 3.841273e+03
+Accuracy = 24.8927% (348/1398)
+Accuracy = 46.3519% (648/1398)
+acc =
+   27.3963
+auc =
+    0.8131
+!!!i = 792, acc = 27.396280, auc = 0.813126filtered features
+size of training: 6729
+Cross Validation Accuracy = 61.7774%
+Cross Validation Accuracy = 63.5756%
+Cross Validation Accuracy = 61.8071%
+Cross Validation Accuracy = 64.1551%
+Cross Validation Accuracy = 61.6585%
+Cross Validation Accuracy = 62.2529%
+Cross Validation Accuracy = 61.6585%
+Cross Validation Accuracy = 62.1638%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 3999
+Negative: 2730
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 262.014480 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.720806e+06, fun: 3.992215e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.204590e+07, fun: 3.992111e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.512254e+07, fun: 3.992352e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.625714e+08, fun: 3.992933e+01
+
+converged i: 3998, j:11
+Pass: 4, L: 2.000000e+02, sumY: 2.625714e+08, fun: 3.992933e+01
+Positive: 3999
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 262.014480 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.754999e+10, fun: 3.852989e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 9.627277e+10, fun: 3.845213e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 7.010462e+11, fun: 3.840295e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.120006e+12, fun: 3.845148e+03
+
+converged i: 3998, j:664
+Pass: 4, L: 2.000000e+02, sumY: 3.119983e+12, fun: 3.845161e+03
+Accuracy = 27.1817% (380/1398)
+Accuracy = 46.9242% (656/1398)
+acc =
+   31.1874
+auc =
+    0.7806
+!!!i = 802, acc = 31.187411, auc = 0.780597filtered features
+size of training: 6814
+Cross Validation Accuracy = 61.8433%
+Cross Validation Accuracy = 64.8518%
+Cross Validation Accuracy = 61.8286%
+Cross Validation Accuracy = 64.6757%
+Cross Validation Accuracy = 61.7699%
+Cross Validation Accuracy = 62.2982%
+Cross Validation Accuracy = 61.7699%
+Cross Validation Accuracy = 62.2689%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4084
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 267.583680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.786218e+10, fun: 3.968812e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.395533e+11, fun: 3.958404e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.001780e+11, fun: 3.982942e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.493381e+12, fun: 4.050496e+03
+
+converged i: 4083, j:9
+Pass: 4, L: 2.000000e+02, sumY: 2.493381e+12, fun: 4.050496e+03
+Positive: 4084
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 267.583680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.953239e+10, fun: 3.852684e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.065300e+11, fun: 3.844432e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 8.234055e+11, fun: 3.838305e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.067066e+11, fun: 3.850708e+03
+
+converged i: 4083, j:113
+Pass: 4, L: 2.000000e+02, sumY: 3.067056e+11, fun: 3.850708e+03
+Accuracy = 27.6109% (386/1398)
+Accuracy = 29.7568% (416/1398)
+acc =
+   61.2303
+auc =
+    0.6874
+!!!i = 812, acc = 61.230329, auc = 0.687395filtered features
+size of training: 6931
+Cross Validation Accuracy = 61.7948%
+Cross Validation Accuracy = 64.2909%
+Cross Validation Accuracy = 61.7804%
+Cross Validation Accuracy = 64.0456%
+Cross Validation Accuracy = 61.8237%
+Cross Validation Accuracy = 61.6794%
+Cross Validation Accuracy = 61.8093%
+Cross Validation Accuracy = 61.7083%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 4201
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 275.249520 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.741342e+10, fun: 3.946156e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.929903e+11, fun: 3.934860e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.926601e+11, fun: 3.953248e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 9.660632e+11, fun: 4.001804e+03
+
+converged i: 4200, j:0
+Pass: 4, L: 2.000000e+02, sumY: 9.660632e+11, fun: 4.001804e+03
+Positive: 4201
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 275.249520 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.785261e+10, fun: 3.872079e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 5.570962e+10, fun: 3.872043e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 4.853026e+10, fun: 3.872012e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 4.791151e+10, fun: 3.871988e+06
+
+converged i: 4185, j:1709
+Pass: 4, L: 2.000000e+02, sumY: 4.790910e+10, fun: 3.871987e+06
+Accuracy = 27.3963% (383/1398)
+Accuracy = 30.4721% (426/1398)
+acc =
+   46.7096
+auc =
+    0.6149
+!!!i = 822, acc = 46.709585, auc = 0.614879filtered features
+size of training: 6986
+Cross Validation Accuracy = 61.1509%
+Cross Validation Accuracy = 64.4145%
+Cross Validation Accuracy = 61.1509%
+Cross Validation Accuracy = 64.343%
+Cross Validation Accuracy = 61.1366%
+Cross Validation Accuracy = 61.4085%
+Cross Validation Accuracy = 61.1652%
+Cross Validation Accuracy = 61.3083%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4256
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 278.853120 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.897753e+10, fun: 3.957794e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.112756e+11, fun: 3.946498e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.369086e+11, fun: 3.965902e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 9.654984e+11, fun: 4.017085e+03
+
+converged i: 4255, j:0
+Pass: 4, L: 2.000000e+02, sumY: 9.654984e+11, fun: 4.017085e+03
+Positive: 4256
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 278.853120 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.371989e+10, fun: 3.852633e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.032151e+11, fun: 3.844073e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 8.612981e+11, fun: 3.836917e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 5.287455e+12, fun: 3.842083e+03
+
+converged i: 4255, j:113
+Pass: 4, L: 2.000000e+02, sumY: 5.287454e+12, fun: 3.842080e+03
+Accuracy = 27.6109% (386/1398)
+Accuracy = 30.329% (424/1398)
+acc =
+   59.9428
+auc =
+    0.6950
+!!!i = 832, acc = 59.942775, auc = 0.694986filtered features
+size of training: 7068
+Cross Validation Accuracy = 61.7006%
+Cross Validation Accuracy = 64.2898%
+Cross Validation Accuracy = 61.7148%
+Cross Validation Accuracy = 63.4267%
+Cross Validation Accuracy = 61.6723%
+Cross Validation Accuracy = 61.7006%
+Cross Validation Accuracy = 61.6582%
+Cross Validation Accuracy = 61.6157%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4338
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 284.225760 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.974265e+10, fun: 3.952384e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.970521e+11, fun: 3.940718e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.653697e+11, fun: 3.958306e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 5.554483e+11, fun: 4.008517e+03
+
+converged i: 4337, j:20
+Pass: 4, L: 2.000000e+02, sumY: 5.554483e+11, fun: 4.008517e+03
+Positive: 4338
+Negative: 2730
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 284.225760 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.552462e+10, fun: 3.852402e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.090533e+11, fun: 3.844018e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 9.329250e+11, fun: 3.835849e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 6.171942e+12, fun: 3.838371e+03
+
+converged i: 4337, j:113
+Pass: 4, L: 2.000000e+02, sumY: 6.171941e+12, fun: 3.838369e+03
+Accuracy = 36.6237% (512/1398)
+Accuracy = 30.4006% (425/1398)
+acc =
+   58.9413
+auc =
+    0.6909
+!!!i = 842, acc = 58.941345, auc = 0.690930filtered features
+size of training: 7162
+Cross Validation Accuracy = 61.6169%
+Cross Validation Accuracy = 65.7358%
+Cross Validation Accuracy = 61.6448%
+Cross Validation Accuracy = 65.6241%
+Cross Validation Accuracy = 61.4493%
+Cross Validation Accuracy = 61.5331%
+Cross Validation Accuracy = 61.4354%
+Cross Validation Accuracy = 61.184%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4410
+Negative: 2752
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 291.271680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.080457e+10, fun: 3.959710e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.966723e+11, fun: 3.947743e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.038836e+11, fun: 3.964001e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.564539e+11, fun: 4.012825e+03
+
+converged i: 4409, j:20
+Pass: 4, L: 2.000000e+02, sumY: 3.564539e+11, fun: 4.012825e+03
+Positive: 4410
+Negative: 2752
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 291.271680 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.789280e+10, fun: 3.856312e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.125781e+11, fun: 3.847777e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.025270e+12, fun: 3.838269e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 7.268970e+12, fun: 3.836816e+03
+
+converged i: 4409, j:113
+Pass: 4, L: 2.000000e+02, sumY: 7.268968e+12, fun: 3.836813e+03
+Accuracy = 40.5579% (567/1398)
+Accuracy = 46.495% (650/1398)
+acc =
+   59.2275
+auc =
+    0.6909
+!!!i = 852, acc = 59.227468, auc = 0.690856filtered features
+size of training: 7227
+Cross Validation Accuracy = 61.63%
+Cross Validation Accuracy = 63.8162%
+Cross Validation Accuracy = 61.6438%
+Cross Validation Accuracy = 64.1068%
+Cross Validation Accuracy = 61.5747%
+Cross Validation Accuracy = 61.5331%
+Cross Validation Accuracy = 61.547%
+Cross Validation Accuracy = 61.4363%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-09
+Positive: 4410
+Negative: 2817
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 298.151280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.250340e+06, fun: 3.976743e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.759383e+07, fun: 3.976615e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.519268e+07, fun: 3.976746e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.154432e+07, fun: 3.977156e+01
+
+converged i: 4409, j:20
+Pass: 4, L: 2.000000e+02, sumY: 1.154432e+07, fun: 3.977156e+01
+Positive: 4410
+Negative: 2817
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 298.151280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.857217e+10, fun: 3.885763e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 6.377002e+10, fun: 3.885725e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 5.456457e+10, fun: 3.885692e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 5.384010e+10, fun: 3.885666e+06
+
+converged i: 3880, j:134
+Pass: 4, L: 2.000000e+02, sumY: 5.373329e+10, fun: 3.885663e+06
+Accuracy = 26.3948% (369/1398)
+Accuracy = 30.4721% (426/1398)
+acc =
+   36.4092
+auc =
+    0.6749
+!!!i = 862, acc = 36.409156, auc = 0.674854filtered features
+size of training: 7288
+Cross Validation Accuracy = 61.567%
+Cross Validation Accuracy = 64.6817%
+Cross Validation Accuracy = 61.567%
+Cross Validation Accuracy = 64.7366%
+Cross Validation Accuracy = 61.5395%
+Cross Validation Accuracy = 61.5944%
+Cross Validation Accuracy = 61.5258%
+Cross Validation Accuracy = 61.6493%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4410
+Negative: 2878
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 304.607520 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.474545e+06, fun: 3.976741e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.787869e+07, fun: 3.976608e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.148894e+07, fun: 3.976740e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.682259e+06, fun: 3.977133e+01
+
+converged i: 4409, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.682259e+06, fun: 3.977133e+01
+Positive: 4410
+Negative: 2878
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 304.607520 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.118526e+06, fun: 3.898850e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.078396e+07, fun: 3.898755e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.100366e+08, fun: 3.898631e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 8.661532e+08, fun: 3.898546e+01
+
+converged i: 4409, j:568
+Pass: 4, L: 2.000000e+02, sumY: 8.661525e+08, fun: 3.898546e+01
+Accuracy = 23.6052% (330/1398)
+Accuracy = 29.8283% (417/1398)
+acc =
+   58.5122
+auc =
+    0.7047
+!!!i = 872, acc = 58.512160, auc = 0.704718filtered features
+size of training: 7383
+Cross Validation Accuracy = 61.3436%
+Cross Validation Accuracy = 64.2557%
+Cross Validation Accuracy = 61.3165%
+Cross Validation Accuracy = 64.3234%
+Cross Validation Accuracy = 61.2353%
+Cross Validation Accuracy = 61.3436%
+Cross Validation Accuracy = 61.2353%
+Cross Validation Accuracy = 61.3707%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4410
+Negative: 2973
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 314.662320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 4.870032e+06, fun: 3.976737e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.859638e+07, fun: 3.976603e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.184573e+07, fun: 3.976731e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.315690e+06, fun: 3.977151e+01
+
+converged i: 4409, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.315690e+06, fun: 3.977151e+01
+Positive: 4410
+Negative: 2973
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 314.662320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.326062e+06, fun: 3.905774e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.097760e+07, fun: 3.905675e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.271268e+08, fun: 3.905533e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.029595e+09, fun: 3.905407e+01
+
+converged i: 4409, j:588
+Pass: 4, L: 2.000000e+02, sumY: 1.029595e+09, fun: 3.905407e+01
+Accuracy = 23.4621% (328/1398)
+Accuracy = 29.3991% (411/1398)
+acc =
+   58.5122
+auc =
+    0.7032
+!!!i = 882, acc = 58.512160, auc = 0.703187filtered features
+size of training: 7484
+Cross Validation Accuracy = 61.3843%
+Cross Validation Accuracy = 64.0032%
+Cross Validation Accuracy = 61.3976%
+Cross Validation Accuracy = 63.1614%
+Cross Validation Accuracy = 61.3041%
+Cross Validation Accuracy = 61.558%
+Cross Validation Accuracy = 61.3175%
+Cross Validation Accuracy = 61.4244%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4410
+Negative: 3074
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 325.352160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.219961e+10, fun: 3.958486e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.912558e+11, fun: 3.944830e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.358554e+11, fun: 3.956883e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.035258e+11, fun: 4.002382e+03
+
+converged i: 4409, j:7
+Pass: 4, L: 2.000000e+02, sumY: 1.035258e+11, fun: 4.002382e+03
+Positive: 4410
+Negative: 3074
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 325.352160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.819921e+10, fun: 3.865123e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.212940e+11, fun: 3.853802e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.682690e+12, fun: 3.840221e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.398860e+13, fun: 3.826180e+03
+
+converged i: 4409, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.398860e+13, fun: 3.826180e+03
+Accuracy = 23.4621% (328/1398)
+Accuracy = 29.1845% (408/1398)
+acc =
+   56.2947
+auc =
+    0.7055
+!!!i = 892, acc = 56.294707, auc = 0.705516filtered features
+size of training: 7568
+Cross Validation Accuracy = 61.3768%
+Cross Validation Accuracy = 63.6628%
+Cross Validation Accuracy = 61.4165%
+Cross Validation Accuracy = 63.5703%
+Cross Validation Accuracy = 61.3372%
+Cross Validation Accuracy = 61.9582%
+Cross Validation Accuracy = 61.3636%
+Cross Validation Accuracy = 61.9318%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4413
+Negative: 3155
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 334.152360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 5.712837e+10, fun: 3.959187e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.920712e+11, fun: 3.944531e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 6.605370e+11, fun: 3.955948e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.415187e+11, fun: 4.005135e+03
+
+converged i: 4412, j:7
+Pass: 4, L: 2.000000e+02, sumY: 4.415187e+11, fun: 4.005135e+03
+Positive: 4413
+Negative: 3155
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 334.152360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.247202e+10, fun: 3.864877e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.249008e+11, fun: 3.853373e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.810302e+12, fun: 3.838296e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.533103e+13, fun: 3.821808e+03
+
+converged i: 4412, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.533103e+13, fun: 3.821808e+03
+Accuracy = 23.319% (326/1398)
+Accuracy = 29.4707% (412/1398)
+acc =
+   57.5107
+auc =
+    0.7065
+!!!i = 902, acc = 57.510730, auc = 0.706541filtered features
+size of training: 7654
+Cross Validation Accuracy = 61.7194%
+Cross Validation Accuracy = 63.7053%
+Cross Validation Accuracy = 61.7063%
+Cross Validation Accuracy = 63.4701%
+Cross Validation Accuracy = 61.6018%
+Cross Validation Accuracy = 62.2681%
+Cross Validation Accuracy = 61.5887%
+Cross Validation Accuracy = 62.1505%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4476
+Negative: 3178
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 341.393472 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.064922e+10, fun: 3.957702e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.921625e+11, fun: 3.942174e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 7.399952e+11, fun: 3.952110e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 9.140235e+11, fun: 4.001078e+03
+
+converged i: 4475, j:7
+Pass: 4, L: 2.000000e+02, sumY: 9.140235e+11, fun: 4.001078e+03
+Positive: 4476
+Negative: 3178
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 341.393472 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.599692e+10, fun: 3.870474e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.227893e+11, fun: 3.858451e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.835526e+12, fun: 3.843002e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.628234e+13, fun: 3.824312e+03
+
+converged i: 4475, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.628234e+13, fun: 3.824312e+03
+Accuracy = 23.4621% (328/1398)
+Accuracy = 29.4707% (412/1398)
+acc =
+   57.0100
+auc =
+    0.7088
+!!!i = 912, acc = 57.010014, auc = 0.708782filtered features
+size of training: 7739
+Cross Validation Accuracy = 61.3387%
+Cross Validation Accuracy = 63.5612%
+Cross Validation Accuracy = 61.3516%
+Cross Validation Accuracy = 63.7679%
+Cross Validation Accuracy = 61.2611%
+Cross Validation Accuracy = 62.1915%
+Cross Validation Accuracy = 61.2482%
+Cross Validation Accuracy = 62.1527%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4543
+Negative: 3196
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 348.466272 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 6.713702e+06, fun: 3.978762e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.902821e+07, fun: 3.978597e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 9.475628e+07, fun: 3.978688e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.034515e+08, fun: 3.979148e+01
+
+converged i: 4542, j:7
+Pass: 4, L: 2.000000e+02, sumY: 2.034515e+08, fun: 3.979148e+01
+Positive: 4543
+Negative: 3196
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 348.466272 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.798194e+10, fun: 3.877785e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.190464e+11, fun: 3.865324e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.866974e+12, fun: 3.849550e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.744408e+13, fun: 3.829230e+03
+
+converged i: 4542, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.744408e+13, fun: 3.829230e+03
+Accuracy = 23.6767% (331/1398)
+Accuracy = 29.1845% (408/1398)
+acc =
+   25.4649
+auc =
+    0.8249
+!!!i = 922, acc = 25.464950, auc = 0.824881filtered features
+size of training: 7833
+Cross Validation Accuracy = 61.6239%
+Cross Validation Accuracy = 63.858%
+Cross Validation Accuracy = 61.6111%
+Cross Validation Accuracy = 63.6921%
+Cross Validation Accuracy = 61.6877%
+Cross Validation Accuracy = 61.9303%
+Cross Validation Accuracy = 61.675%
+Cross Validation Accuracy = 61.8665%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4571
+Negative: 3262
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 357.854448 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 7.324567e+10, fun: 3.964535e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.895895e+11, fun: 3.947275e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 9.658969e+11, fun: 3.955983e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.604467e+12, fun: 4.007208e+03
+
+converged i: 4570, j:7
+Pass: 4, L: 2.000000e+02, sumY: 2.604467e+12, fun: 4.007208e+03
+Positive: 4571
+Negative: 3262
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 357.854448 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.515963e+10, fun: 3.860104e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.293882e+11, fun: 3.847310e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.059425e+12, fun: 3.828799e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.958931e+13, fun: 3.805804e+03
+
+converged i: 4570, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.958931e+13, fun: 3.805804e+03
+Accuracy = 23.6767% (331/1398)
+Accuracy = 29.4707% (412/1398)
+acc =
+   56.0801
+auc =
+    0.7160
+!!!i = 932, acc = 56.080114, auc = 0.715988filtered features
+size of training: 7922
+Cross Validation Accuracy = 61.1967%
+Cross Validation Accuracy = 63.5319%
+Cross Validation Accuracy = 61.1967%
+Cross Validation Accuracy = 63.5572%
+Cross Validation Accuracy = 61.1083%
+Cross Validation Accuracy = 61.7521%
+Cross Validation Accuracy = 61.1209%
+Cross Validation Accuracy = 61.7395%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4602
+Negative: 3320
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 366.687360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.330192e+06, fun: 3.988977e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 2.412168e+07, fun: 3.988794e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 1.519078e+08, fun: 3.988888e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 5.169429e+08, fun: 3.989436e+01
+
+converged i: 4601, j:7
+Pass: 4, L: 2.000000e+02, sumY: 5.169429e+08, fun: 3.989436e+01
+Positive: 4602
+Negative: 3320
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 366.687360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.018947e+11, fun: 3.852223e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.372194e+11, fun: 3.837938e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.245421e+12, fun: 3.818961e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.168926e+13, fun: 3.794036e+03
+
+converged i: 4601, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.168926e+13, fun: 3.794036e+03
+Accuracy = 24.0343% (336/1398)
+Accuracy = 29.5422% (413/1398)
+acc =
+   24.4635
+auc =
+    0.8400
+!!!i = 942, acc = 24.463519, auc = 0.840025filtered features
+size of training: 7997
+Cross Validation Accuracy = 61.8482%
+Cross Validation Accuracy = 63.4363%
+Cross Validation Accuracy = 61.8982%
+Cross Validation Accuracy = 63.1987%
+Cross Validation Accuracy = 61.8357%
+Cross Validation Accuracy = 62.2734%
+Cross Validation Accuracy = 61.8607%
+Cross Validation Accuracy = 62.3609%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 3377
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 374.441760 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 8.770500e+10, fun: 3.971780e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.435293e+11, fun: 3.953076e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.490364e+12, fun: 3.961900e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 5.458069e+12, fun: 4.020936e+03
+
+converged i: 4619, j:7
+Pass: 4, L: 2.000000e+02, sumY: 5.458069e+12, fun: 4.020936e+03
+Positive: 4620
+Negative: 3377
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 374.441760 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.076878e+07, fun: 3.869314e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.398423e+07, fun: 3.869166e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.229905e+08, fun: 3.868925e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.142133e+09, fun: 3.868521e+01
+
+converged i: 4619, j:407
+Pass: 4, L: 2.000000e+02, sumY: 2.142132e+09, fun: 3.868521e+01
+Accuracy = 24.0343% (336/1398)
+Accuracy = 29.6853% (415/1398)
+acc =
+   68.0973
+auc =
+    0.7223
+!!!i = 952, acc = 68.097282, auc = 0.722290filtered features
+size of training: 8078
+Cross Validation Accuracy = 61.7603%
+Cross Validation Accuracy = 63.6049%
+Cross Validation Accuracy = 61.7603%
+Cross Validation Accuracy = 63.6049%
+Cross Validation Accuracy = 61.748%
+Cross Validation Accuracy = 62.1565%
+Cross Validation Accuracy = 61.7603%
+Cross Validation Accuracy = 62.0946%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4620
+Negative: 3458
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 383.423040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 9.381996e+10, fun: 3.970846e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 2.786049e+11, fun: 3.951801e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 1.787802e+12, fun: 3.960624e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 7.198770e+12, fun: 4.020961e+03
+
+converged i: 4619, j:7
+Pass: 4, L: 2.000000e+02, sumY: 7.198770e+12, fun: 4.020961e+03
+Positive: 4620
+Negative: 3458
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 383.423040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.128604e+11, fun: 3.839179e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.518004e+11, fun: 3.824172e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.567080e+12, fun: 3.802835e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.524092e+13, fun: 3.773964e+03
+
+converged i: 4619, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.524092e+13, fun: 3.773964e+03
+Accuracy = 24.392% (341/1398)
+Accuracy = 29.8999% (418/1398)
+acc =
+   54.9356
+auc =
+    0.7165
+!!!i = 962, acc = 54.935622, auc = 0.716504filtered features
+size of training: 8152
+Cross Validation Accuracy = 61.9235%
+Cross Validation Accuracy = 63.4446%
+Cross Validation Accuracy = 61.9725%
+Cross Validation Accuracy = 63.2851%
+Cross Validation Accuracy = 61.8499%
+Cross Validation Accuracy = 62.8435%
+Cross Validation Accuracy = 61.8499%
+Cross Validation Accuracy = 62.868%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 3532
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 391.628160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.008815e+11, fun: 3.969889e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 3.342494e+11, fun: 3.950247e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 2.250572e+12, fun: 3.959243e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 9.800135e+12, fun: 4.022264e+03
+
+converged i: 4619, j:7
+Pass: 4, L: 2.000000e+02, sumY: 9.800135e+12, fun: 4.022264e+03
+Positive: 4620
+Negative: 3532
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 391.628160 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.170769e+07, fun: 3.869784e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.509327e+07, fun: 3.869634e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.530714e+08, fun: 3.869355e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.558167e+09, fun: 3.868870e+01
+
+converged i: 4619, j:447
+Pass: 4, L: 2.000000e+02, sumY: 2.558167e+09, fun: 3.868870e+01
+Accuracy = 24.5351% (343/1398)
+Accuracy = 30.2575% (423/1398)
+acc =
+   67.0959
+auc =
+    0.7126
+!!!i = 972, acc = 67.095851, auc = 0.712628filtered features
+size of training: 8253
+Cross Validation Accuracy = 62.3894%
+Cross Validation Accuracy = 62.9347%
+Cross Validation Accuracy = 62.4258%
+Cross Validation Accuracy = 62.8741%
+Cross Validation Accuracy = 62.4621%
+Cross Validation Accuracy = 63.0437%
+Cross Validation Accuracy = 62.4258%
+Cross Validation Accuracy = 63.0559%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 3633
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 402.827040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.119550e+11, fun: 3.968058e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.390010e+11, fun: 3.947367e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.162458e+12, fun: 3.956262e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.411415e+13, fun: 4.025874e+03
+
+converged i: 4619, j:7
+Pass: 4, L: 2.000000e+02, sumY: 1.411415e+13, fun: 4.025874e+03
+Positive: 4620
+Negative: 3633
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 402.827040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.247456e+07, fun: 3.850167e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.593912e+07, fun: 3.850009e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.856753e+08, fun: 3.849696e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.865833e+09, fun: 3.849133e+01
+
+converged i: 4619, j:467
+Pass: 4, L: 2.000000e+02, sumY: 2.865833e+09, fun: 3.849132e+01
+Accuracy = 24.7496% (346/1398)
+Accuracy = 30.4721% (426/1398)
+acc =
+   67.0243
+auc =
+    0.7114
+!!!i = 982, acc = 67.024320, auc = 0.711416filtered features
+size of training: 8319
+Cross Validation Accuracy = 61.8824%
+Cross Validation Accuracy = 63.8418%
+Cross Validation Accuracy = 61.8824%
+Cross Validation Accuracy = 63.1807%
+Cross Validation Accuracy = 61.7983%
+Cross Validation Accuracy = 62.5195%
+Cross Validation Accuracy = 61.8103%
+Cross Validation Accuracy = 62.5796%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 3699
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 410.145120 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.158820e+11, fun: 3.967650e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 4.705303e+11, fun: 3.946833e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.462742e+12, fun: 3.955284e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 1.555952e+13, fun: 4.022279e+03
+
+converged i: 4619, j:7
+Pass: 4, L: 2.000000e+02, sumY: 1.555952e+13, fun: 4.022279e+03
+Positive: 4620
+Negative: 3699
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 410.145120 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.252042e+07, fun: 3.843467e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.514468e+07, fun: 3.843322e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 2.828329e+08, fun: 3.842990e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.793803e+09, fun: 3.842390e+01
+
+converged i: 4619, j:7
+Pass: 4, L: 2.000000e+02, sumY: 2.793803e+09, fun: 3.842390e+01
+Accuracy = 23.3906% (327/1398)
+Accuracy = 30.4721% (426/1398)
+acc =
+   66.7382
+auc =
+    0.7061
+!!!i = 992, acc = 66.738197, auc = 0.706115filtered features
+size of training: 8423
+Cross Validation Accuracy = 61.9613%
+Cross Validation Accuracy = 63.0535%
+Cross Validation Accuracy = 61.9494%
+Cross Validation Accuracy = 63.0773%
+Cross Validation Accuracy = 61.8901%
+Cross Validation Accuracy = 62.5074%
+Cross Validation Accuracy = 61.9019%
+Cross Validation Accuracy = 62.638%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 3803
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 421.676640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.274805e+07, fun: 3.993767e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 7.103914e+07, fun: 3.993547e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.627500e+08, fun: 3.993624e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.518621e+09, fun: 3.994291e+01
+
+converged i: 4619, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.518621e+09, fun: 3.994291e+01
+Positive: 4620
+Negative: 3803
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 421.676640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.299324e+07, fun: 3.832134e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.395208e+07, fun: 3.831976e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.022537e+08, fun: 3.831607e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.031634e+09, fun: 3.831053e+01
+
+converged i: 4619, j:1092
+Pass: 4, L: 2.000000e+02, sumY: 3.031628e+09, fun: 3.831053e+01
+Accuracy = 40.4864% (566/1398)
+Accuracy = 30.8298% (431/1398)
+acc =
+   54.5064
+auc =
+    0.6942
+!!!i = 1002, acc = 54.506438, auc = 0.694237filtered features
+size of training: 8522
+Cross Validation Accuracy = 62.0512%
+Cross Validation Accuracy = 62.0394%
+Cross Validation Accuracy = 62.0512%
+Cross Validation Accuracy = 62.7318%
+Cross Validation Accuracy = 61.8751%
+Cross Validation Accuracy = 62.7552%
+Cross Validation Accuracy = 61.8634%
+Cross Validation Accuracy = 62.7435%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4620
+Negative: 3902
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 432.653760 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.376403e+07, fun: 3.993758e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.022240e+08, fun: 3.993526e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 7.738078e+08, fun: 3.993597e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.612784e+09, fun: 3.994276e+01
+
+converged i: 4619, j:0
+Pass: 4, L: 2.000000e+02, sumY: 3.612784e+09, fun: 3.994276e+01
+Positive: 4620
+Negative: 3902
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 432.653760 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.360805e+11, fun: 3.800128e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.433267e+11, fun: 3.783601e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.588071e+12, fun: 3.752189e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.478931e+13, fun: 3.727464e+03
+
+converged i: 4619, j:1122
+Pass: 4, L: 2.000000e+02, sumY: 3.478915e+13, fun: 3.727468e+03
+Accuracy = 26.3948% (369/1398)
+Accuracy = 31.4735% (440/1398)
+acc =
+   25.7511
+auc =
+    0.8339
+!!!i = 1012, acc = 25.751073, auc = 0.833889filtered features
+size of training: 8607
+Cross Validation Accuracy = 62.4492%
+Cross Validation Accuracy = 61.2873%
+Cross Validation Accuracy = 62.4608%
+Cross Validation Accuracy = 61.4732%
+Cross Validation Accuracy = 62.4143%
+Cross Validation Accuracy = 62.7745%
+Cross Validation Accuracy = 62.4259%
+Cross Validation Accuracy = 62.8791%
+bestcmd1: -s 2 -c 0.0001 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 3987
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 442.078560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.454201e+07, fun: 3.994030e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 1.445454e+07, fun: 3.994030e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 1.418501e+07, fun: 3.994029e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 1.331936e+07, fun: 3.994029e+04
+
+converged i: 4619, j:176
+Pass: 4, L: 2.000000e+02, sumY: 1.331936e+07, fun: 3.994029e+04
+Positive: 4620
+Negative: 3987
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 442.078560 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.427963e+07, fun: 3.821353e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.380452e+07, fun: 3.821176e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.501318e+08, fun: 3.820746e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.415485e+09, fun: 3.819986e+01
+
+converged i: 4619, j:1148
+Pass: 4, L: 2.000000e+02, sumY: 3.415482e+09, fun: 3.819986e+01
+Accuracy = 25.8941% (362/1398)
+Accuracy = 27.1102% (379/1398)
+acc =
+   53.2904
+auc =
+    0.6760
+!!!i = 1022, acc = 53.290415, auc = 0.675986filtered features
+size of training: 8665
+Cross Validation Accuracy = 62.6774%
+Cross Validation Accuracy = 61.0271%
+Cross Validation Accuracy = 62.6544%
+Cross Validation Accuracy = 60.8425%
+Cross Validation Accuracy = 62.6197%
+Cross Validation Accuracy = 63.3814%
+Cross Validation Accuracy = 62.6197%
+Cross Validation Accuracy = 63.3006%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4620
+Negative: 4045
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 448.509600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.506504e+11, fun: 3.994029e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.497021e+11, fun: 3.993969e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.466871e+11, fun: 3.993910e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.371981e+11, fun: 3.993863e+06
+
+converged i: 4619, j:1409
+Pass: 4, L: 2.000000e+02, sumY: 1.371981e+11, fun: 3.993863e+06
+Positive: 4620
+Negative: 4045
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 448.509600 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.469458e+11, fun: 3.802637e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.518780e+11, fun: 3.784677e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 3.935356e+12, fun: 3.748638e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.696844e+13, fun: 3.727413e+03
+
+converged i: 4619, j:1175
+Pass: 4, L: 2.000000e+02, sumY: 3.696781e+13, fun: 3.727424e+03
+Accuracy = 27.4678% (384/1398)
+Accuracy = 27.5393% (385/1398)
+acc =
+   52.5751
+auc =
+    0.6844
+!!!i = 1032, acc = 52.575107, auc = 0.684352filtered features
+size of training: 8753
+Cross Validation Accuracy = 62.6642%
+Cross Validation Accuracy = 60.6535%
+Cross Validation Accuracy = 62.6642%
+Cross Validation Accuracy = 62.0016%
+Cross Validation Accuracy = 62.5157%
+Cross Validation Accuracy = 63.1669%
+Cross Validation Accuracy = 62.5271%
+Cross Validation Accuracy = 63.0755%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4620
+Negative: 4133
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 458.267040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.636620e+11, fun: 3.994029e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.624531e+11, fun: 3.993965e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.581093e+11, fun: 3.993900e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.466213e+11, fun: 3.993852e+06
+
+converged i: 4615, j:47
+Pass: 4, L: 2.000000e+02, sumY: 1.466172e+11, fun: 3.993852e+06
+Positive: 4620
+Negative: 4133
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 458.267040 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.556470e+11, fun: 3.798636e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.610810e+11, fun: 3.779078e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.271405e+12, fun: 3.739366e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.990881e+13, fun: 3.727771e+03
+
+converged i: 4618, j:6
+Pass: 4, L: 2.000000e+02, sumY: 3.990381e+13, fun: 3.727837e+03
+Accuracy = 28.4692% (398/1398)
+Accuracy = 27.9685% (391/1398)
+acc =
+   53.3619
+auc =
+    0.6878
+!!!i = 1042, acc = 53.361946, auc = 0.687759filtered features
+size of training: 8834
+Cross Validation Accuracy = 62.599%
+Cross Validation Accuracy = 61.9878%
+Cross Validation Accuracy = 62.599%
+Cross Validation Accuracy = 61.8519%
+Cross Validation Accuracy = 62.6556%
+Cross Validation Accuracy = 63.9348%
+Cross Validation Accuracy = 62.6443%
+Cross Validation Accuracy = 63.8329%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4620
+Negative: 4214
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 467.248320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.711338e+11, fun: 3.994030e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 1.697942e+11, fun: 3.993963e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.647864e+11, fun: 3.993897e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.523299e+11, fun: 3.993848e+06
+
+converged i: 4619, j:47
+Pass: 4, L: 2.000000e+02, sumY: 1.523299e+11, fun: 3.993848e+06
+Positive: 4620
+Negative: 4214
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 467.248320 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.618680e+11, fun: 3.804083e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.576483e+11, fun: 3.784062e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.355010e+12, fun: 3.742401e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.048110e+13, fun: 3.733021e+03
+
+converged i: 4618, j:6
+Pass: 4, L: 2.000000e+02, sumY: 4.047572e+13, fun: 3.733095e+03
+Accuracy = 28.6838% (401/1398)
+Accuracy = 28.3977% (397/1398)
+acc =
+   54.7926
+auc =
+    0.6942
+!!!i = 1052, acc = 54.792561, auc = 0.694245filtered features
+size of training: 8923
+Cross Validation Accuracy = 62.748%
+Cross Validation Accuracy = 61.8962%
+Cross Validation Accuracy = 62.7816%
+Cross Validation Accuracy = 61.829%
+Cross Validation Accuracy = 62.8488%
+Cross Validation Accuracy = 63.6109%
+Cross Validation Accuracy = 62.8376%
+Cross Validation Accuracy = 63.779%
+bestcmd1: -s 2 -c 0.0001 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 4303
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 477.116640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.803369e+07, fun: 3.994030e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 1.788621e+07, fun: 3.994030e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 1.731856e+07, fun: 3.994029e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 1.598593e+07, fun: 3.994028e+04
+
+converged i: 4619, j:3133
+Pass: 4, L: 2.000000e+02, sumY: 1.598593e+07, fun: 3.994028e+04
+Positive: 4620
+Negative: 4303
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 477.116640 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.685771e+07, fun: 3.836017e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.423255e+07, fun: 3.835807e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.145899e+08, fun: 3.835284e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.984506e+09, fun: 3.834230e+01
+
+converged i: 4619, j:1261
+Pass: 4, L: 2.000000e+02, sumY: 3.984482e+09, fun: 3.834230e+01
+Accuracy = 27.2532% (381/1398)
+Accuracy = 28.6838% (401/1398)
+acc =
+   57.8684
+auc =
+    0.7051
+!!!i = 1062, acc = 57.868383, auc = 0.705060filtered features
+size of training: 9000
+Cross Validation Accuracy = 63.0667%
+Cross Validation Accuracy = 59.7444%
+Cross Validation Accuracy = 63.0889%
+Cross Validation Accuracy = 59.7889%
+Cross Validation Accuracy = 63.1444%
+Cross Validation Accuracy = 64.1%
+Cross Validation Accuracy = 63.1333%
+Cross Validation Accuracy = 64.1%
+bestcmd1: -s 2 -c 0.0001 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4620
+Negative: 4380
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 485.654400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.907136e+07, fun: 3.994030e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 1.890502e+07, fun: 3.994030e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 1.822033e+07, fun: 3.994029e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 1.677593e+07, fun: 3.994028e+04
+
+converged i: 4619, j:2237
+Pass: 4, L: 2.000000e+02, sumY: 1.677592e+07, fun: 3.994028e+04
+Positive: 4620
+Negative: 4380
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 485.654400 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.739993e+11, fun: 3.799659e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.548771e+11, fun: 3.778186e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.401001e+12, fun: 3.734344e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.190158e+13, fun: 3.731096e+03
+
+converged i: 4618, j:8
+Pass: 4, L: 2.000000e+02, sumY: 4.189638e+13, fun: 3.731192e+03
+Accuracy = 28.3977% (397/1398)
+Accuracy = 28.8984% (404/1398)
+acc =
+   30.9013
+auc =
+    0.8125
+!!!i = 1072, acc = 30.901288, auc = 0.812535filtered features
+size of training: 9105
+Cross Validation Accuracy = 63.0533%
+Cross Validation Accuracy = 59.0115%
+Cross Validation Accuracy = 63.0533%
+Cross Validation Accuracy = 58.9676%
+Cross Validation Accuracy = 63.0093%
+Cross Validation Accuracy = 64.4591%
+Cross Validation Accuracy = 63.0093%
+Cross Validation Accuracy = 64.5799%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 4485
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 497.296800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.066726e+11, fun: 3.994028e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.047324e+11, fun: 3.993953e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 1.962283e+11, fun: 3.993876e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.803288e+11, fun: 3.993824e+06
+
+converged i: 4619, j:2287
+Pass: 4, L: 2.000000e+02, sumY: 1.803288e+11, fun: 3.993824e+06
+Positive: 4620
+Negative: 4485
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 497.296800 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.843300e+07, fun: 3.824985e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.411830e+07, fun: 3.824753e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.516468e+08, fun: 3.824153e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.237646e+09, fun: 3.822892e+01
+
+converged i: 4618, j:6
+Pass: 4, L: 2.000000e+02, sumY: 4.237215e+09, fun: 3.822891e+01
+Accuracy = 28.8269% (403/1398)
+Accuracy = 29.3276% (410/1398)
+acc =
+   64.9499
+auc =
+    0.7170
+!!!i = 1082, acc = 64.949928, auc = 0.716969filtered features
+size of training: 9195
+Cross Validation Accuracy = 62.9473%
+Cross Validation Accuracy = 61.3268%
+Cross Validation Accuracy = 62.9473%
+Cross Validation Accuracy = 61.3921%
+Cross Validation Accuracy = 62.9799%
+Cross Validation Accuracy = 64.5568%
+Cross Validation Accuracy = 62.9908%
+Cross Validation Accuracy = 64.5677%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4620
+Negative: 4575
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 507.276000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.215292e+11, fun: 3.994028e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.192806e+11, fun: 3.993948e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.087813e+11, fun: 3.993870e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 1.916406e+11, fun: 3.993815e+06
+
+converged i: 4619, j:2596
+Pass: 4, L: 2.000000e+02, sumY: 1.916406e+11, fun: 3.993815e+06
+Positive: 4620
+Negative: 4575
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 507.276000 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.936334e+07, fun: 3.817129e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.393089e+07, fun: 3.816889e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.647396e+08, fun: 3.816261e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.224157e+09, fun: 3.814910e+01
+
+converged i: 4619, j:2524
+Pass: 4, L: 2.000000e+02, sumY: 4.223880e+09, fun: 3.814909e+01
+Accuracy = 29.3991% (411/1398)
+Accuracy = 29.6853% (415/1398)
+acc =
+   65.7368
+auc =
+    0.7263
+!!!i = 1092, acc = 65.736767, auc = 0.726344filtered features
+size of training: 9246
+Cross Validation Accuracy = 62.7623%
+Cross Validation Accuracy = 61.6591%
+Cross Validation Accuracy = 62.7839%
+Cross Validation Accuracy = 63.952%
+Cross Validation Accuracy = 62.8704%
+Cross Validation Accuracy = 64.5252%
+Cross Validation Accuracy = 62.8812%
+Cross Validation Accuracy = 64.5144%
+bestcmd1: -s 2 -c 0.0001 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4624
+Negative: 4622
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 512.931072 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.357018e+07, fun: 3.995189e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 4.512532e+08, fun: 3.994801e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.667338e+09, fun: 3.994550e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 1.764811e+10, fun: 3.994332e+01
+
+converged i: 4623, j:0
+Pass: 4, L: 2.000000e+02, sumY: 1.764811e+10, fun: 3.994332e+01
+Positive: 4624
+Negative: 4622
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 512.931072 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 1.958868e+11, fun: 3.790789e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.488658e+11, fun: 3.767840e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.724859e+12, fun: 3.721272e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.232798e+13, fun: 3.712351e+03
+
+converged i: 4623, j:11
+Pass: 4, L: 2.000000e+02, sumY: 4.232798e+13, fun: 3.712352e+03
+Accuracy = 43.3476% (606/1398)
+Accuracy = 32.6896% (457/1398)
+acc =
+   34.9070
+auc =
+    0.7774
+!!!i = 1102, acc = 34.907010, auc = 0.777385filtered features
+size of training: 9341
+Cross Validation Accuracy = 62.9804%
+Cross Validation Accuracy = 61.4709%
+Cross Validation Accuracy = 62.9804%
+Cross Validation Accuracy = 59.2442%
+Cross Validation Accuracy = 63.0446%
+Cross Validation Accuracy = 64.6826%
+Cross Validation Accuracy = 63.0446%
+Cross Validation Accuracy = 64.6826%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4672
+Negative: 4669
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 523.525632 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.372424e+11, fun: 3.999569e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.347516e+11, fun: 3.999486e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.228526e+11, fun: 3.999405e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.046522e+11, fun: 3.999349e+06
+
+converged i: 4671, j:2656
+Pass: 4, L: 2.000000e+02, sumY: 2.046522e+11, fun: 3.999349e+06
+Positive: 4672
+Negative: 4669
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 523.525632 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.028381e+11, fun: 3.781021e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.490377e+11, fun: 3.757778e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.691645e+12, fun: 3.708275e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 4.093169e+13, fun: 3.702752e+03
+
+converged i: 4671, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.093169e+13, fun: 3.702752e+03
+Accuracy = 26.1087% (365/1398)
+Accuracy = 29.7568% (416/1398)
+acc =
+   61.4449
+auc =
+    0.7350
+!!!i = 1112, acc = 61.444921, auc = 0.734971filtered features
+size of training: 9433
+Cross Validation Accuracy = 62.9704%
+Cross Validation Accuracy = 61.5287%
+Cross Validation Accuracy = 62.981%
+Cross Validation Accuracy = 61.4333%
+Cross Validation Accuracy = 63.0446%
+Cross Validation Accuracy = 64.3274%
+Cross Validation Accuracy = 63.0552%
+Cross Validation Accuracy = 64.3274%
+bestcmd1: -s 2 -c 0.0001 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4723
+Negative: 4710
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 533.887920 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.505176e+07, fun: 4.005172e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 2.477148e+07, fun: 4.005171e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 2.338062e+07, fun: 4.005170e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 2.147793e+07, fun: 4.005170e+04
+
+converged i: 4722, j:2755
+Pass: 4, L: 2.000000e+02, sumY: 2.147792e+07, fun: 4.005170e+04
+Positive: 4723
+Negative: 4710
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 533.887920 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.069316e+11, fun: 3.775608e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.660852e+11, fun: 3.751996e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.799700e+12, fun: 3.699703e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.986878e+13, fun: 3.711273e+03
+
+converged i: 4722, j:11
+Pass: 4, L: 2.000000e+02, sumY: 3.986878e+13, fun: 3.711274e+03
+Accuracy = 43.133% (603/1398)
+Accuracy = 49.6423% (694/1398)
+acc =
+   35.0501
+auc =
+    0.7703
+!!!i = 1122, acc = 35.050072, auc = 0.770311filtered features
+size of training: 9538
+Cross Validation Accuracy = 63.1893%
+Cross Validation Accuracy = 58.8278%
+Cross Validation Accuracy = 63.1893%
+Cross Validation Accuracy = 58.6286%
+Cross Validation Accuracy = 63.1789%
+Cross Validation Accuracy = 64.7515%
+Cross Validation Accuracy = 63.1789%
+Cross Validation Accuracy = 64.8983%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4765
+Negative: 4773
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 545.840280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.725176e+11, fun: 4.004859e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.692841e+11, fun: 4.004767e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.519945e+11, fun: 4.004683e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.313547e+11, fun: 4.004621e+06
+
+converged i: 4764, j:2789
+Pass: 4, L: 2.000000e+02, sumY: 2.313546e+11, fun: 4.004621e+06
+Positive: 4765
+Negative: 4773
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 545.840280 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.190175e+07, fun: 3.799594e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.676986e+07, fun: 3.799325e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.245581e+08, fun: 3.798522e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.466192e+09, fun: 3.796767e+01
+
+converged i: 4764, j:1410
+Pass: 4, L: 2.000000e+02, sumY: 4.466136e+09, fun: 3.796767e+01
+Accuracy = 28.5408% (399/1398)
+Accuracy = 29.5422% (413/1398)
+acc =
+   66.0944
+auc =
+    0.7318
+!!!i = 1132, acc = 66.094421, auc = 0.731815filtered features
+size of training: 9594
+Cross Validation Accuracy = 63.1957%
+Cross Validation Accuracy = 58.9222%
+Cross Validation Accuracy = 63.1957%
+Cross Validation Accuracy = 61.3404%
+Cross Validation Accuracy = 63.1645%
+Cross Validation Accuracy = 64.6863%
+Cross Validation Accuracy = 63.1645%
+Cross Validation Accuracy = 64.7071%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4799
+Negative: 4795
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 552.268920 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.800734e+11, fun: 4.009401e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 2.766843e+11, fun: 4.009308e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 2.582270e+11, fun: 4.009223e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.369920e+11, fun: 4.009161e+06
+
+converged i: 4798, j:2806
+Pass: 4, L: 2.000000e+02, sumY: 2.369919e+11, fun: 4.009161e+06
+Positive: 4799
+Negative: 4795
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 552.268920 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.229359e+07, fun: 3.804149e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.733496e+07, fun: 3.803874e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 5.372549e+08, fun: 3.803055e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 4.690574e+09, fun: 3.801273e+01
+
+converged i: 4798, j:0
+Pass: 4, L: 2.000000e+02, sumY: 4.690574e+09, fun: 3.801273e+01
+Accuracy = 27.8255% (389/1398)
+Accuracy = 29.5422% (413/1398)
+acc =
+   66.0944
+auc =
+    0.7301
+!!!i = 1142, acc = 66.094421, auc = 0.730148filtered features
+size of training: 9672
+Cross Validation Accuracy = 63.2651%
+Cross Validation Accuracy = 64.206%
+Cross Validation Accuracy = 63.2651%
+Cross Validation Accuracy = 64.206%
+Cross Validation Accuracy = 63.4822%
+Cross Validation Accuracy = 64.8883%
+Cross Validation Accuracy = 63.4926%
+Cross Validation Accuracy = 64.8263%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4834
+Negative: 4838
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 561.285408 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.599258e+11, fun: 3.971254e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 5.029838e+12, fun: 3.926725e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.902587e+13, fun: 3.877367e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 2.604807e+14, fun: 3.797588e+03
+
+converged i: 4833, j:1
+Pass: 4, L: 2.000000e+02, sumY: 2.604807e+14, fun: 3.797588e+03
+Positive: 4834
+Negative: 4838
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 561.285408 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.206481e+11, fun: 3.760714e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.314409e+11, fun: 3.736114e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.021381e+12, fun: 3.676165e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.197751e+13, fun: 3.709441e+03
+
+converged i: 4833, j:13
+Pass: 4, L: 2.000000e+02, sumY: 3.197751e+13, fun: 3.709442e+03
+Accuracy = 27.5393% (385/1398)
+Accuracy = 33.4049% (467/1398)
+acc =
+   54.3634
+auc =
+    0.7231
+!!!i = 1152, acc = 54.363376, auc = 0.723093filtered features
+size of training: 9779
+Cross Validation Accuracy = 63.3398%
+Cross Validation Accuracy = 64.209%
+Cross Validation Accuracy = 63.3705%
+Cross Validation Accuracy = 64.0761%
+Cross Validation Accuracy = 63.4625%
+Cross Validation Accuracy = 64.843%
+Cross Validation Accuracy = 63.4625%
+Cross Validation Accuracy = 64.8942%
+bestcmd1: -s 2 -c 0.01 -p 1e-06
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4864
+Negative: 4915
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 573.757440 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.669614e+11, fun: 3.971173e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 5.435081e+12, fun: 3.924452e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 5.478119e+13, fun: 3.863979e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.047991e+14, fun: 3.758779e+03
+
+converged i: 4863, j:1
+Pass: 4, L: 2.000000e+02, sumY: 3.047991e+14, fun: 3.758779e+03
+Positive: 4864
+Negative: 4915
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 573.757440 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.393219e+07, fun: 3.776729e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.282663e+07, fun: 3.776459e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.059321e+08, fun: 3.775572e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.158246e+09, fun: 3.773679e+01
+
+converged i: 4863, j:1315
+Pass: 4, L: 2.000000e+02, sumY: 3.158201e+09, fun: 3.773679e+01
+Accuracy = 28.8269% (403/1398)
+Accuracy = 34.3348% (480/1398)
+acc =
+   61.6595
+auc =
+    0.7250
+!!!i = 1162, acc = 61.659514, auc = 0.724953filtered features
+size of training: 9875
+Cross Validation Accuracy = 63.5646%
+Cross Validation Accuracy = 58.7646%
+Cross Validation Accuracy = 63.5646%
+Cross Validation Accuracy = 58.7241%
+Cross Validation Accuracy = 63.5342%
+Cross Validation Accuracy = 65.1038%
+Cross Validation Accuracy = 63.5342%
+Cross Validation Accuracy = 65.0228%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.01 -p 1e-06
+Positive: 4906
+Negative: 4969
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 585.069936 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.379075e+11, fun: 4.014936e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 3.330754e+11, fun: 4.014829e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 3.053535e+11, fun: 4.014737e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.790788e+11, fun: 4.014668e+06
+
+converged i: 4905, j:2552
+Pass: 4, L: 2.000000e+02, sumY: 2.790787e+11, fun: 4.014668e+06
+Positive: 4906
+Negative: 4969
+C_r: 1.000000e-02, C_c: 1.000000e-06
+eps: 0.010000
+allocated 585.069936 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.456244e+11, fun: 3.732962e+03
+
+Pass: 1, L: 2.000000e+02, sumY: 1.237654e+11, fun: 3.706722e+03
+
+Pass: 2, L: 2.000000e+02, sumY: 4.166908e+12, fun: 3.640601e+03
+
+Pass: 3, L: 2.000000e+02, sumY: 3.012832e+13, fun: 3.688761e+03
+
+converged i: 4905, j:1200
+Pass: 4, L: 2.000000e+02, sumY: 3.012828e+13, fun: 3.688797e+03
+Accuracy = 28.0401% (392/1398)
+Accuracy = 49.3562% (690/1398)
+acc =
+   62.0887
+auc =
+    0.7357
+!!!i = 1172, acc = 62.088698, auc = 0.735695filtered features
+size of training: 9961
+Cross Validation Accuracy = 63.3571%
+Cross Validation Accuracy = 58.9298%
+Cross Validation Accuracy = 63.3671%
+Cross Validation Accuracy = 58.7893%
+Cross Validation Accuracy = 63.4274%
+Cross Validation Accuracy = 65.0336%
+Cross Validation Accuracy = 63.4274%
+Cross Validation Accuracy = 65.1139%
+bestcmd1: -s 2 -c 0.0001 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 4965
+Negative: 4996
+C_r: 1.000000e-04, C_c: 1.000000e-09
+eps: 0.010000
+allocated 595.323360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.454691e+07, fun: 4.006294e+04
+
+Pass: 1, L: 2.000000e+02, sumY: 3.405180e+07, fun: 4.006292e+04
+
+Pass: 2, L: 2.000000e+02, sumY: 3.123801e+07, fun: 4.006292e+04
+
+Pass: 3, L: 2.000000e+02, sumY: 2.852250e+07, fun: 4.006291e+04
+
+converged i: 4964, j:2573
+Pass: 4, L: 2.000000e+02, sumY: 2.852249e+07, fun: 4.006291e+04
+Positive: 4965
+Negative: 4996
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 595.323360 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.643775e+07, fun: 3.772899e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.170203e+07, fun: 3.772621e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 4.156127e+08, fun: 3.771677e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 3.238885e+09, fun: 3.769705e+01
+
+converged i: 4964, j:11
+Pass: 4, L: 2.000000e+02, sumY: 3.238885e+09, fun: 3.769705e+01
+Accuracy = 27.6109% (386/1398)
+Accuracy = 29.3276% (410/1398)
+acc =
+   62.0172
+auc =
+    0.7361
+!!!i = 1182, acc = 62.017167, auc = 0.736115filtered features
+size of training: 10032
+Cross Validation Accuracy = 63.3473%
+Cross Validation Accuracy = 61.9916%
+Cross Validation Accuracy = 63.3473%
+Cross Validation Accuracy = 62.0813%
+Cross Validation Accuracy = 63.3772%
+Cross Validation Accuracy = 65.1216%
+Cross Validation Accuracy = 63.3672%
+Cross Validation Accuracy = 65.2014%
+bestcmd1: -s 2 -c 0.01 -p 1e-09
+bestcmd2: -s 2 -c 0.0001 -p 1e-06
+Positive: 5016
+Negative: 5016
+C_r: 1.000000e-02, C_c: 1.000000e-09
+eps: 0.010000
+allocated 603.846144 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 3.513654e+11, fun: 3.998169e+06
+
+Pass: 1, L: 2.000000e+02, sumY: 3.464931e+11, fun: 3.998062e+06
+
+Pass: 2, L: 2.000000e+02, sumY: 3.188876e+11, fun: 3.997968e+06
+
+Pass: 3, L: 2.000000e+02, sumY: 2.909057e+11, fun: 3.997898e+06
+
+converged i: 5015, j:2589
+Pass: 4, L: 2.000000e+02, sumY: 2.909056e+11, fun: 3.997898e+06
+Positive: 5016
+Negative: 5016
+C_r: 1.000000e-04, C_c: 1.000000e-06
+eps: 0.010000
+allocated 603.846144 MB
+
+Pass: 0, L: 2.000000e+02, sumY: 2.684431e+07, fun: 3.778398e+01
+
+Pass: 1, L: 2.000000e+02, sumY: 1.042476e+07, fun: 3.778130e+01
+
+Pass: 2, L: 2.000000e+02, sumY: 3.876098e+08, fun: 3.777207e+01
+
+Pass: 3, L: 2.000000e+02, sumY: 2.831915e+09, fun: 3.775413e+01
+
+converged i: 5015, j:0
+Pass: 4, L: 2.000000e+02, sumY: 2.831915e+09, fun: 3.775413e+01
+Accuracy = 27.1817% (380/1398)
+Accuracy = 29.3991% (411/1398)
+acc =
+   66.3090
+auc =
+    0.7354
+!!!i = 1192, acc = 66.309013, auc = 0.735426

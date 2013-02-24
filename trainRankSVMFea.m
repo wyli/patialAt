@@ -1,5 +1,5 @@
 function [acc, nr_points] = trainRankSVMFea(schemeInd)
-%matlabpool 4;
+matlabpool 4;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/dropbox/libr/matlab'));

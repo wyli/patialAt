@@ -1,5 +1,5 @@
 function [acc, nr_points] = trainRankSVM(schemeInd)
-matlabpool 4;
+%matlabpool 4;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/dropbox/libr/matlab'));
@@ -35,7 +35,7 @@ acc = [];
 scores = [];
 nr_points = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-parfor j = 1:length(2:10:total)%2:1:120
+for j = 1:length(2:10:total)%2:1:120
      indexes=2:10:total;
      i = indexes(j);
 %for i = total

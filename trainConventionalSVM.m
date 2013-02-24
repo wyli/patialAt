@@ -1,8 +1,9 @@
 function [acc,nr_points]  = trainConventionalSVM(schemeInd)
-
+RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/desktop/liblinear-1.93/matlab'));
 load('../../exparam.mat');
+which train
 
 trainInd = allInd(:, ~testScheme(schemeInd, :));
 trainInd = trainInd(:);
@@ -44,21 +45,24 @@ function [acc, auc, scores] = expConventionalSVM(...
 
 accnow = 0;
 bestcmd = [];
-for log10c = 7:-1:-7
+for log10c = -4:-1:-10
     cmd = ['-s 2 -c ', num2str(10^log10c)];
-    acc = train(sparse(y), sparse(featureSet), [cmd ' -v 3 -q']);
-    if (acc >= accnow)
+    modelnow = train(sparse(y), sparse(featureSet), [cmd ' -q']);
+    [~, ~, scores] = predict(sparse(y), sparse(featureSet), modelnow, [' -q']);
+    scores(isnan(scores)) = 0;
+    [~, ~, ~, auc] = perfcurve(y, scores, '1');
+    if (auc > accnow && sum(modelnow.w) ~= 0)
         bestcmd = cmd;
-        accnow = acc;
+        accnow = auc;
     end
 end
-fprintf('training auc: %f cmd: %s\n', acc, bestcmd);
-modelbest = train(sparse(y), sparse(featureSet), bestcmd);
+fprintf('training auc: %f cmd: %s\n', auc, bestcmd);
+modelbest = train(sparse(y), sparse(featureSet), [bestcmd ' -q']);
 clear y log10e tempmodel scores auc aucnow cmd featureSet bestcmd
 
 [~, acc, scores] = predict(sparse(testY), sparse(feaTest), modelbest);
 try
-    [~, ~, ~, auc] = perfcurve(testY, scores, 1);
+    [~, ~, ~, auc] = perfcurve(testY, scores, 1)
 catch
     auc = 0;
 end

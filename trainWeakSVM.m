@@ -75,21 +75,23 @@ function [acc, auc, scores] = expConventionalSVM(...
 fprintf('size of training: %d\n', size(featureSet, 1));
 accnow = 0;
 bestcmd = [];
-for log10c = 7:-1:-7
+for log10c = -5:-1:-11
     cmd = ['-s 2 -c ', num2str(10^log10c)];
-    acc = train(sparse(y), sparse(featureSet), [cmd ' -v 3 -q']);
-    if (acc > accnow)
+    modelnow = train(sparse(y), sparse(featureSet), [cmd ' -q']);
+    [~, ~, scores] = predict(sparse(y), sparse(featureSet), modelnow, [' -q']);
+    [~, ~, ~, auc] = perfcurve(y, scores, 1);
+    if (auc > accnow && sum(modelnow.w) ~= 0)
         bestcmd = cmd;
-        accnow = acc;
+        accnow = auc;
     end
 end
-fprintf('training acc: %f cmd: %s\n', acc(1), bestcmd);
-modelbest = train(sparse(y), sparse(featureSet), bestcmd);
+fprintf('training acc: %f cmd: %s\n', auc, bestcmd);
+modelbest = train(sparse(y), sparse(featureSet), [bestcmd '-q']);
 clear y log10e tempmodel scores aucnow cmd featureSet bestcmd
 
 [~, acc, scores] = predict(sparse(testY), sparse(feaTest), modelbest);
 try
-    [~, ~, ~, auc] = perfcurve(testY, scores, '1');
+    [~, ~, ~, auc] = perfcurve(testY, scores, 1)
 catch
     auc = 0;
 end

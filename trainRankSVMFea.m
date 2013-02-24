@@ -1,5 +1,5 @@
-function [acc, nr_points] = trainRankSVM(schemeInd)
-matlabpool 4;
+function [acc, nr_points] = trainRankSVMFea(schemeInd)
+%matlabpool 4;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/dropbox/libr/matlab'));
@@ -48,9 +48,15 @@ parfor j = 1:length(2:10:total)%2:1:120
     acc = [acc, accs];
     scores = [scores, score_column];
     nr_points = [nr_points, i];
+    fprintf('!!!i = %d, acc = %f, auc = %f', i, accs, aucs);
+    isave(['scores', num2str(i)], score_column, i);
 end
 save('rankSVM', 'acc', 'auc', 'nr_points', 'scores');
 end %end of trainweakSVMfunction
+
+function isave(name, x, i)
+    save(name, 'x', 'i');
+end
 
 function [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
@@ -78,12 +84,12 @@ fprintf('size of training: %d\n', size(featureSet, 1));
 facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
-for log10c = [-16, -12]
-    for log10p = [-18, -16, -14]
+for log10c = [-2, -4]
+    for log10p = [-9, -6]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y<0) = -facty;
-        acc = train1(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
+        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
         if (acc > accnow)
             bestcmd = cmd;
             accnow = acc;
@@ -92,12 +98,12 @@ for log10c = [-16, -12]
 end
 accnow = 0;
 bestcmd2 = [];
-for log10c = [-16, -12]
-    for log10p = [-18, -16, -14]
+for log10c = [-2, -4]
+    for log10p = [-9, -6]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y>0) = facty;
-        acc = train1(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
+        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
         if (acc > accnow)
             bestcmd2 = cmd;
             accnow = acc;
@@ -109,19 +115,19 @@ fprintf('bestcmd1: %s\n', bestcmd);
 fprintf('bestcmd2: %s\n', bestcmd2);
 tempy = y;
 tempy(y<0) = -1;
-modelpos = train1(sparse(tempy), sparse(featureSet), bestcmd);
+modelpos = train(sparse(tempy), sparse(featureSet), bestcmd);
 tempy = y;
 tempy(y>0) = 1;
-modelneg = train1(sparse(tempy), sparse(featureSet), bestcmd2);
+modelneg = train(sparse(tempy), sparse(featureSet), bestcmd2);
 clear y featureSet cmd bestcmd
 
-testY = (testY > 0);
-[~, ~, scoresneg] = predict1(sparse(testY), sparse(feaTest), modelneg);
-[~, ~, scorespos] = predict1(sparse(testY), sparse(feaTest), modelpos);
+testY = double(testY > 0);
+[~, ~, scoresneg] = predict(sparse(testY), sparse(feaTest), modelneg);
+[~, ~, scorespos] = predict(sparse(testY), sparse(feaTest), modelpos);
 [scores, labels] = max([scoresneg, scorespos], [], 2);
 labels = labels - 1;
 prelabels = (labels == testY);
-acc = 100 * sum(prelabels) / length(prelabels);
+acc = 100 * sum(prelabels) / length(prelabels)
 try
     [~, ~, ~, auc] = perfcurve(testY, scores, '1')
 catch
@@ -170,7 +176,7 @@ features = feaHigh';
 
 y = zeros(size(yHigh))';
 if radius > -1
-    feadists = exp(feadists/std(feadists)) - 0.5;
+    feadists = exp(feadists/std(feadists));
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')

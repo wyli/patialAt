@@ -1,5 +1,5 @@
 function [acc, nr_points] = trainRankSVM(schemeInd)
-%matlabpool 4;
+matlabpool 4;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/dropbox/libr/matlab'));
@@ -35,10 +35,10 @@ acc = [];
 scores = [];
 nr_points = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-% for j = 1:length(2:10:total)%2:1:120
-%     indexes=2:10:total;
-%     i = indexes(j);
-for i = total
+parfor j = 1:length(2:10:total)%2:1:120
+     indexes=2:10:total;
+     i = indexes(j);
+%for i = total
     [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
         feaLow, trainYLow, lowImageInd, referLowInd, i);
@@ -49,9 +49,15 @@ for i = total
     acc = [acc, accs];
     scores = [scores, score_column];
     nr_points = [nr_points, i];
+    fprintf('!!!i = %d, acc = %f, auc = %f', i, accs, aucs);
+    isave(['scores', num2str(i)], score_column, i);
 end
 save('rankSVM', 'acc', 'auc', 'nr_points', 'scores');
 end %end of trainweakSVMfunction
+
+function isave(name, x, i)
+save(name, 'x', 'i');
+end
 
 function [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
@@ -79,12 +85,12 @@ fprintf('size of training: %d\n', size(featureSet, 1));
 facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
-for log10c = [-16, -12]
-    for log10p = [-18, -16, -14]
+for log10c = [-2, -4]
+    for log10p = [-9, -6]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y<0) = -facty;
-        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
+        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
         if (acc > accnow)
             bestcmd = cmd;
             accnow = acc;
@@ -93,12 +99,12 @@ for log10c = [-16, -12]
 end
 accnow = 0;
 bestcmd2 = [];
-for log10c = [-16, -12]
-    for log10p = [-18, -16, -14]
+for log10c = [-2, -4]
+    for log10p = [-9, -6]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y>0) = facty;
-        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 3 -q']);
+        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
         if (acc > accnow)
             bestcmd2 = cmd;
             accnow = acc;
@@ -116,7 +122,7 @@ tempy(y>0) = 1;
 modelneg = train(sparse(tempy), sparse(featureSet), bestcmd2);
 clear y featureSet cmd bestcmd
 
-testY = (testY > 0);
+testY = double(testY > 0);
 [~, ~, scoresneg] = predict(sparse(testY), sparse(feaTest), modelneg);
 [~, ~, scorespos] = predict(sparse(testY), sparse(feaTest), modelpos);
 [scores, labels] = max([scoresneg, scorespos], [], 2);

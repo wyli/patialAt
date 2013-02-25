@@ -34,15 +34,18 @@ auc = [];
 acc = [];
 scores = [];
 nr_points = [];
-total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-%parfor j = 1:length(2:10:total)%2:1:120
-for j = 1:length(2:10:total)%2:1:120
-     indexes=2:10:total;
-     i = indexes(j);
-%for i = total
+
+indexes = [];
+for i = 1:50
+    indexes = [indexes, i:50:2450];
+end
+
+for i = 43:20:1800
+
+    cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
-        feaLow, trainYLow, lowImageInd, referLowInd, i);
+        feaLow, trainYLow, lowImageInd, referLowInd, cInd);
     [accs, aucs, score_column] = expRankSVM(...
         fea, y,...
         feaTest, testY);
@@ -59,24 +62,6 @@ end %end of trainweakSVMfunction
 function isave(name, x, i)
 save(name, 'x', 'i');
 end
-
-function [fea, y] = calculateTrainingSet(...
-        feaHigh, trainYHigh, highImageInd, referHighInd,...
-        feaLow, trainYLow, lowImageInd, referLowInd, i)
-
-    fprintf('filtered features\n');
-    fea = [feaHigh(1:i, :); feaHigh(end-i+1:end, :)];
-    y = [trainYHigh(1:i, :); trainYHigh(end-i+1:end, :)];
-    indAll = zeros(size(trainYLow));
-    for j = [1:i, length(trainYHigh)-i+1:length(trainYHigh)]
-        indAll = indAll +...
-            double((lowImageInd == highImageInd(j)) & (referLowInd == referHighInd(j)));
-    end
-    fea = [fea; feaLow(indAll > 0, :)];
-    y = [y; trainYLow(indAll > 0)];
-    
-end % end of calculateTrainingSet
-
 
 function [acc, auc, scores] = expRankSVM(...
         featureSet, y,...
@@ -136,6 +121,7 @@ catch
     auc = 0;
 end
 end %end of expranksvm
+
 
 function [features, y, imageInd, referInd] =...
         loadFeaturesWithRadius(setpath, ind, radius)

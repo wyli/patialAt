@@ -23,11 +23,17 @@ acc = [];
 nr_points = [];
 scores = [];
 total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-for i = 2:10:total
+indexes = [];
+for i = 1:50
+    indexes = [indexes, i:50:2450];
+end
 
+for i = 43:20:1800%length(indexes)
+
+    cInd = indexes(1:i);
     [accs, aucs, score_column]= expConventionalSVM(...
-        [feaHigh(1:i, :); feaHigh(end-i+1:end, :)],...
-        [trainYHigh(1:i); trainYHigh(end-i+1:end)],...
+        feaHigh(cInd, :),...
+        trainYHigh(cInd),...
         feaTest, testY);
     auc = [auc, aucs];
     acc = [acc, accs];
@@ -45,7 +51,7 @@ function [acc, auc, scores] = expConventionalSVM(...
 
 accnow = 0;
 bestcmd = [];
-for log10c = -4:-1:-10
+for log10c = -5:-1:-10
     cmd = ['-s 2 -c ', num2str(10^log10c)];
     modelnow = train(sparse(y), sparse(featureSet), [cmd ' -q']);
     [~, ~, scores] = predict(sparse(y), sparse(featureSet), modelnow, [' -q']);

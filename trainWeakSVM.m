@@ -34,12 +34,18 @@ acc = [];
 auc = [];
 nr_points = [];
 scores = [];
-total = min(sum(trainYHigh > 0), sum(trainYHigh < 0));
-for i = 2:10:total
 
+indexes = [];
+for i = 1:50
+    indexes = [indexes, i:50:2450];
+end
+
+for i = 43:20:1800
+
+    cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
         feaHigh, trainYHigh, highImageInd, referHighInd,...
-        feaLow, trainYLow, lowImageInd, referLowInd, i);
+        feaLow, trainYLow, lowImageInd, referLowInd, cInd);
     [accs, aucs, score_column] = expConventionalSVM(...
         fea, y,...
         feaTest, testY);
@@ -50,22 +56,6 @@ for i = 2:10:total
 end
 save('weaksvm', 'acc', 'auc', 'nr_points');
 end %end of trainweakSVMfunction
-
-function [fea, y] = calculateTrainingSet(...
-        feaHigh, trainYHigh, highImageInd, referHighInd,...
-        feaLow, trainYLow, lowImageInd, referLowInd, i)
-
-    fprintf('filtered features, low size %d\n', length(trainYLow));
-    fea = [feaHigh(1:i, :); feaHigh(end-i+1:end, :)];
-    y = [trainYHigh(1:i, :); trainYHigh(end-i+1:end, :)];
-    indAll = zeros(size(trainYLow));
-    for j = [1:i, length(trainYHigh)-i+1:length(trainYHigh)]
-        indAll = indAll +...
-            double((lowImageInd == highImageInd(j)) & (referLowInd == referHighInd(j)));
-    end
-    fea = [fea; feaLow(indAll > 0, :)];
-    y = [y; trainYLow(indAll > 0)];
-end
 
 
 function [acc, auc, scores] = expConventionalSVM(...

@@ -40,7 +40,7 @@ for i = 1:50
     indexes = [indexes, i:50:2450];
 end
 
-for i = 43:20:1800
+for i = 53:60:1800
 
     cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
@@ -71,8 +71,8 @@ fprintf('size of training: %d\n', size(featureSet, 1));
 facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
-for log10c = [-2, -4]
-    for log10p = [-9, -6]
+for log10c = [-6]
+    for log10p = [-9]
         cmd = ['-s 2 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y<0) = -facty;
@@ -85,8 +85,8 @@ for log10c = [-2, -4]
 end
 accnow = 0;
 bestcmd2 = [];
-for log10c = [-2, -4]
-    for log10p = [-9, -6]
+for log10c = [-4]
+    for log10p = [-6]
         cmd = ['-s 2 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
         yy(y>0) = facty;

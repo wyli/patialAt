@@ -40,7 +40,7 @@ for i = 1:50
     indexes = [indexes, i:50:2450];
 end
 
-for i = 43:20:1800
+for i = 53:60:1800
 
     cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
@@ -68,14 +68,13 @@ function [acc, auc, scores] = expRankSVM(...
         feaTest, testY)
 
 fprintf('size of training: %d\n', size(featureSet, 1));
-facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
-for log10c = [-2, -4]
-    for log10p = [-9, -6]
+for log10c = [-4]
+    for log10p = [-10]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
-        yy(y<0) = -facty;
+        yy(y<0) = -0.5;
         acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
         if (acc > accnow)
             bestcmd = cmd;
@@ -85,11 +84,11 @@ for log10c = [-2, -4]
 end
 accnow = 0;
 bestcmd2 = [];
-for log10c = [-2, -4]
-    for log10p = [-9, -6]
+for log10c = [-4]
+    for log10p = [-10]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
-        yy(y>0) = facty;
+        yy(y>0) = 0.5;
         acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
         if (acc > accnow)
             bestcmd2 = cmd;
@@ -111,7 +110,8 @@ clear y featureSet cmd bestcmd
 testY = double(testY > 0);
 [~, ~, scoresneg] = predict(sparse(testY), sparse(feaTest), modelneg);
 [~, ~, scorespos] = predict(sparse(testY), sparse(feaTest), modelpos);
-[scores, labels] = max([scoresneg, scorespos], [], 2);
+[scores, labels] = max([-scoresneg, scorespos], [], 2);
+scores(labels==1) = -scores(labels==1);
 labels = labels - 1;
 prelabels = (labels == testY);
 acc = 100 * sum(prelabels) / length(prelabels)

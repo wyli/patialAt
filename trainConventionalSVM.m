@@ -28,7 +28,7 @@ for i = 1:50
     indexes = [indexes, i:50:2450];
 end
 
-for i = 43:20:1800%length(indexes)
+for i = length(indexes)
 
     cInd = indexes(1:i);
     [accs, aucs, score_column]= expConventionalSVM(...
@@ -52,7 +52,8 @@ function [acc, auc, scores] = expConventionalSVM(...
 accnow = 0;
 bestcmd = [];
 for log10c = -5:-1:-10
-    cmd = ['-s 2 -c ', num2str(10^log10c)];
+    for log10e = 5:-1:-5
+    cmd = ['-s 2 -c ', num2str(10^log10c), ' -e ' num2str(10^log10e)];
     modelnow = train(sparse(y), sparse(featureSet), [cmd ' -q']);
     [~, ~, scores] = predict(sparse(y), sparse(featureSet), modelnow, [' -q']);
     scores(isnan(scores)) = 0;
@@ -61,6 +62,7 @@ for log10c = -5:-1:-10
         bestcmd = cmd;
         accnow = auc;
     end
+end
 end
 fprintf('training auc: %f cmd: %s\n', auc, bestcmd);
 modelbest = train(sparse(y), sparse(featureSet), [bestcmd ' -q']);

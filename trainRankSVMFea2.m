@@ -1,5 +1,5 @@
 function [acc, nr_points] = trainRankSVMFea2(schemeInd)
-matlabpool 4;
+
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/dropbox/libr/matlab'));
@@ -40,7 +40,7 @@ for i = 1:50
     indexes = [indexes, i:50:2450];
 end
 
-for i = 43:20:1800
+for i = 1800%43:20:1800
 
     cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
@@ -71,7 +71,7 @@ fprintf('size of training: %d\n', size(featureSet, 1));
 facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
-for log10c = [-2, -4]
+for log10c = [-6, -8]
     for log10p = [-9, -6]
         cmd = ['-s 2 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
@@ -85,7 +85,7 @@ for log10c = [-2, -4]
 end
 accnow = 0;
 bestcmd2 = [];
-for log10c = [-2, -4]
+for log10c = [-6, -8]
     for log10p = [-9, -6]
         cmd = ['-s 2 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         yy = y;
@@ -163,7 +163,7 @@ features = feaHigh';
 
 y = zeros(size(yHigh))';
 if radius > -1
-    feadists = exp(feadists/std(feadists));
+    feadists = exp(feadists/std(feadists))
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')

@@ -40,7 +40,7 @@ for i = 1:50
     indexes = [indexes, i:50:2450];
 end
 
-for i = 43:20:1800
+for i = 53:60:1800
 
     cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
@@ -54,9 +54,9 @@ for i = 43:20:1800
     scores = [scores, score_column];
     nr_points = [nr_points, i];
     fprintf('!!!i = %d, acc = %f, auc = %f', i, accs, aucs);
-    isave(['huberscoressingleFea', num2str(i)], score_column, i);
+    isave(['s0scoressingleFea', num2str(i)], score_column, i);
 end
-save('huberrankSVMsinglefea', 'acc', 'auc', 'nr_points', 'scores');
+save('rankSVMsinglefea', 'acc', 'auc', 'nr_points', 'scores');
 end %end of trainweakSVMfunction
 
 function isave(name, x, i)
@@ -72,8 +72,8 @@ fprintf('size of training: %d\n', size(featureSet, 1));
 facty = abs(y(1));
 accnow = 0;
 bestcmd = [];
-for log10c = [-2, -3]
-    for log10p = [-12, -10]
+for log10c = [-5]
+    for log10p = [-9]
         cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
         modelnow = train(sparse(y), sparse(featureSet), cmd);
         [~, ~, scores] = predict(sparse(y), sparse(featureSet), modelnow, '-q');
@@ -91,11 +91,11 @@ for log10c = [-2, -3]
 end
 
 fprintf('bestcmd1: %s\n', bestcmd);
-modelbest = train(sparse(y), sparse(featureSet), bestcmd);
+%modelbest = train(sparse(y), sparse(featureSet), bestcmd);
 clear y featureSet cmd bestcmd
 
 testY = double(testY > 0) * 2 - 1;
-[~, acc, scores] = predict(sparse(testY), sparse(feaTest), modelbest);
+[~, acc, scores] = predict(sparse(testY), sparse(feaTest), modelnow);
 scores(isnan(scores)) = 0;
 try
     [~, ~, ~, auc] = perfcurve(testY, scores, '1')

@@ -1,9 +1,11 @@
-function [acc, nr_points] = trainRankSVMFea(schemeInd)
+function [acc, nr_points] = trainRankSVM(schemeInd)
+%matlabpool 4;
 RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
-addpath(genpath('~/dropbox/libr/matlab'));
+%addpath(genpath('~/dropbox/libr/matlab'));
+addpath(genpath('~/desktop/liblinear-1.93/matlab'));
 load('../../exparam.mat');
-
+which train
 trainInd = allInd(:, ~testScheme(schemeInd, :));
 trainInd = trainInd(:);
 trainInd = trainInd(trainInd < 60);
@@ -39,7 +41,7 @@ for i = 1:50
     indexes = [indexes, i:50:2450];
 end
 
-for i = 43:20:1800
+for i = 53:60:1800
 
     cInd = indexes(1:i);
     [fea, y] = calculateTrainingSet(...
@@ -53,13 +55,13 @@ for i = 43:20:1800
     scores = [scores, score_column];
     nr_points = [nr_points, i];
     fprintf('!!!i = %d, acc = %f, auc = %f', i, accs, aucs);
-    isave(['scores', num2str(i)], score_column, i);
+    isave(['weakscoresall', num2str(i)], score_column, i);
 end
-save('rankSVM', 'acc', 'auc', 'nr_points', 'scores');
+save('weakSVMall', 'acc', 'auc', 'nr_points', 'scores');
 end %end of trainweakSVMfunction
 
 function isave(name, x, i)
-    save(name, 'x', 'i');
+save(name, 'x', 'i');
 end
 
 function [acc, auc, scores] = expRankSVM(...
@@ -67,55 +69,52 @@ function [acc, auc, scores] = expRankSVM(...
         feaTest, testY)
 
 fprintf('size of training: %d\n', size(featureSet, 1));
-facty = abs(y(1));
+% -1 vs rest
 accnow = 0;
 bestcmd = [];
-for log10c = [-6, -8]
-    for log10p = [-9, -6]
-        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
-        yy = y;
-        yy(y<0) = -facty;
-        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
-        if (acc > accnow)
-            bestcmd = cmd;
-            accnow = acc;
-        end
+for log10c = -5:-1:-11
+    cmd = ['-s 2 -c ', num2str(10^log10c)];
+    yy = y;
+    yy = -1 * (double(y == -1) * 2 - 1);
+    acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
+    if (acc > accnow)
+        bestcmd = cmd;
+        accnow = acc;
     end
 end
+% +1 vs rest
 accnow = 0;
 bestcmd2 = [];
-for log10c = [-2, -4]
-    for log10p = [-9, -6]
-        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
-        yy = y;
-        yy(y>0) = facty;
-        acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
-        if (acc > accnow)
-            bestcmd2 = cmd;
-            accnow = acc;
-        end
+for log10c = -5:-1:-11
+    cmd = ['-s 0 -c ', num2str(10^log10c)];
+    yy = y;
+    yy = double(y == 1) * 2 - 1;
+    acc = train(sparse(yy), sparse(featureSet), [cmd ' -v 2 -q']);
+    if (acc > accnow)
+        bestcmd2 = cmd;
+        accnow = acc;
     end
 end
 
 fprintf('bestcmd1: %s\n', bestcmd);
 fprintf('bestcmd2: %s\n', bestcmd2);
-tempy = y;
-tempy(y<0) = -1;
-modelpos = train(sparse(tempy), sparse(featureSet), bestcmd);
-tempy = y;
-tempy(y>0) = 1;
-modelneg = train(sparse(tempy), sparse(featureSet), bestcmd2);
+tempy = -1 * (double(y==-1) * 2 - 1);
+modelneg = train(sparse(tempy), sparse(featureSet), bestcmd);
+tempy = double(y==1) * 2 - 1;
+modelpos = train(sparse(tempy), sparse(featureSet), bestcmd2);
 clear y featureSet cmd bestcmd
 
 testY = double(testY > 0);
 [~, ~, scoresneg] = predict(sparse(testY), sparse(feaTest), modelneg);
 [~, ~, scorespos] = predict(sparse(testY), sparse(feaTest), modelpos);
-[scores, labels] = max([scoresneg, scorespos], [], 2);
-labels = labels - 1;
+[scores, labels] = max([-scoresneg, scorespos], [], 2);
+scores(labels==1) = -scores(labels==1);
+labels = (labels - 1) * 2 - 1;
 prelabels = (labels == testY);
 acc = 100 * sum(prelabels) / length(prelabels)
 try
-    [~, ~, ~, auc] = perfcurve(testY, scores, '1')
+    [~, ~, ~, auc] = perfcurve(testY, scores, '1');
+    auc = 1 - auc
 catch
     auc = 0;
 end
@@ -135,7 +134,7 @@ feaHigh = [];
 yHigh = [];
 imageInd = [];
 referInd = [];
-feadists = [];
+locdists = [];
 for i = 1:length(ind)
 
     if radius > -1
@@ -146,7 +145,7 @@ for i = 1:length(ind)
         yHigh = [yHigh, info(1, r)];
         imageInd = [imageInd; ones(size(info(1,r)))' * i];
         referInd = [referInd; nearestInd(r)];
-        feadists = [feadists; distanceweak(r)];
+        locdists = [locdists; locdist(r)];
     else
         fprintf([setpath '/%s\n'], lsFiles(ind(i)).name)
         load([setpath '/', lsFiles(ind(i)).name]);
@@ -162,22 +161,21 @@ features = feaHigh';
 
 y = zeros(size(yHigh))';
 if radius > -1
-    feadists = exp(feadists/std(feadists));
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')
-            y(i) = -feadists(i);
+            y(i) = -5;
         else
-            y(i) = feadists(i);
+            y(i) = 5;
         end
     end
 else
     for i = 1:length(yHigh)
 
         if strcmp(yHigh{i}.type, 'LGD')
-            y(i) = -0.5;
+            y(i) = -1;
         else
-            y(i) = 0.5;
+            y(i) = 1;
         end
     end
 end

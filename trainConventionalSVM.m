@@ -1,5 +1,5 @@
 function [acc,nr_points]  = trainConventionalSVM(schemeInd)
-RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
+%RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 addpath(genpath('~/desktop/liblinear-1.93/matlab'));
 load('../../exparam.mat');

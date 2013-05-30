@@ -42,7 +42,7 @@ for i = 1:size(listFiles, 1)
 %     clear rMat repClusters repSize repStep cuboid;
 
     histograms = cell(1, size(cuboid,2));
-    for index = 1:length(histograms)
+    parfor index = 1:length(histograms)
         histograms{index} = cuboid2Hist(cuboid{4, index}, clusters);
     end
     %clear rMat repClusters cuboid;

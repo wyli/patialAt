@@ -1,9 +1,9 @@
 clear all; close all;
-RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
+%RandStream.setDefaultStream(RandStream('mrg32k3a', 'seed', sum(100*clock)));
 addpath('~/dropbox/libr/matlab/');
 addpath(genpath('~/documents/opt_learning/randomfeatures'));
 
-id = '';
+id = '20130529T185037_primal';
 if isempty(id)
     id = datestr(now, 30);
     id = sprintf('%s_primal', id);
@@ -18,10 +18,13 @@ diary([out_dir '/exp.log']);
 patchSet = '~/desktop/cuboidset';
 
 % flags
-generate_scheme = 1;
-do_kmeans = ones(3, 1);
-do_extract_features= 1;
-do_classification = 1;
+generate_scheme = 0;
+new_random_matrix = 0;
+%do_kmeans = ones(10, 1);
+do_kmeans = zeros(10, 1);
+
+do_extract_features = 1;
+do_classification = 0;
 fprintf('at: %s\n', datestr(now));
 fprintf('generate testing scheme? %d\n', generate_scheme);
 fprintf('%s: \n', 'I will');
@@ -34,8 +37,8 @@ fprintf('\n\n');
 windowSize = 21;
 subWindow = 9;
 if generate_scheme
-    k = 6;
-    foldSize = 10;
+    k = 10;
+    foldSize = 6;
     allInd = randsample(k*foldSize, k*foldSize);
     allInd = reshape(allInd, foldSize, []);
     testScheme = eye(k, 'int8');
@@ -44,7 +47,12 @@ else
     load([out_dir '/exparam']);
 end
 
-repeating = 3;
+if new_random_matrix
+    randMat = randn(64, 9^3);
+    save([out_dir, '/randMat'], 'randMat');
+end
+
+repeating = 10;
 for f = 1:min(repeating, length(testScheme))
 
     % output dir
@@ -55,7 +63,7 @@ for f = 1:min(repeating, length(testScheme))
     trainInd = trainInd(:);
     trainInd = trainInd(trainInd~=60);
     testInd = allInd(:, f);
-    testInd = testInd(testInd~=60); % we only have 59 files
+    testInd = testInd(testInd~=60); %59 files in total
     fprintf('training on:\n');
     for i = trainInd
         fprintf('%d, ', i);
@@ -68,38 +76,43 @@ for f = 1:min(repeating, length(testScheme))
 
     if do_kmeans(f)
 
-        randMat = randn(150, 9^3);
-        save([resultSet, '/randMat'], 'randMat');
+        load([out_dir, '/randMat']);
         kcenters = 200;
-        samplePerFile = 50; % use all key points.
-        trainBases(...
-            resultSet, patchSet, trainInd,...
-            windowSize, subWindow, 2, kcenters, randMat, samplePerFile)
+        for samplePerFile = 1:50; % use all key points.
+            trainBases(...
+                resultSet, patchSet, trainInd,...
+                windowSize, subWindow, 2, kcenters, randMat, samplePerFile);
+        end
     end
 
     if do_extract_features
-
-        if ~do_kmeans(f)
-            load([resultSet, '/randMat']);
+        load([out_dir, '/randMat']);
+        parfor clicks = 1:50
+            %if ~do_kmeans(f)
+            
+            
+            %end
+            mkdir([resultSet, '/fea' int2str(clicks)]);
+            cuboidInput = [patchSet, '/cuboid_%d/high/%s'];
+            feaOutput = [resultSet, '/fea' int2str(clicks) '/high'];
+            %samplePerFile = 50;
+            extractFeatures(...
+                resultSet, cuboidInput, feaOutput,...
+                windowSize, 9, 1, randMat, clicks);
+            
+            cuboidInput = [patchSet, '/cuboid_%d/low/%s'];
+            feaOutput = [resultSet, '/fea' int2str(clicks) '/low'];
+            samplePerFile = 500;
+            radius = 0;
+            extractFeatures(...
+                resultSet, cuboidInput, feaOutput,...
+                windowSize, 9, 1, randMat, clicks);
+            
         end
-        mkdir([resultSet, '/fea']);
-        cuboidInput = [patchSet, '/cuboid_%d/high/%s'];
-        feaOutput = [resultSet, '/fea/high'];
-        samplePerFile = 50;
-        extractFeatures(...
-            resultSet, cuboidInput, feaOutput,...
-            windowSize, 9, 1, randMat, samplePerFile, -1);
-
-        cuboidInput = [patchSet, '/cuboid_%d/low/%s'];
-        feaOutput = [resultSet, '/fea/low'];
-        samplePerFile = 500;
-        radius = 0;
-        extractFeatures(...
-            resultSet, cuboidInput, feaOutput,...
-            windowSize, 9, 1, randMat, samplePerFile, radius);
     end
 
     if do_classification
+        % classify features
     end
 end
 

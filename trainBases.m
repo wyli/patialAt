@@ -9,7 +9,7 @@ numOfSubsamples = 6;
 cuboidSet = [cuboidSet '/cuboid_%d/high/%s'];
 
 % output
-clusterFile = [baseDir, '/clusters.mat'];
+clusterFile = [baseDir, '/clusters_' int2str(samplePerFile) '.mat'];
 
 localSet = [];
 listFiles = dir(sprintf(cuboidSet, windowSize, '*.mat'));
@@ -18,9 +18,10 @@ for j = 1:size(trainInd, 1)
     cuboidFile = sprintf(cuboidSet, windowSize, listFiles(i).name);
     load(cuboidFile);
     if(samplePerFile < size(cuboid, 2))
-        r = randsample(size(cuboid,2), min(size(cuboid,2), samplePerFile));
-        cuboid = cuboid(:, r);
-        save(cuboidFile, 'cuboid');
+        %r = randsample(size(cuboid,2), min(size(cuboid,2), samplePerFile));
+        %cuboid = cuboid(:, r);
+        cuboid = cuboid(:, 1:samplePerFile);
+        %save(cuboidFile, 'cuboid');
     end
     cuboid = cuboid(1, :);
 
@@ -37,8 +38,8 @@ localSet = (randMat*localSet')';
 %assert(size(localSet, 1) > 40000, '%d %d', size(localSet, 1), size(localSet, 2));
 %r = randsample(size(localSet, 1), 40000);
 %localSet = localSet(r, :);
-prm.nTrial = 5;
-prm.maxIter = 200;
+prm.nTrial = 3;
+%prm.maxIter = 100;
 [~, clusters] = kmeans2(localSet, k, prm);
 save(clusterFile, 'clusters');
 end

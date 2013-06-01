@@ -1,9 +1,9 @@
-function [features, y, imageInd, referInd] = ...
+function [features, y] = ...
         loadFeaturesWithRadius(setpath, ind, radius, clicks, locFlag)
 
 
-    fprintf('radius:%d, clicks:%d, locFlag:%d\n',...
-        radius, clicks, locFlag);
+    %fprintf('radius:%d, clicks:%d, locFlag:%d\n',...
+    %    radius, clicks, locFlag);
     if radius > -1
         filesetname = sprintf([setpath '/*_%d.mat'], radius);
     else % clicked patches
@@ -13,8 +13,6 @@ function [features, y, imageInd, referInd] = ...
     feaHigh = [];
     yHigh = [];
     info = [];
-    imageInd = [];
-    referInd = [];
     d = [];
 
     lsFiles = dir(filesetname);
@@ -28,8 +26,8 @@ function [features, y, imageInd, referInd] = ...
             selection = locRef <= clicks;
             feaHigh = [feaHigh, X_features(:, selection)];
             yHigh = [yHigh, info(selection)];
-            imageInd = [imageInd; ones(size(yHigh))' * i];
-            referInd = [referInd; locRef(selection)];
+            %imageInd = [imageInd; ones(size(yHigh))' * i];
+            %referInd = [referInd; locRef(selection)];
             d = [d; locDist(selection)];
         end
     end
@@ -43,8 +41,8 @@ function [features, y, imageInd, referInd] = ...
             selection = feaRef <= clicks;
             feaHigh = [feaHigh, X_features(:, selection)];
             yHigh = [yHigh, info(selection)];
-            imageInd = [imageInd; ones(size(yHigh))' * i];
-            referInd = [referInd; feaRef(selection)];
+            %imageInd = [imageInd; ones(size(yHigh))' * i];
+            %referInd = [referInd; feaRef(selection)];
             d = [d; feaDist(selection)];
         end
     end

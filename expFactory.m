@@ -73,8 +73,8 @@ if ~strcmp(model, 'svm-ign')
         %    loadFeaturesWithRadius('./low', trainInd, r, clicks, locFlag);
         [tempfeaLow, temptrainYLow] = ...
             loadFeaturesWithRadius('./low', trainInd, r, clicks, locFlag);
-        r = randsample(s, size(tempfeaLow,1), ceil(.2 * size(tempfeaLow,1)));
-        %r = randsample(s, size(tempfeaLow,1), size(tempfeaLow,1));
+        %r = randsample(s, size(tempfeaLow,1), ceil(.2 * size(tempfeaLow,1)));
+        r = randsample(s, size(tempfeaLow,1), size(tempfeaLow,1));
         feaLow = [feaLow; tempfeaLow(r, :)];
         trainYLow = [trainYLow; temptrainYLow(r, :)];
         fprintf('.');
@@ -106,7 +106,7 @@ if strfind(model, 'svm')
     fprintf('model selecting... ');
     trainYHigh = double(trainYHigh > 0) * 2 - 1; % binary labels.
     feaHigh = double(feaHigh);
-    for log10c = -1:-1:-2
+    for log10c = -1.2
         cmd = ['-s 2 -c ', num2str(10^log10c)];
         modelnow = train(sparse(trainYHigh), sparse(feaHigh), [cmd ' -q']);
         [~, ~, scores] = predict(...
@@ -134,12 +134,53 @@ if strfind(model, 'svm')
     [predicted, testacc, testscores] = predict(...
         sparse(testY), sparse(feaTest), modelbest, ' -q');
     scores(isnan(testscores)) = 0;
-    if modelnow.Label(1) == -1
+    if modelbest.Label(1) == -1
         testscores = -testscores;
     end
     [~, ~, ~, testauc] = perfcurve(testY, testscores, 1);
     fprintf('test auc: %.3f\n', testauc);
-    %save(filename, 'predicted', 'testacc', 'testscores', 'testY', 'testauc');
+    save(filename, 'predicted', 'testacc', 'testscores', 'testY', 'testauc');
+end
+
+if strfind(model, 'prop')
+
+    % train
+    fprintf('model selecting... ');
+    trainYHigh = double(trainYHigh);
+    feaHigh = double(feaHigh);
+    if strfind(model, 'prop-squ-fea')
+        % proposed-squ-fea
+        log10c = -5; log10p = -9;
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
+    elseif strfind(model, 'prop-squ-loc')
+        % proposed-squ-loc
+        log10c = -5; log10p = -9;
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
+    elseif strfind(model, 'prop-huber-fea')
+        %proposed-huber-fea
+        log10c = -5; log10p = -9;
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
+    elseif strfind(model, 'prop-huber-loc')
+        %proposed-huber-loc
+        log10c = -5; log10p = -9;
+        cmd = ['-s 0 -c ', num2str(10^log10c), ' -p ', num2str(10^log10p)];
+    end
+
+    modelbest = train(sparse(trainYHigh), sparse(feaHigh), [cmd ' -q']);
+    fprintf('cmd: %s\n', cmd);
+
+    %test
+    testY = double(testY > 0) * 2 - 1; % testing binary labels
+    feaTest = double(feaTest);
+    [predicted, testacc, testscores] = predict(...
+        sparse(testY), sparse(feaTest), modelbest, ' -q');
+    scores(isnan(testscores)) = 0;
+    if modelbest.Label(1) == -1
+        testscores = -testscores;
+    end
+    [~, ~, ~, testauc] = perfcurve(testY, testscores, 1);
+    fprintf('test auc: %.3f\n', testauc);
+    save(filename, 'predicted', 'testauc', 'testscores', 'testY', 'testauc');
 end
 
 fprintf('%s: loc-based: %d, fold: %d, clicks: %d, repeating: %d, %.3f\n',...

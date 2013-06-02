@@ -74,6 +74,7 @@ if ~strcmp(model, 'svm-ign')
         [tempfeaLow, temptrainYLow] = ...
             loadFeaturesWithRadius('./low', trainInd, r, clicks, locFlag);
         r = randsample(s, size(tempfeaLow,1), ceil(.2 * size(tempfeaLow,1)));
+        %r = randsample(s, size(tempfeaLow,1), size(tempfeaLow,1));
         feaLow = [feaLow; tempfeaLow(r, :)];
         trainYLow = [trainYLow; temptrainYLow(r, :)];
         fprintf('.');
@@ -105,7 +106,7 @@ if strfind(model, 'svm')
     fprintf('model selecting... ');
     trainYHigh = double(trainYHigh > 0) * 2 - 1; % binary labels.
     feaHigh = double(feaHigh);
-    for log10c = -1:-1:-10
+    for log10c = -1:-1:-2
         cmd = ['-s 2 -c ', num2str(10^log10c)];
         modelnow = train(sparse(trainYHigh), sparse(feaHigh), [cmd ' -q']);
         [~, ~, scores] = predict(...
@@ -138,7 +139,7 @@ if strfind(model, 'svm')
     end
     [~, ~, ~, testauc] = perfcurve(testY, testscores, 1);
     fprintf('test auc: %.3f\n', testauc);
-    save(filename, 'predicted', 'testacc', 'testscores', 'testY', 'testauc');
+    %save(filename, 'predicted', 'testacc', 'testscores', 'testY', 'testauc');
 end
 
 fprintf('%s: loc-based: %d, fold: %d, clicks: %d, repeating: %d, %.3f\n',...

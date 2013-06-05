@@ -64,7 +64,7 @@ function [features, y] = ...
 
     % labels: location based affinity
     if radius > -1 && locFlag > 0
-        yDist = exp(d/12); % change this delta
+        yDist = exp(-d/5e7); % change this delta
         for i = 1:length(yHigh)
 
             if strcmp(yHigh{i}.type, 'LGD')
@@ -77,7 +77,7 @@ function [features, y] = ...
 
     % labels: feature based affinity
     if radius > -1 && locFlag < 0
-        yDist = exp(d/12); % change this sigma
+        yDist = exp(-d/25000); % change this sigma
         for i = 1:length(yHigh)
 
             if strcmp(yHigh{i}.type, 'LGD')

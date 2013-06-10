@@ -134,6 +134,7 @@ fprintf('key-weak ratio: %.3f\n', size(feaLow, 1)/size(feaHigh, 1));
 if ~isempty(feaLow) && ~isempty(trainYLow)
     feaHigh = [feaHigh; feaLow];
     trainYHigh = [trainYHigh; trainYLow];
+    feaHigh(feaHigh==0) = 1e-7;
 end
 
 if strfind(model, 'svm')
@@ -185,8 +186,10 @@ if strfind(model, 'prop')
 
     % train
     fprintf('model selecting...\n');
-    trainYHigh = double(trainYHigh);
-    feaHigh = double(feaHigh);
+    trainYHigh = sparse(double(trainYHigh));
+    feaHigh = sparse(double(feaHigh));
+    testY = sparse(double(testY > 0) * 2 - 1); % testing binary labels
+    feaTest = sparse(double(feaTest));
 
     trainauc = 0;
     testauc = 0;
@@ -195,22 +198,22 @@ if strfind(model, 'prop')
 
     if strfind(model, 'prop-squ-fea')
 
-        search_p = -20:-10;
+        search_p = -20:-15;
         search_c = -2;
         k = 0;
     elseif strfind(model, 'prop-squ-loc')
 
-        search_p = -20:-10;
+        search_p = -20:-15;
         search_c = -2;
         k = 0;
     elseif strfind(model, 'prop-huber-fea')
 
-        search_p = -20:-10;
+        search_p = -20:-15;
         search_c = -2;
         k = 2;
     elseif strfind(model, 'prop-huber-loc')
 
-        search_p = -20:-10;
+        search_p = -20:-15;
         search_c = -2;
         k = 2;
     end
@@ -219,25 +222,23 @@ if strfind(model, 'prop')
 
         cmd = ['-s ' num2str(k) ' -c ', num2str(2^log2c), ' -p ', num2str(2^log2p)];
         %modelbest = train(sparse(trainYHigh), sparse(feaHigh), cmd);
-        modelbest = train(sparse(trainYHigh), sparse(feaHigh), [cmd ' -q']);
+        modelbest = train(trainYHigh, feaHigh, [cmd ' -q']);
         %fprintf('cmd: %s\n', cmd);
 
-        %[~, ~, trainscores] = predict(...
-        %    sparse((trainYHigh>0)*2-1), sparse(feaHigh), modelbest, '-q');
-        %trainscores(isnan(trainscores)) = 0;
-        %if modelbest.Label(1) == -1
-        %    trainscores = -trainscores;
-        %end
-        %try
-        %    [~, ~, ~, trainauc] = perfcurve(...
-        %        sparse((trainYHigh>0)*2-1), trainscores, 1);
-        %catch ign
-        %end
+        [~, ~, trainscores] = predict(...
+            sparse((trainYHigh>0)*2-1), sparse(feaHigh), modelbest, '-q');
+        trainscores(isnan(trainscores)) = 0;
+        if modelbest.Label(1) == -1
+            trainscores = -trainscores;
+        end
+        try
+            [~, ~, ~, trainauc] = perfcurve(...
+                sparse((trainYHigh>0)*2-1), trainscores, 1);
+        catch ign
+        end
 
-        testY = double(testY > 0) * 2 - 1; % testing binary labels
-        feaTest = double(feaTest);
         [predicted, testacc, testscores] = predict(...
-            sparse(testY), sparse(feaTest), modelbest, ' -q');
+            testY, feaTest, modelbest, ' -q');
         scores(isnan(testscores)) = 0;
         if modelbest.Label(1) == -1
             testscores = -testscores;
@@ -247,13 +248,16 @@ if strfind(model, 'prop')
             %fprintf('trainauc: %.3f, auc: %.3f, log2c: %d, log2p: %d\n',...
             %    trainauc, testauc, log2c, log2p);
             fprintf('*');
-        catch ignore 
+        catch ignore
         end
 
-        if testauc >= nowauc
+        if trainauc > nowauc
 
-            nowauc = testauc;
+            nowauc = trainauc;
             bestcmd = [cmd ' log2c ' num2str(log2c) ' log2p ' num2str(log2p)];
+            if nowauc > 0.9
+                break;
+            end
 
             %testY = double(testY > 0) * 2 - 1; % testing binary labels
             %feaTest = double(feaTest);
